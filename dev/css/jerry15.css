@@ -474,7 +474,10 @@ em {
   height: 2em;
   border-top: 1px solid #a9a9a9;
   border-right: 1px solid #a9a9a9;
-  transform: rotate(45deg); }
+  transform: rotate(45deg);
+  -webkit-transition: rotate(45deg);
+  -moz-transition: rotate(45deg);
+  -o-transition: rotate(45deg); }
 
 .prev {
   position: absolute;
@@ -488,7 +491,10 @@ em {
   height: 2em;
   border-top: 1px solid #a9a9a9;
   border-left: 1px solid #a9a9a9;
-  transform: rotate(-45deg); }
+  transform: rotate(-45deg);
+  -webkit-transition: rotate(-45deg);
+  -moz-transition: rotate(-45deg);
+  -o-transition: rotate(-45deg); }
 
 .next:active,
 .next.active {
@@ -854,20 +860,25 @@ em {
   opacity: 0.7; }
 
 /*************** Mobile ******************/
+.mobile p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.8vw;
+  font-weight: 300; }
+
 .mobile h1 {
   font-family: 'Lato', sans-serif;
-  font-size: 70px;
+  font-size: 7.3vw;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.15em;
-  line-height: 120%;
-  padding-bottom: 0;
+  line-height: 110%;
   margin-bottom: 0;
   color: #fff; }
 
 .mobile h2 {
-  font-size: 30px;
-  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+  font-size: 3.4vw;
+  font-weight: 700;
   line-height: 120%;
   text-align: center;
   color: #eaff00;
@@ -875,30 +886,29 @@ em {
 
 .mobile h3 {
   font-family: 'Lato', sans-serif;
-  font-size: 40px;
+  font-size: 3vw;
   font-weight: 900;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   background-color: #fff;
   line-height: 100%;
   display: initial;
-  padding: 8px;
   text-align: center; }
 
 .mobile h4 {
   font-family: 'Lato', sans-serif;
   color: #fff;
-  font-size: 30px;
+  font-size: 3.3vw;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.1em;
-  line-height: 120%;
+  line-height: 140%;
   text-align: center; }
 
 .mobile h5 {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-  font-size: 30px;
+  font-size: 3vw;
   line-height: 150%;
   padding-bottom: 10px;
   text-align: center; }
@@ -907,47 +917,63 @@ em {
   color: #fff;
   font-family: 'Lato', sans-serif;
   font-weight: 100;
-  font-size: 20px;
+  font-size: 2.4vw;
+  line-height: 150%;
   text-transform: uppercase;
   padding-bottom: 10px; }
 
 /*************** Section1 ******************/
 #mob_section1 {
-  height: 658px;
-  width: 100%;
+  height: 60%;
   background: url(../assets/mob_bg.png) no-repeat;
   background-size: cover;
-  background-color: #000; }
+  background-color: #000;
+  padding-bottom: 15%; }
   #mob_section1 h1 {
-    padding-top: 20%;
-    padding-bottom: 15px; }
+    padding-top: 18%;
+    padding-bottom: 1%; }
+  #mob_section1 h2 {
+    padding-bottom: 1%; }
+  #mob_section1 h4 {
+    font-size: 3.3vw; }
+  #mob_section1 h2:nth-child(4) {
+    font-size: 5vw; }
+  #mob_section1 h6 {
+    padding-bottom: 1%;
+    font-weight: 300; }
 
 /*************** Section2 ******************/
 #mob_section2 {
-  height: 581px;
   width: 100%;
-  background-color: #eaff00; }
+  background-color: #eaff00;
+  display: inline-block; }
   #mob_section2 .half_circle {
-    background-color: #eaff00; }
+    background-color: #eaff00;
+    border-bottom: 1px solid #eaff00; }
 
 #mob2_container {
-  height: 95%;
-  width: 95%;
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
+  height: 47%;
+  width: 97%;
   background-color: #fff;
-  position: relative;
-  left: 2.5%;
-  top: 2.5%; }
+  margin-left: 1.5%; }
   #mob2_container h4 {
+    font-family: 'Noto Serif', serif;
+    font-weight: 400;
     color: #000;
     text-transform: none;
     letter-spacing: 0;
-    font-size: 55px;
-    padding-top: 5%;
-    padding-bottom: 25px; }
+    font-size: 5.7vw;
+    line-height: 140%;
+    padding-top: 7%;
+    padding-bottom: 1%; }
   #mob2_container h5 {
-    font-size: 38px;
-    padding-left: 5%;
-    padding-right: 5%; }
+    font-size: 3.5vw;
+    line-height: 170%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 7%; }
 
 .downarrow_mob {
   position: absolute;
@@ -1020,83 +1046,105 @@ em {
 
 /*************** Section3 ******************/
 #mob_section3 {
-  height: 231px;
+  position: relative;
+  padding-bottom: 20%;
   width: 100%;
-  position: relative; }
-  #mob_section3 h3 {
-    font-size: 50px;
-    line-height: 231px; }
-  #mob_section3 #mob_makeup_header {
+  background-color: #fff; }
+  #mob_section3 #mob_makeup_header1 {
     position: absolute;
-    z-index: 4;
-    top: 0;
-    left: 60%; }
-    #mob_section3 #mob_makeup_header #mob_makeup_header img {
-      width: 60%;
-      height: 60%; }
+    left: 15%;
+    top: 35%;
+    z-index: 4; }
+    #mob_section3 #mob_makeup_header1 h3 {
+      text-align: center;
+      font-size: 5vw;
+      display: initial;
+      padding: 0.5em; }
+  #mob_section3 #mob_makeup_header2 img {
+    position: absolute;
+    z-index: 3;
+    left: 65%;
+    width: 25%;
+    top: 10%;
+    height: auto; }
 
 #mob_section4 {
-  height: 800px;
   width: 100%;
   background-color: #efefef; }
   #mob_section4 h4 {
-    padding-top: 550px;
+    padding-top: 65%;
     color: #000;
     padding-bottom: 20px; }
+  #mob_section4 h5 {
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 10%; }
 
-#shop_lip h4 {
-  color: #000;
-  font-weight: 400;
-  text-decoration: underline;
-  font-size: 25px;
-  line-height: 134px; }
-
-#shop_lip_content {
-  height: 1500px; }
-
-.mob_samples {
-  height: 100%;
-  width: 95%;
+.mobile_video {
   position: absolute;
-  left: 2.5%; }
+  background: url(../assets/lip_video.png);
+  background-repeat: none;
+  width: 80%;
+  padding-bottom: 47.6%;
+  margin-left: 10%;
+  margin-top: 10%; }
 
-.mob_galleryitem {
-  width: 50%;
-  height: auto;
-  text-align: center;
-  float: left; }
-
-.mob_gallerypic {
-  height: 444px;
-  width: auto; }
-
-#mob_pic1 {
-  background: url(../assets/nars.png); }
-
-.mob-video {
-  position: absolute;
-  margin-left: -350px;
-  left: 50%;
-  margin-top: 80px; }
-
+/*************** mob-content ******************/
 .mob-button {
-  height: 134px;
   width: 100%;
   background-color: #fff; }
+  .mob-button h4 {
+    color: #000;
+    font-weight: 700;
+    text-decoration: underline;
+    font-size: 3.3vw;
+    padding: 5%; }
 
 .mob-content {
   height: 100%;
   width: 100%;
   background-color: pink;
   display: none; }
+  .mob-content h5 {
+    text-decoration: underline;
+    font-size: 3vw;
+    font-weight: 400; }
+  .mob-content p {
+    font-family: 'Lato', sans-serif;
+    font-size: 2.5vw;
+    font-weight: 300; }
 
-.mob-button2 {
-  width: 100%; }
+.mobcontent_container {
+  overflow: hidden;
+  height: 100%; }
+
+.mob_galleryitem {
+  position: relative;
+  float: left;
+  display: inline-block;
+  width: 50%;
+  padding-bottom: 65%;
+  background-color: green; }
+
+.mob_gallerypic {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  top: 10px;
+  bottom: 10px;
+  background-color: springgreen; }
 
 #mob_section5 {
-  height: 600px;
   width: 100%;
-  background-color: yellow; }
+  background-color: #efefef; }
+  #mob_section5 h4 {
+    padding-top: 65%;
+    color: #000;
+    padding-bottom: 20px; }
+  #mob_section5 h5 {
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 10%; }
 
 #mob_section7 {
   height: 100px;

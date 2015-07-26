@@ -1,50 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
+<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no/"> -->
 	<title>Makeup Date</title>
 	<!-- Custom CSS -->
 	<link href="css/jerry15.css" rel="stylesheet"/>
 	<!-- The Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Noto+Serif' rel='stylesheet' type='text/css'>
 	<link href="https://customerservice.bloomingdales.com/euf/assets/css/main.css" rel="stylesheet" type="text/css">
-	</head>
+</head>
 
-	<style></style>
+<style></style>
 
-	<body>
-		<div id="bl_main_container">
-			<!--Desktop-->
-			<div class="desktop">
-				<div id="desktop-header"></div>
-				<!-- Video -->
-				<div id="videowrapper">
-						<div id="video_overlay"></div>
-						<video autoplay loop id="bgvid">
-							<!-- <source src="assets/.webm" type='video/webm'/> -->
-							<source src="assets/headervideo.mp4" type='video/mp4'/>
-						</video>
+<body>
+	<div id="bl_main_container">
+		<!--Desktop-->
+		<div class="desktop">
+			<div id="desktop-header"></div>
+			<!-- Video -->
+			<div id="videowrapper">
+				<div id="video_overlay"></div>
+				<video autoplay loop id="bgvid">
+					<!-- <source src="assets/.webm" type='video/webm'/> -->
+					<source src="assets/headervideo.mp4" type='video/mp4'/>
+				</video>
+			</div> 
+			<!-- Main Section -->
+			<div id="main_section">
+				<div class="main"> 
+					<h5> 2 Days Only:</h5>
+					<h4> Exclusive 15-Piece Gift <em> + </em> Triple points for loyallists</h4>
+					<h1>The Makeup Date</h1>
+					<h2> Your All-Access Pass to the Season's Top Trends</h2>
+					<p> Clear your schedule: Our beauty edit is filled with the hautest how-tos and the most buzzworthy products—plus tips and tricks from our resident makeup artist (and fellow beauty junkie) Cyndle Komarovski.</p> 
 				</div> 
-				<!-- Main Section -->
-				<div id="main_section">
-					<div class="main"> 
-						<h5> 2 Days Only:</h5>
-						<h4> Exclusive 15-Piece Gift <em> + </em> Triple points for loyallists</h4>
-						<h1>The Makeup Date</h1>
-						<h2> Your All-Access Pass to the Season's Top Trends</h2>
-						<p> Clear your schedule: Our beauty edit is filled with the hautest how-tos and the most buzzworthy products—plus tips and tricks from our resident makeup artist (and fellow beauty junkie) Cyndle Komarovski.</p> 
-					</div> 
-				</div>
+			</div>
 
-				<!-- Pages -->
-				<div class="pages">
-					<div class="half_circle" id="downarrow"><div class="downarrow"></div><div class="uparrow"></div></div> 
-					<!-- Section 1 -->
-					<nav id="section1">
-						<div class="container">
-							<div id="makeup_header"><img src="assets/mob_makeup1.png" alt="makeup"></div> 
-							<div id="nav_heading"><h3>How-To Videos</h3><div>
+			<!-- Pages -->
+			<div class="pages">
+				<div class="half_circle" id="downarrow"><div class="downarrow"></div><div class="uparrow"></div></div> 
+				<!-- Section 1 -->
+				<nav id="section1">
+					<div class="container">
+						<div id="makeup_header"><img src="assets/mob_makeup1.png" alt="makeup"></div> 
+						<div id="nav_heading"><h3>How-To Videos</h3><div>
 						</div>
 					</nav>  <!-- sticky header? -->
 
@@ -53,16 +55,14 @@
 						<div id="sticky">
 							<ul class="side_navigation">
 								<li id="part2" class="change_section">part2</li>
-							    <li id="part3" class="change_section">part3</li>
-							    <li id="part4" class="change_section">part4</li>
-							    <li id="part5" class="change_section">part5</li>
+								<li id="part3" class="change_section">part3</li>
+								<li id="part4" class="change_section">part4</li>
+								<li id="part5" class="change_section">part5</li>
 							</ul> 
 						</div>	
 
 
 						<div id="container2">
-
-
 							<div id="videopreview" class="">  
 								<div id='videoplayer_music'></div>
 								<div id="videoplayer">
@@ -80,101 +80,101 @@
 										<param name="templateLoadHandler" value="onTemplateLoaded">
 									</object>
 								</div>
-					 
-							<div class="videoset"> 
-								<div id="v1" class="video_thumbnail clicked" onclick="loadVideo(event, 4065898176001)">
-									<div id='video1_title'>
-										<div id='video1_button'><img src="assets/videobutton.png" alt="videobutton"></div>
+
+								<div class="videoset"> 
+									<div id="v1" class="video_thumbnail clicked" onclick="loadVideo(event, 4065898176001)">
+										<div id='video1_title'>
+											<div id='video1_button'><img src="assets/videobutton.png" alt="videobutton"></div>
+										</div>
+									</div>
+
+									<div id="v2" class="video_thumbnail" onclick="loadVideo(event, 4065945907001)">
+										<div id='video2_title'>
+											<div id='video1_button'><img src="assets/videobutton.png" alt="videobutton"></div>   
+										</div>                        
+									</div>
+
+									<div id="v3" class="video_thumbnail" onclick="loadVideo(event, 4072917973001)">
+										<div id='video3_title'>
+											<div id='video1_button'><img src="assets/videobutton.png" alt="videobutton"></div>
+										</div>                        
 									</div>
 								</div>
-								
-								<div id="v2" class="video_thumbnail" onclick="loadVideo(event, 4065945907001)">
-									<div id='video2_title'>
-										<div id='video1_button'><img src="assets/videobutton.png" alt="videobutton"></div>   
-									</div>                        
-								</div>
-								
-								<div id="v3" class="video_thumbnail" onclick="loadVideo(event, 4072917973001)">
-									<div id='video3_title'>
-									<div id='video1_button'><img src="assets/videobutton.png" alt="videobutton"></div>
-									</div>                        
-								</div>
 							</div>
+
+							<div id="shopthevideo"><span>Shop The Video:</span></div> 
+
 						</div>
 
-						<div id="shopthevideo"><span>Shop The Video:</span></div> 
-		
-					</div>
+						<div class="shopslideshow">
 
-					<div class="shopslideshow">
+							<div class="slideshow" id="shop1"> <!--slideshow1-->
+								<div class="slide_buttons">
+									<div class="prev" alt="Previous"> </div>
+									<div class="next" alt="Next"> </div>
+								</div>
+								<div class="slide1" class="slide">
+									<ul>
+										<li class="shopvideo_item">
+											<div id="shopvideo_pic1" class="shopvideo_pic"></div>
+											<h6>Sisley Paris</h6>
+											<p> Black Rose Precious Face Oil</p>
+										</li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+									</ul>
+								</div>
+								<div class="slide2" class="slide"><img src="http://placehold.it/960x300/37FDFC" alt="image"></div>
+							</div> <!--end of slideshow 1-->
 
-						<div class="slideshow" id="shop1"> <!--slideshow1-->
-							<div class="slide_buttons">
-		   						<div class="prev" alt="Previous"> </div>
-		   						<div class="next" alt="Next"> </div>
-		   					</div>
-							<div class="slide1" class="slide">
-								<ul>
-									<li class="shopvideo_item">
-										<div id="shopvideo_pic1" class="shopvideo_pic"></div>
-										<h6>Sisley Paris</h6>
-										<p> Black Rose Precious Face Oil</p>
-									</li>
-									<li></li>
-									<li></li>
-									<li></li>
-									<li></li>
-								</ul>
-							</div>
-							<div class="slide2" class="slide"><img src="http://placehold.it/960x300/37FDFC" alt="image"></div>
-						</div> <!--end of slideshow 1-->
+							<div class="slideshow" id="shop2" style="display:none;"> <!--slideshow2-->
+								<div class="slide_buttons">
+									<div class="prev" alt="Previous"> </div>
+									<div class="next" alt="Next"> </div>
+								</div>
+								<div class="slide1" class="slide">
+									<ul>
+										<li class="shopvideo_item">
+											<div id="shopvideo_pic1" class="shopvideo_pic" style="color:FF9966;"></div>
+											<h6>Sisley Paris</h6>
+											<p> Black Rose Precious Face Oil</p>
+										</li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+									</ul>
+								</div>
+								<div class="slide2" class="slide"><img src="http://placehold.it/960x300/FF3333" alt="image"></div>
+							</div> <!--end of slideshow 2-->
 
-						<div class="slideshow" id="shop2" style="display:none;"> <!--slideshow2-->
-							<div class="slide_buttons">
-		   						<div class="prev" alt="Previous"> </div>
-		   						<div class="next" alt="Next"> </div>
-		   					</div>
-							<div class="slide1" class="slide">
-								<ul>
-									<li class="shopvideo_item">
-										<div id="shopvideo_pic1" class="shopvideo_pic" style="color:FF9966;"></div>
-										<h6>Sisley Paris</h6>
-										<p> Black Rose Precious Face Oil</p>
-									</li>
-									<li></li>
-									<li></li>
-									<li></li>
-									<li></li>
-								</ul>
-							</div>
-							<div class="slide2" class="slide"><img src="http://placehold.it/960x300/FF3333" alt="image"></div>
-						</div> <!--end of slideshow 2-->
-
-						<div class="slideshow" id="shop3" style="display:none;"> <!--slideshow3-->
-							<div class="slide_buttons">
-		   						<div class="prev" alt="Previous"> </div>
-		   						<div class="next" alt="Next"> </div>
-		   					</div>
-							<div class="slide1" class="slide">
-								<ul>
-									<li class="shopvideo_item">
-										<div id="shopvideo_pic1" class="shopvideo_pic" style="color:FF6666;"></div>
-										<h6>Sisley Paris</h6>
-										<p> Black Rose Precious Face Oil</p>
-									</li>
-									<li></li>
-									<li></li>
-									<li></li>
-									<li></li>
-								</ul>
-							</div>
-							<div class="slide2" class="slide"><img src="http://placehold.it/960x300/FF00CC" alt="image"></div>
-						</div> <!--end of slideshow 3-->
+							<div class="slideshow" id="shop3" style="display:none;"> <!--slideshow3-->
+								<div class="slide_buttons">
+									<div class="prev" alt="Previous"> </div>
+									<div class="next" alt="Next"> </div>
+								</div>
+								<div class="slide1" class="slide">
+									<ul>
+										<li class="shopvideo_item">
+											<div id="shopvideo_pic1" class="shopvideo_pic" style="color:FF6666;"></div>
+											<h6>Sisley Paris</h6>
+											<p> Black Rose Precious Face Oil</p>
+										</li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+									</ul>
+								</div>
+								<div class="slide2" class="slide"><img src="http://placehold.it/960x300/FF00CC" alt="image"></div>
+							</div> <!--end of slideshow 3-->
 
 
-					</div> <!--end of productslideshow-->
-					
-				</div><!--end of end of section2-->
+						</div> <!--end of productslideshow-->
+
+					</div><!--end of end of section2-->
 
 
 					<!-- Section 3 -->
@@ -186,298 +186,415 @@
 								<div class="cyndle_heading">
 									<h4> Meet Makeup Artist </h4>
 									<h3> Cyndle<br> Komarovski<h3> 
-								</div>
+									</div>
 
-								<div id="makeup_section3"><img src="assets/makeup_section3.png" alt="makeup"></div> 
-								<div id="cyndle_screenshot"></div>
-								
-								<div class="questions">
-									<h4> A Q&amp;A With Our <br> Go-To Beauty Guru </h4>
-									<div class="line"></div>
-									<div class="answers">
-										<p> We’ve surveyed the field, tried every new trend and re-examined the classics to create the ultimate: </p>
-										<h5> Favorite Makeup Tip: </h5>
-										<p> We’ve surveyed the field, tried every new trend and re-examined the classics to create the ultimate beauty guidebook—a step-by-step checklist of the newest, the best and the prettiest (of course). </p>
-										<h5> Favorite Makeup Tip: </h5>
-										<p> We’ve surveyed the field, tried every new trend and re-examined the classics to create the ultimate beauty guidebook—a step-by-step checklist of the newest, the best and the prettiest (of course). </p>
+									<div id="makeup_section3"><img src="assets/makeup_section3.png" alt="makeup"></div> 
+									<div id="cyndle_screenshot"></div>
+
+									<div class="questions">
+										<h4> A Q&amp;A With Our <br> Go-To Beauty Guru </h4>
+										<div class="line"></div>
+										<div class="answers">
+											<p> We’ve surveyed the field, tried every new trend and re-examined the classics to create the ultimate: </p>
+											<h5> Favorite Makeup Tip: </h5>
+											<p> We’ve surveyed the field, tried every new trend and re-examined the classics to create the ultimate beauty guidebook—a step-by-step checklist of the newest, the best and the prettiest (of course). </p>
+											<h5> Favorite Makeup Tip: </h5>
+											<p> We’ve surveyed the field, tried every new trend and re-examined the classics to create the ultimate beauty guidebook—a step-by-step checklist of the newest, the best and the prettiest (of course). </p>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
 
 
-					<!-- Section 4 -->
-					<div id="section4" data-scroll-index="2">
-						<div class="container">
-							<div class="giftset">
-								<div class="giftheading"><h3> Your Exclusive<br>10-Piece Gift</h3> </div>
-								<div id="bluecircle"><span>Loyallists<br>Recieve Triple<br>Points<br>Today Only!</span></div>
+						<!-- Section 4 -->
+						<div id="section4" data-scroll-index="2">
+							<div class="container">
+								<div class="giftset">
+									<div class="giftheading"><h3> Your Exclusive<br>10-Piece Gift</h3> </div>
+									<div id="bluecircle"><span>Loyallists<br>Recieve Triple<br>Points<br>Today Only!</span></div>
+								</div>
+
+								<div class="onlyyours">
+									<h5>oo</h5><h5>Only Ours</h5>
+									<p> Receive an Only-Ours cosmetics bag filled with 9 deluxe samples with any $25 beauty purchase. While supplies last.</p>
+									<h6>Shop Now</h6>
+								</div>
+								<div id="bag"></div>
 							</div>
-
-							<div class="onlyyours">
-								<h5>oo</h5><h5>Only Ours</h5>
-								<p> Receive an Only-Ours cosmetics bag filled with 9 deluxe samples with any $25 beauty purchase. While supplies last.</p>
-								<h6>Shop Now</h6>
-							</div>
-							<div id="bag"></div>
 						</div>
-					</div>
 
 
-					<!-- Section 5 -->
-					<div id="section5" data-scroll-index="3">
-						<div class="container">
-							<div class="section5_line"></div>
-							<div class="sample_heading"><div id="sample_heading"><h3>Deluxe Samples</h3></div></div>
-							<div id="nailpolish"><img src="assets/nailpolish.png" alt="nailpolish"></div> 
-							<div id="nailpolish2"><img src="assets/nailpolish2.png" alt="nailpolish"></div>
-							<div id="nailpolish3"><img src="assets/nailpolish3.png" alt="nailpolish"></div> 
+						<!-- Section 5 -->
+						<div id="section5" data-scroll-index="3">
+							<div class="container">
+								<div class="section5_line"></div>
+								<div class="sample_heading"><div id="sample_heading"><h3>Deluxe Samples</h3></div></div>
+								<div id="nailpolish"><img src="assets/nailpolish.png" alt="nailpolish"></div> 
+								<div id="nailpolish2"><img src="assets/nailpolish2.png" alt="nailpolish"></div>
+								<div id="nailpolish3"><img src="assets/nailpolish3.png" alt="nailpolish"></div> 
 								
-							<div class="samples">  
-								<div class="galleryitem">
-									<div id="pic1" class="gallerypic"></div>
-									<h5>Only Ours</h5>
-									<p>We’ve surveyed the field, tried every new trend and re-examined the classics to create the ultimate beauty guidebook—a step-by-step checklist of the newest, the best and the prettiest (of course).</p>
-								</div>
+								<div class="samples">  
+									<div class="galleryitem">
+										<div id="pic1" class="gallerypic"></div>
+										<h5>Only Ours</h5>
+										<p>We’ve surveyed the field, tried every new trend and re-examined the classics to create the ultimate beauty guidebook—a step-by-step checklist of the newest, the best and the prettiest (of course).</p>
+									</div>
 
-								<div class="galleryitem">
-									<div id="pic2" class="gallerypic"></div>
-									<h5>Only Ours</h5>
-									<p>We’ve surveyed the field, tried every new trend and re-examined the classics to create the ultimate beauty guidebook—a step-by-step checklist of the newest, the best and the prettiest (of course).</p>
-								</div>
+									<div class="galleryitem">
+										<div id="pic2" class="gallerypic"></div>
+										<h5>Only Ours</h5>
+										<p>We’ve surveyed the field, tried every new trend and re-examined the classics to create the ultimate beauty guidebook—a step-by-step checklist of the newest, the best and the prettiest (of course).</p>
+									</div>
 
-								<div class="galleryitem">
-									<div id="pic3" class="gallerypic"></div>
-									<h5>Only Ours</h5>
-									<p>We’ve surveyed the field, tried every new trend and re-examined the classics to create the ultimate beauty guidebook—a step-by-step checklist of the newest, the best and the prettiest (of course).</p>
-								</div>
+									<div class="galleryitem">
+										<div id="pic3" class="gallerypic"></div>
+										<h5>Only Ours</h5>
+										<p>We’ve surveyed the field, tried every new trend and re-examined the classics to create the ultimate beauty guidebook—a step-by-step checklist of the newest, the best and the prettiest (of course).</p>
+									</div>
 
-								<div class="galleryitem">
-									<div id="pic4" class="gallerypic2"></div>
-									<h5>Only Ours</h5>
-									<p>We’ve surveyed the field, tried every new trend and re-examined the classics to create the ultimate beauty guidebook—a step-by-step checklist of the newest, the best and the prettiest (of course).</p>
-								</div>
+									<div class="galleryitem">
+										<div id="pic4" class="gallerypic2"></div>
+										<h5>Only Ours</h5>
+										<p>We’ve surveyed the field, tried every new trend and re-examined the classics to create the ultimate beauty guidebook—a step-by-step checklist of the newest, the best and the prettiest (of course).</p>
+									</div>
 
-								<div class="galleryitem">
-									<div id="pic5" class="gallerypic2"></div>
-									<h5>Only Ours</h5>
-									<p>We’ve surveyed the field, tried every new trend and re-examined the classics to create the ultimate beauty guidebook—a step-by-step checklist of the newest, the best and the prettiest (of course).</p>
-								</div>
+									<div class="galleryitem">
+										<div id="pic5" class="gallerypic2"></div>
+										<h5>Only Ours</h5>
+										<p>We’ve surveyed the field, tried every new trend and re-examined the classics to create the ultimate beauty guidebook—a step-by-step checklist of the newest, the best and the prettiest (of course).</p>
+									</div>
 
-								<div class="galleryitem">
-									<div id="pic6" class="gallerypic2"></div>
-									<h5>Only Ours</h5>
-									<p>We’ve surveyed the field, tried every new trend and re-examined the classics to create the ultimate beauty guidebook—a step-by-step checklist of the newest, the best and the prettiest (of course).</p>
-								</div>
+									<div class="galleryitem">
+										<div id="pic6" class="gallerypic2"></div>
+										<h5>Only Ours</h5>
+										<p>We’ve surveyed the field, tried every new trend and re-examined the classics to create the ultimate beauty guidebook—a step-by-step checklist of the newest, the best and the prettiest (of course).</p>
+									</div>
 
-								<div class="galleryitem">
-									<div id="pic7" class="gallerypic3"></div>
-									<h5>Only Ours</h5>
-									<p>We’ve surveyed the field, tried every new trend and re-examined the classics to create the ultimate beauty guidebook—a step-by-step checklist of the newest, the best and the prettiest (of course).</p>
-								</div>
+									<div class="galleryitem">
+										<div id="pic7" class="gallerypic3"></div>
+										<h5>Only Ours</h5>
+										<p>We’ve surveyed the field, tried every new trend and re-examined the classics to create the ultimate beauty guidebook—a step-by-step checklist of the newest, the best and the prettiest (of course).</p>
+									</div>
 
-								<div class="galleryitem">
-									<div id="pic8" class="gallerypic3"></div>
-									<h5>Only Ours</h5>
-									<p>We’ve surveyed the field, tried every new trend and re-examined the classics to create the ultimate beauty guidebook—a step-by-step checklist of the newest, the best and the prettiest (of course).</p>
-								</div>
+									<div class="galleryitem">
+										<div id="pic8" class="gallerypic3"></div>
+										<h5>Only Ours</h5>
+										<p>We’ve surveyed the field, tried every new trend and re-examined the classics to create the ultimate beauty guidebook—a step-by-step checklist of the newest, the best and the prettiest (of course).</p>
+									</div>
 
-								<div class="galleryitem">
-									<div id="pic9" class="gallerypic3"></div>
-									<h5>Only Ours</h5>
-									<p>We’ve surveyed the field, tried every new trend and re-examined the classics to create the ultimate beauty guidebook—a step-by-step checklist of the newest, the best and the prettiest (of course).</p>
+									<div class="galleryitem">
+										<div id="pic9" class="gallerypic3"></div>
+										<h5>Only Ours</h5>
+										<p>We’ve surveyed the field, tried every new trend and re-examined the classics to create the ultimate beauty guidebook—a step-by-step checklist of the newest, the best and the prettiest (of course).</p>
+									</div>
 								</div>
-							</div>
-							<div class="section5_line"></div>  
-						</div>
-					</div>
-
-
-					<!-- Section 6 -->
-					<div id="section6">
-						<div class="container">
-							<div class="instore">
-								<div id="instore"><h3>Celebrate In Stores</h3></div>
-								<div id="findstore">
-									<p>Runway shows, makeovers and more! See the beauty trends come to life and learn how to recreate your favorite looks at an exclusive event near you. FIND A STORE for more details and to reserve your space.</p>
-									<h6>Find A Store</h6>
-								</div>
+								<div class="section5_line"></div>  
 							</div>
 						</div>
-					</div>
 
 
-					<!-- Section 7 -->
-					<div id="section7">
-						<div class="container">
-							<div id="makeup_bottom"><img src="assets/makeup_bottom.png"  alt="makeup"></div>
-							<div id="makeup2_bottom"><img src="assets/makeup2_bottom.png" alt="makeup"></div>
-							<div class="win" id="win">
-								<h3>Enter to Win</h3>
-								<p>TKTK Runway shows, makeovers and more! See the beauty trends come to life and learn how to recreate your favorite looks at an exclusive event near you. for more details and to reserve your space.</p>
-								<h6>Enter Now</h6>
+						<!-- Section 6 -->
+						<div id="section6">
+							<div class="container">
+								<div class="instore">
+									<div id="instore"><h3>Celebrate In Stores</h3></div>
+									<div id="findstore">
+										<p>Runway shows, makeovers and more! See the beauty trends come to life and learn how to recreate your favorite looks at an exclusive event near you. FIND A STORE for more details and to reserve your space.</p>
+										<h6>Find A Store</h6>
+									</div>
+								</div>
 							</div>
 						</div>
-					</div>
 
 
-					<!-- Section 8 -->
-					<div id="section8">
-						<div class="container">
-							<div class="half_circle" id="uparrow_button"><img src="assets/uparrow.png" alt="arrow"></div>
-							<div class="backtotop">
-								<div id="backtotop"><h6>Back To Top</h6></div>
+						<!-- Section 7 -->
+						<div id="section7">
+							<div class="container">
+								<div id="makeup_bottom"><img src="assets/makeup_bottom.png"  alt="makeup"></div>
+								<div id="makeup2_bottom"><img src="assets/makeup2_bottom.png" alt="makeup"></div>
+								<div class="win" id="win">
+									<h3>Enter to Win</h3>
+									<p>TKTK Runway shows, makeovers and more! See the beauty trends come to life and learn how to recreate your favorite looks at an exclusive event near you. for more details and to reserve your space.</p>
+									<h6>Enter Now</h6>
+								</div>
 							</div>
 						</div>
-					</div>
 
-					<div id="section9">
-						<div class="container">
-							<div id="bottom_nav">
-								<ul>
-									<li><a href="#section2" data-scroll-nav="0">section 2</a></li>
-									<li><a href="#section3" data-scroll-nav="1">section 3</a></li>
-									<li><a href="#section4" data-scroll-nav="2">section 4</a></li>
-									<li><a href="#section5" data-scroll-nav="3">section 5</a></li>
-								</ul>
+
+						<!-- Section 8 -->
+						<div id="section8">
+							<div class="container">
+								<div class="half_circle" id="uparrow_button"><img src="assets/uparrow.png" alt="arrow"></div>
+								<div class="backtotop">
+									<div id="backtotop"><h6>Back To Top</h6></div>
+								</div>
 							</div>
 						</div>
-					</div>
-			
-				</div> <!-- end of pages -->
-			
-			<div id="desktop-footer"></div>  
+
+						<div id="section9">
+							<div class="container">
+								<div id="bottom_nav">
+									<ul>
+										<li><a href="#section2" data-scroll-nav="0">section 2</a></li>
+										<li><a href="#section3" data-scroll-nav="1">section 3</a></li>
+										<li><a href="#section4" data-scroll-nav="2">section 4</a></li>
+										<li><a href="#section5" data-scroll-nav="3">section 5</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+			</div> <!-- end of pages -->
 		</div> <!-- end of desktop-->
-	</div>
-	 
-		<!--Mobile-->
-		<div class="mobile">
-			<div id="mob_section1">
-				<h1>The Makeup Date</h1>
-				<h2> 2 Days Only:</h2>
-				<h4> Exclusive 15-Piece Gift</h4>
-				<h2>+</h2>
-				<h4> Triple points for loyallists</h4>
-				<h6> ends 9/1 </h6>
-			</div>
-			
+	</div> <!-- end of bl_main_container-->
 
-			<div id="mob_section2">
+<!--Mobile-->
+	<div class="mobile">
+	<!--Mobile Section1-->	
+		<div id="mob_section1">
+			<h1>The Makeup Date</h1>
+			<h2> 2 Days Only:</h2>
+			<h4> Exclusive 15-Piece Gift</h4>
+			<h2>+</h2>
+			<h4> Triple points for loyallists</h4>
+			<h6> ends 9/1 </h6>
+		</div>
+
+
+		<div id="mob_section2">
+
+			<div class="half_circle" id="downarrow_mob"><div class="downarrow_mob"></div></div> 
+			<div id="mob2_container">
+				<h4>Your All-Access Pass to the <br> Season’s Top Trends</h4>
+				<h5>Clear your schedule: Our beauty edit is filled with the hautest how-tos and the most buzzworthy products—plus tips and tricks from our resident makeup artist (and fellow beauty junkie) Cyndle Komarovski.</h5>
+			</div>
+		</div>
+
+		<div id="mob_section3">	
+			<div id="mob_makeup_header1"><h3>How-To Videos</h3></div>
+			<div id="mob_makeup_header2"><img src="assets/mob_makeup1.png" alt="makeup"></div>
+		</div>
+
+		<div id="mob_section4">
+			<div class="mobile_video"></div>
+			<h4>The Two-Tone Matte Lip</h4>
+			<h5>Create a runway-inspired look with pucker-perfect dimension.</h5>
+		</div> <!-- end of section 4 -->
+
+		<div class="mob-button" id="shop_lip"><h4>Shop The Two-Tone Matte Lip</h4></div>
+		<div class="mob-content" id="shop_lip_content">
+			<div class="mobcontent_container">
 				
-				<div class="half_circle" id="downarrow_mob"><div class="downarrow_mob"></div></div> 
-				<div id="mob2_container">
-					<h4>Your All-Access Pass to the <br> Season’s Top Trends</h4>
-					<h5>Clear your schedule: Our beauty edit is filled with the hautest how-tos and the most buzzworthy products—plus tips and tricks from our resident makeup artist (and fellow beauty junkie) Cyndle Komarovski.</h5>
-				</div>
-			</div>
-
-			<div id="mob_section3">	
-				<h3>How-To Videos</h3>
-				<div id="mob_makeup_header"><img src="assets/mob_makeup1.png" alt="makeup"></div>
-			</div>
-
-			<div id="mob_section4">
-				
-				<div id="videoplayer" class="mob-video">
-					<object id="myExperience4065945907001" class="BrightcoveExperience">
-						<param name="bgcolor" value="#FFFFFF" />
-						<param name="width" value="700" />
-						<param name="height" value="400" />
-						<param name="playerID" value="4064673202001" />
-						<param name="playerKey" value="AQ~~,AAAAEa4LKPk~,F9t4RD8tmUuI7RH8-zLTMbKDLlHkRRYW" />
-						<param name="isVid" value="true" />
-						<param name="isUI" value="true" />
-						<param name="dynamicStreaming" value="true" />
-						<param name="@videoPlayer" value="4065898176001" />
-						<param name="includeAPI" value="true">
-						<param name="templateLoadHandler" value="onTemplateLoaded">
-					</object>
-				</div>
-
-				<h4>The Two-Tone Matte Lip</h4>
-				<h5>Create a runway-inspired look with pucker-perfect dimension.</h5>
-
-			</div>
 			
-			<div class="mob-button" id="shop_lip"><h4>Shop The Two-Tone Matte Lip</h4></div>
-			<div class="mob-content" id="shop_lip_content">
-					<div class="mob_galleryitem"> 
-						<div id="mob_pic1" class="mob_gallerypic"></div>
-						<h5>Only Ours</h5>
-						<p>We’ve surveyed the field, tried every new trend and re-examined the classics to create the ultimate beauty guidebook—a step-by-step checklist of the newest, the best and the prettiest (of course).</p>
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic1"><img src="assets/nars.png" alt="makeup"></div>
+						<h5>Nars</h5>
+						<p>Velvet Matte Lip Pencil in Dragon Girl</p>
 					</div>
-					<div class="mob_galleryitem"> 
-						<div id="mob_pic1" class="mob_gallerypic"></div>
-						<h5>Only Ours</h5>
-						<p>We’ve surveyed the field, tried every new trend and re-examined the classics to create the ultimate beauty guidebook—a step-by-step checklist of the newest, the best and the prettiest (of course).</p>
-					</div>
-					<div class="mob_galleryitem"> 
-						<div id="mob_pic1" class="mob_gallerypic"></div>
-						<h5>Only Ours</h5>
-						<p>We’ve surveyed the field, tried every new trend and re-examined the classics to create the ultimate beauty guidebook—a step-by-step checklist of the newest, the best and the prettiest (of course).</p>
-					</div>
-					<div class="mob_galleryitem"> 
-						<div id="mob_pic1" class="mob_gallerypic"></div>
-						<h5>Only Ours</h5>
-						<p>We’ve surveyed the field, tried every new trend and re-examined the classics to create the ultimate beauty guidebook—a step-by-step checklist of the newest, the best and the prettiest (of course).</p>
-					</div>
-			</div>
-			<div class="mob-button2">
-				<div class="mob-half_circle" id="arrow_mob2"><div class="arrow_mob"></div></div>
-			</div>
+				</div>
 
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic2"></div>
+						<h5>Tom Ford</h5>
+						<p>Lip Color Matte in Velvet Cherry</p>
+					</div>
+				</div>
 
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic3"></div>
+						<h5>Nars</h5>
+						<p>Lip Liner Pencil in Jungle Red</p>
+					</div>
+				</div>
 
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic4"></div>
+						<h5>Laura Mercier</h5>
+						<p>Translucent Loose Setting Powder</p>
+					</div>
+				</div>
+
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic4"></div>
+						<h5>Bobbi Brown</h5>
+						<p>Perfectly Defined Long-Wear Brow Pencil in Blonde</p>
+					</div>	
+				</div>
+
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic6"></div>
+						<h5>Estée Lauder</h5>
+						<p>Lip Brush 35</p>
+					</div>
+				</div>
+
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic7"></div>
+						<h5>Yves Saint Laurent</h5>
+						<p>Rouge Pur Couture in Le Rouge</p>
+					</div>
+				</div>
+
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic8"></div>
+						<h5>Bobbi Brown</h5>
+						<p>Creamy Matte Lip Color in Red Carpet</p>
+					</div>
+				</div>
+
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic9"></div>
+						<h5>Estée Lauder</h5>
+						<p>Pure Color Envy Sculpting Lipstick in Envious</p>
+					</div>
+				</div>
+
+			</div> <!--shop_lip_container-->
+		</div> <!--shop_lip_content-->
+
+		<div class="mob-button2">
+			<div class="mob-half_circle" id="arrow_mob2"><div class="arrow_mob"></div></div>
+		</div>
+
+		<div id="mob_section5">
+			<div class="mobile_video"></div>
+			<h4>The Two-Tone Matte Lip</h4>
+			<h5>Create a runway-inspired look with pucker-perfect dimension.</h5>
+		</div> <!-- end of section 5 -->
 		
-
-
-				<div class="mob-button">click</div>
-				<div class="mob-content">hello world!</div>
-
-
-
-			<div id="mob_section5" data-scroll-index="8">
-			</div>
-
-
-			<div id="mob_section7">
-				<div class="container">
-					<div class="half_circle totop"><img src="assets/uparrow.png" alt="arrow"></div>
-					<div class="backtotop totop">
-						<div id="backtotop_mob"><h6>Back To Top</h6></div>
+		<div class="mob-button" id="shop_lip"><h4>Shop The Two-Tone Matte Lip</h4></div>
+		<div class="mob-content" id="shop_lip_content">
+			<div class="mobcontent_container">
+				
+			
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic1"><img src="assets/nars.png" alt="makeup"></div>
+						<h5>Nars</h5>
+						<p>Velvet Matte Lip Pencil in Dragon Girl</p>
 					</div>
 				</div>
-			</div>	
 
-			<div id="mob_section6">	
-				<div class="mob_bottom_nav">
-					<ul>
-						<li id="part2" class="change_section">Section 2</li>
-				    <li id="part3" class="change_section">Section 3</li>
-				    <li id="part4" class="change_section">Section 4</li>
-				    <li id="part5" class="change_section">Section 5</li>
-					</ul>
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic2"></div>
+						<h5>Tom Ford</h5>
+						<p>Lip Color Matte in Velvet Cherry</p>
+					</div>
+				</div>
+
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic3"></div>
+						<h5>Nars</h5>
+						<p>Lip Liner Pencil in Jungle Red</p>
+					</div>
+				</div>
+
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic4"></div>
+						<h5>Laura Mercier</h5>
+						<p>Translucent Loose Setting Powder</p>
+					</div>
+				</div>
+
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic4"></div>
+						<h5>Bobbi Brown</h5>
+						<p>Perfectly Defined Long-Wear Brow Pencil in Blonde</p>
+					</div>	
+				</div>
+
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic6"></div>
+						<h5>Estée Lauder</h5>
+						<p>Lip Brush 35</p>
+					</div>
+				</div>
+
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic7"></div>
+						<h5>Yves Saint Laurent</h5>
+						<p>Rouge Pur Couture in Le Rouge</p>
+					</div>
+				</div>
+
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic8"></div>
+						<h5>Bobbi Brown</h5>
+						<p>Creamy Matte Lip Color in Red Carpet</p>
+					</div>
+				</div>
+
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic9"></div>
+						<h5>Estée Lauder</h5>
+						<p>Pure Color Envy Sculpting Lipstick in Envious</p>
+					</div>
+				</div>
+
+			</div> <!--shop_lip_container-->
+		</div> <!--shop_lip_content-->
+
+		<div class="mob-button2">
+			<div class="mob-half_circle" id="arrow_mob2"><div class="arrow_mob"></div></div>
+		</div>
+
+
+
+
+
+
+<!-- 		<div class="mob-button">click</div>
+		<div class="mob-content">hello world!</div> -->
+
+
+		<div id="mob_section7">
+			<div class="container">
+				<div class="half_circle totop"><img src="assets/uparrow.png" alt="arrow"></div>
+				<div class="backtotop totop">
+					<div id="backtotop_mob"><h6>Back To Top</h6></div>
 				</div>
 			</div>
+		</div>	
 
+		<div id="mob_section6">	
+			<div class="mob_bottom_nav">
+				<ul>
+					<li id="part2" class="change_section">Section 2</li>
+					<li id="part3" class="change_section">Section 3</li>
+					<li id="part4" class="change_section">Section 4</li>
+					<li id="part5" class="change_section">Section 5</li>
+				</ul>
+			</div>
+		</div>
 
+	</div> <!-- end of mobile -->
 
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="http://admin.brightcove.com/js/BrightcoveExperiences.js" type="text/javascript"></script>    
+	<script src="js/jerry15.js" type="text/javascript"></script>
 
-
-
-
-
-		</div> <!-- end of mobile -->
-
-		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-		<script src="http://admin.brightcove.com/js/BrightcoveExperiences.js" type="text/javascript"></script>    
-		<script src="js/jerry15.js" type="text/javascript"></script>
-
-		<!--Custom Javascript-->
-		<script>
-		</script>
-	</body>
+	<!--Custom Javascript-->
+	<script>
+	</script>
+</body>
 </html>
 
 

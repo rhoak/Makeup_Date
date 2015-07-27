@@ -190,7 +190,9 @@ gulp.task('prefix-js', function () {
         .pipe(replace(/(?:find\()(?:\s*|)(?:\"|\')(\#|\.)/g, function(fullmatch,group0) { return fullmatch + Project.prefix + '_'; }))
         .pipe(replace(/(?:next\()(?:\s*|)(?:\"|\')(\#|\.)/g, function(fullmatch,group0) { return fullmatch + Project.prefix + '_'; }))
         .pipe(replace(/(?:previous\()(?:\s*|)(?:\"|\')(\#|\.)/g, function(fullmatch,group0) { return fullmatch + Project.prefix + '_'; }))
+        
 
+        .pipe(replace(/(?:getElementById\()(?:\s*|)(?:\"|\')/g, function(fullmatch,group0) { return fullmatch + Project.prefix + '_'; }))
         .pipe(replace(/(?:addClass\()(?:\s*|)(?:\"|\')/g, function(fullmatch,group0) { return fullmatch + Project.prefix + '_'; }))
         .pipe(replace(/(?:removeClass\()(?:\s*|)(?:\"|\')/g, function(fullmatch,group0) { return fullmatch + Project.prefix + '_'; }))
         .pipe(replace("assets/'", "assets/" + Project.prefix + '_'))

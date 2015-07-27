@@ -26,72 +26,72 @@ $yellow: #eaff00;
 
 .desktop {
   p { 
-   font-family: 'Lato', sans-serif;
-   font-size: 17px;
-   font-weight: 300;
-   line-height: 160%;
-}
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 160%;
+  }
+  h1 { 
+    font-family: 'Lato', sans-serif;
+    font-size: 70px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    line-height: 120%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
 
-h1 { 
-   font-family: 'Lato', sans-serif;
-   font-size: 70px;
-   text-transform: uppercase;
-   font-weight: 700;
-   letter-spacing: 0.15em;
-   line-height: 120%;
-   padding-bottom: 0;
-   margin-bottom: 0;
-}
+  h2 { 
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 120%;
+  }
 
-h2 { 
-   font-size: 30px;
-   font-weight: 400;
-   line-height: 120%;
-}
+  h3 {
+    font-family: 'Lato', sans-serif; 
+    font-size: 40px; 
+    font-weight: 900;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    background-color: #fff;
+    line-height: 100%;
+    display: initial;
+    padding: 8px;
+  }
+  h4 {
+    font-family: 'Lato', sans-serif;
+    color: #000;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    line-height: 120%;
+  }
 
-h3 {
-   font-family: 'Lato', sans-serif; 
-   font-size: 40px; 
-   font-weight: 900;
-   letter-spacing: 0.3em;
-   text-transform: uppercase;
-   background-color: #fff;
-   line-height: 100%;
-   display: initial;
-   padding: 8px;
-}
-h4 {
-   font-family: 'Lato', sans-serif;
-   color: #000;
-   font-size: 1.6em;
-   text-transform: uppercase;
-   font-weight: 700;
-   letter-spacing: 0.1em;
-   line-height: 120%;
-}
-h5 {
-   font-family: 'Lato', sans-serif;
-   font-weight: 700;
-   font-size: 0.8em;
-   letter-spacing: 0.1em;
-   text-transform: uppercase;
-   padding-bottom: 10px;  
-}
-h6 {
-   font-family: 'Lato', sans-serif;
-   color: #000;
-   font-size: 0.9em;
-   text-transform: uppercase;
-   font-weight: 400;
-   line-height: 120%;
-   text-decoration: underline; 
-}
-}
+  h5 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding-bottom: 10px;  
+  }
 
+  h6 {
+    font-family: 'Lato', sans-serif;
+    color: #000;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 120%;
+    text-decoration: underline; 
+  }
+}
 
 /*************** Sections ******************/
 
-#videowrapper { //top 93 for mobile but should fix to 151 for desktop
+#videowrapper { 
   margin: 0;
   background: #000;
   overflow: hidden;
@@ -117,12 +117,12 @@ h6 {
   transform: translateX(-50%) translateY(-50%); 
   -ms-transform: translateX(-50%) translateY(-50%);  /* IE 9 */
   -webkit-transform: translateX(-50%) translateY(-50%);  /* Chrome, Safari, Opera */
+  -o-transform: translateX(-50%) translateY(-50%);
 }
 
 video {
- background:  url(../assets/bg_image.png) 50% 50% / cover no-repeat ;
+  background: url(../assets/bg_image.png) 50% 50% / cover no-repeat;
 }
-
 
 .pages {
   position: absolute;
@@ -214,7 +214,6 @@ video {
 }
 
 /*************** Main Section ******************/
-
 #main_section { 
   position: fixed;
   width: 962px;
@@ -282,7 +281,6 @@ em {
   top: 90px;
   left: 260px;
 }
-
 
 #bottom_section { 
   width: 100%;
@@ -354,8 +352,6 @@ em {
   -o-transform : rotate(-45deg);
 }
 
-
-
 // .downarrow:hover  {
 //   -webkit-animation: bounce 2s infinite; 
 //   -moz-animation:    bounce 2s infinite; 
@@ -385,10 +381,10 @@ em {
 //   60% { top: 10px; }
 // }
 
+
 #section8 .half_circle { 
   background: #eaff00
 }
-
 
 #makeup_header { 
   z-index: 21;
@@ -409,27 +405,51 @@ em {
   top: 60px;
   margin-left: -251.5px; 
 }
+
 /*************** Sticky Nav ******************/
 #sticky {
   position: absolute;
   margin-top: -70px;
   right: 0;
   height: 288px;
-  width: 180px;
+  width: 150px;
   background-color: $yellow;
   z-index: 55; 
+}
+
+
+
+
+.side_navigation li {
+
+  // text-indent: -1em;
+  // padding-left: 1em;
+  // padding-top: 2em; 
+  // padding-bottom: 2em;  
+  // padding-left: 2em; 
+  float: left;
+  h3 { 
+    letter-spacing: 0em;
+    line-height: 220%;
+    color: #000;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: $yellow;
+    
+    
+    padding-left: 1em;
+
+  }
+
 
 }
 
-.side_navigation li { 
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.side_navigation li:hover { 
-  color: #fff;
-  text-decoration: none;
+.side_navigation li h3:hover { 
+  background-color: #fff;
+  display: initial;
+  padding: 8px;
 }
 
 
@@ -1188,21 +1208,21 @@ em {
 /*************** Section2 ******************/
 #mob_section2 { 
 	width: 100%;
-    background-color: $yellow;
-    display: inline-block;
-    .half_circle {
-        background-color: $yellow;
-        border-bottom: 1px solid $yellow;
-    }
+	background-color: $yellow;
+	display: inline-block;
+	  .half_circle {
+	      background-color: $yellow;
+	      border-bottom: 1px solid $yellow;
+	  }
 }
 
-#mob2_container { 
-    margin-top: 1.5%;
-    margin-bottom: 1.5%;
-    height: 47%;
+.mob2_container { 
+	margin-top: 1.5%;
+	margin-bottom: 1.5%;
+	height: 47%;
 	width: 97%;
 	background-color: #fff;
-    margin-left: 1.5%;
+	margin-left: 1.5%;
     h4 { 
         font-family: 'Noto Serif', serif;
         font-weight: 400;
@@ -1315,41 +1335,69 @@ em {
         }
     }
 
-    #mob_makeup_header2 img {
-        position: absolute;
-        z-index: 3;
-        left: 65%;
-        width: 25%;
-        top: 10%;
-        height: auto;
-
-    }
+  #mob_makeup_header2 img {
+    position: absolute;
+    z-index: 3;
+    left: 65%;
+    width: 25%;
+    top: 10%;
+    height: auto;
+  }
 }
 
 
-#mob_section4{ 
-    width: 100%;
-    background-color: $grey;
-    h4 { 
-        padding-top: 65%;
-        color: #000;
-        padding-bottom: 20px;
-    }
-    h5 {
-        padding-left: 15%;
-        padding-right: 15%;
-        padding-bottom: 10%;
-    }
+.mob_section4{ 
+  width: 100%;
+  background-color: $grey;
+  h4 { 
+      padding-top: 65%;
+      color: #000;
+      padding-bottom: 20px;
+  }
+  h5 {
+      padding-left: 15%;
+      padding-right: 15%;
+      padding-bottom: 10%;
+  }
+}
+
+.mobile_video_button {
+  position: absolute;
+  z-index: 5;
+  background: url(../assets/videobutton2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 80%;
+  padding-bottom: 47.6%;
+  margin-left: 10%;
+  margin-top: 10%;
 }
 
 .mobile_video { 
-    position: absolute;
-    background: url(../assets/lip_video.png);
-    background-repeat: none;
-    width: 80%;
-    padding-bottom: 47.6%;
-    margin-left: 10%;
-    margin-top: 10%;
+  position: absolute;
+  z-index: 4;
+  width: 80%;
+  padding-bottom: 47.6%;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+
+#shoplip_video { 
+  background: url(../assets/lip_video.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#dewylook_video { 
+  background: url(../assets/dewylook_video.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#smokyeye_video { 
+  background: url(../assets/smokyeye_video.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /*************** mob-content ******************/
@@ -1369,154 +1417,267 @@ em {
 }
 
 .mob-content {
-    height: 100%;
-    width: 100%;
-    background-color: pink;
-    display: none;
-    h5 { 
-        text-decoration: underline;
-        font-size: 3vw;
-        font-weight: 400;
-    }
-    p { 
-        font-family: 'Lato', sans-serif;
-        font-size: 2.5vw;
-        font-weight: 300;
-
-    }
-
+  height: 100%;
+  width: 100%;
+  background-color: pink;
+  display: none;
+  h5 { 
+      text-decoration: underline;
+      font-size: 3vw;
+      font-weight: 400;
+  }
+  p { 
+      font-family: 'Lato', sans-serif;
+      font-size: 2.5vw;
+      font-weight: 300;
+  }
 }
 
 .mobcontent_container { 
-    overflow: hidden;
-    height: 100%;
-
+  overflow: hidden;
+  height: 100%;
 }
 
 .mob_galleryitem { 
+  position: relative;
+  float: left;
+  display: inline-block;
+  width: 50%;
+  padding-bottom: 65%;
+  background-color: green;
+}
+
+.mob_gallerypic { 
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  top: 10px;
+  bottom: 10px;
+  background-color: springgreen;
+}
+
+#mob_section5{ 
+	width: 100%;
+	padding-bottom: 8%;
+	background-color: $grey;
+}
+
+#mob_section6 { 
+	width: 100%;
+	background-color: $yellow;
+	display: inline-block;
+  h4 { 
+    font-family: 'Lato', sans-serif;
+    font-size: 3vw;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+  }
+  h3 { 
+    text-align: center;
+    font-size: 5vw;
+    display: initial;
+    padding: 8px;
+    line-height: 180%;
+  }
+  #mob_cyndle { 
+    z-index: 6;
+    position: absolute;
+    left: 25%;
+    right: 25%;
+  }
+  #mob_makeup { 
+    position: absolute;
+    left: 15%;
+    margin-top: 8%;
+    z-index: 5;
+  }
+  #mob_cyndle_portrait { 
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 25%;
+    margin-right: 25%;
+    z-index: 4;
+    width: 50%;
+    padding-bottom: 50%;
+    background: url(../assets/cyndle_portrait.png) no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .cyndle_words { 
+    padding-top: 75%;
+    padding-bottom: 5%;
+    h5 { 
+      text-align: left;
+      font-size: 3vw;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: 700;
+      line-height: 150%;
+      padding-bottom: 0;
+      padding-left: 5%;
+      padding-right: 5%;
+
+    }
+    p { 
+      text-align: left;
+      font-size: 2.8vw;
+      line-height: 150%;
+      padding-top: 2%;
+      padding-bottom: 5%;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  }
+}
+
+#mob_section7{ 
+  width: 100%;
+  background-color: $grey;
+  padding-bottom: 20%;
+  h4 { 
+    font-family: 'Lato', sans-serif;
+    color: #000;
+    font-size: 3vw;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+  }
+  h3 { 
+    text-align: center;
+    font-size: 5vw;
+    display: initial;
+    padding: 8px;
+    line-height: 180%;
+  }
+  h5 { 
+    background-color: $yellow;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+    font-size: 3vw;
+    display: initial;
+    padding: 8px;
+    line-height: 180%;
+  }
+  h6 {
+    font-size: 2vw; 
+    color: #000;
+  }
+  #mob_exlusive_gift { 
+    width: 90%;
+    padding-bottom: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background: url(../assets/mob_gifts.png) no-repeat;
+    background-size: cover;
+  }
+}
+
+
+ #mob_section8_heading { 
+    position: absolute;
+    background: #fff;
+    margin-top: -10%;
+    margin-left: 20%;
+    margin-right: 20%;
+    h4 { 
+      padding: 15px;
+      background-color: #fff;
+      color: #000;
+      display: initial;
+      text-align: center;
+      line-height: 180%;
+    }
+  }
+
+
+#mob_section8 {
+  width: 100%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  background-color: #fff; 
+  .mob_galleryitem { 
     position: relative;
     float: left;
     display: inline-block;
     width: 50%;
-    padding-bottom: 65%;
+    padding-bottom: 55%;
     background-color: green;
+  }
+  #mob_sample_text {
+   position: absolute;
+   margin-top: -13%;
+   width: 100%;
+     h5 {
+      text-align: center;
+      padding: 0;
+     }
+     p { 
+      padding-left: 2%;
+      padding-right: 2%; 
+     }
+  }
 }
 
-.mob_gallerypic { 
-    position: absolute;
-    left: 10px;
-    right: 10px;
-    top: 10px;
-    bottom: 10px;
-    background-color: springgreen;
+#mob_section9 { 
+  width: 100%;
+  background-color: $grey;
+  padding-bottom: 10%;
+  padding-top: 10%;
+  h3 {
+    font-size: 5vw;
+    line-height: 130%;
+  }
+  p { 
+    font-size: 3vw;
+    line-height: 180%;
+    padding-top: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  h6 { 
+    padding-top: 2%;
+    font-size: 3vw;
+    font-weight: 400;
+    text-decoration: underline;
+    color: #000;
+  }
 }
 
-#shop_lip_content { 
-
-}
 
 
-
-#shop_lip { 
-    h4 { 
-   
+#mob_section11{
+  width: 100%;
+  #shop { 
+    padding-top: 5%; 
+    padding-bottom: 5%; 
+    h5 { 
+      font-weight: 700;
     }
+  }
+  #mob_bottomnav li {
+    text-decoration: underline;
+    background-color: #000;
+    font-size: 3vw; 
+    padding-top: 5%; 
+    padding-bottom: 5%;
+    color: #fff;
+    border-bottom: solid #fff 3vh;
+  }
 }
 
-
-
-#mob_pic1 {
-    // height: 500px;
-    // background: url(../assets/shoplip_samples.png) 0 0;
-}
-
-// #mob_pic2 {
-//     padding-bottom: 55%;
-//     height: 0;
-//     width: 50%;
-//     background: url(../assets/shoplip_samples.png) 466px 0;
-//     background-size: 200%;
-//     display:block;
-// }
-
-// #mob_pic3 {
-//     background-size: 100% 100%;
-//     width: 466px;
-//     background: url(../assets/shoplip_samples.png) 0 -665px;
-// }
-
-// #mob_pic4 {
-//     background-size: 100% 100%;
-//     width: 466px; 
-//     background: url(../assets/shoplip_samples.png) 466px -665px;
-// }
-
-// #mob_pic5 {
-//     background-size: 100% 100%;
-//     width: 466px;
-//     background: url(../assets/shoplip_samples.png) 0px -1350px;
-// }
-
-// #mob_pic6 {
-//     background-size: 100% 100%;
-//     width: 466px;
-//     background: url(../assets/shoplip_samples.png) 466px -1350px;
-
-// }
-
-// #mob_pic7 {
-//     background-size: 100% 100%;
-//     width: 466px;
-//     background: url(../assets/shoplip_samples.png) 0px -2028px;
-// }
-
-// #mob_pic8 {
-//     background-size: 100% 100%;
-//     width: 466px;
-//     background: url(../assets/shoplip_samples.png) 466px -2028px;
-// }
-
-// #mob_pic9 {
-//     background-size: 100% 100%;
-//     width: 466px;
-//     background: url(../assets/shoplip_samples.png) 0px -2590px;
-// }
-
-
-
-
-#mob_section5{ 
-    width: 100%;
-    background-color: $grey;
-    h4 { 
-        padding-top: 65%;
-        color: #000;
-        padding-bottom: 20px;
-    }
-    h5 {
-        padding-left: 15%;
-        padding-right: 15%;
-        padding-bottom: 10%;
-    }
-
-}
-
-#mob_section7{ 
+#mob_section12{ 
   height: 100px;
   width: 100%;
-  background-color: blue;
+  background-color: $yellow;
+  h6 { 
+      color: #000;
+      font-weight: 700;
+      text-decoration: underline;
+  }
 }
 
 
-.mob_bottom_nav li { 
-  height: 50px;
-  border-bottom: solid #99FFCC thin;
-  background-color: #4DFFA5;
-  text-transform: uppercase;
-  color: #fff;
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  text-shadow: 1px 1px #00CC66;
-}
 
 

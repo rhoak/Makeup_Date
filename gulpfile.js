@@ -36,7 +36,7 @@ var PROD_DIR = './prod/';
 
 
 var Project = {
-    prefix: "jerry15",
+    prefix: "fall15_makeupdate",
     jspPath: "${baseUrlAssets}/dyn_img/cat_splash/",
     exclude: {
         protected_id_class: ["BrightcoveExperience","myExperience4065945907001"],

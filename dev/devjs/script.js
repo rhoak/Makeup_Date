@@ -1,23 +1,15 @@
  /* jshint ignore:start */
 
-
 (function (window, $){
 
 
-
-
-
-
-
-
-
-
-
     $(window).ready(function(){
-
+    
+    	console.log('monkeyface');
 		/********* Detect Device **********/
 		$('.desktop').hide();
 		$('.mobile').hide();
+
 
 		if(jQuery.browser.mobile)
 		{
@@ -43,7 +35,7 @@
 
 
 		
-
+	console.log('monkeyface');
 
 		function CoreMetrics(tag_type, category_name, tag_value){
 			if(tag_type=="Pageview"){
@@ -62,6 +54,34 @@
 				trace("{{{{{{{{ Element- category_name: "+category_name+" tag_value: "+tag_value+" }}}}}}}}");
 			}
 		}
+
+
+		function getSection(currenttop){
+			var sectionDivHeights = [0,
+					$('#section1').offset().top,
+					$('#section3').offset().top,
+					$('#section4').offset().top,
+					$('#section5').offset().top,
+					$('#section6').offset().top,
+					$('#section7').offset().top,
+				]; 
+
+				sectionDivHeights.push(currenttop);
+				sectionDivHeights.sort(function(a, b){return a-b;});
+				return sectionDivHeights.indexOf(currenttop);
+			}
+
+		currentSection=-1;
+
+		currentSection=getSection($(window).scrollTop());
+		CoreMetrics("Pageview","fall15_makeupdate",currentSection);
+
+		$(window).scroll(function () {
+			if(currentSection!=getSection($(window).scrollTop())){
+			currentSection=getSection($(window).scrollTop());
+			CoreMetrics("Pageview","fall15_makeupdate",currentSection);
+			}
+		});
 
 		/********* JQuery Address Desktop **********/ 
 		$('.change_section').click(function() {  

@@ -134,7 +134,6 @@
 
     $(window).ready(function(){
     
-    	console.log('monkeyface');
 		/********* Detect Device **********/
 		$('.desktop').hide();
 		$('.mobile').hide();
@@ -163,24 +162,20 @@
 
 
 
-		
-	console.log('monkeyface');
 
 		function CoreMetrics(tag_type, category_name, tag_value){
 			if(tag_type=="Pageview"){
 				try {
 					BLOOMIES.coremetrics.cmCreatePageviewTag( tag_value, category_name );
-				} catch (e) {
-					console.log('salamander');
+				} catch (e) { console.log('Core Metrics not enabled');
 				}
-				trace("{{{{{{{{ Pageview- category_name: "+category_name+" tag_value: "+tag_value+" }}}}}}}}");
+				("{{{{{{{{ Pageview- category_name: "+category_name+" tag_value: "+tag_value+" }}}}}}}}");
 			}else if(tag_type=="Element"){
 				try {
 					BLOOMIES.coremetrics.cmCreatePageElementTag( tag_value, category_name );
 				} catch (e) {
-					console.log('salamander');
 				}
-				trace("{{{{{{{{ Element- category_name: "+category_name+" tag_value: "+tag_value+" }}}}}}}}");
+				("{{{{{{{{ Element- category_name: "+category_name+" tag_value: "+tag_value+" }}}}}}}}");
 			}
 		}
 

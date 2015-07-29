@@ -1,0 +1,66 @@
+
+
+
+function getSection(currenttop){
+var sectionDivHeights = [0,
+$('#Burberry').offset().top,
+$('#MCM').offset().top,
+$('#Moschino').offset().top,
+$('#SalvatoreFerragamo').offset().top,
+$('#StuartWeitzman').offset().top,
+$('#Longchamp').offset().top,
+$('#SergioRossi').offset().top
+];
+
+sectionDivHeights.push(currenttop);
+sectionDivHeights.sort(function(a, b){return a-b;});
+return sectionDivHeights.indexOf(currenttop);
+}
+//detect which section the user is on
+currentSection=-1;
+
+//get first page when user first landed on site
+currentSection=getSection($(window).scrollTop());
+CoreMetrics("Pageview","fall15_shoehandbag",currentSection);
+
+$(window).scroll(function () {
+if(currentSection!=getSection($(window).scrollTop())){
+currentSection=getSection($(window).scrollTop());
+CoreMetrics("Pageview","fall15_shoehandbag",currentSection);
+}
+});
+
+
+
+
+
+function getSection(currenttop){
+var sectionDivHeights = [0,
+$('#section1').offset().top,
+$('#section3').offset().top,
+$('#section4').offset().top,
+$('#section5').offset().top,
+$('#section6').offset().top,
+$('#section7').offset().top,
+]; 
+
+sectionDivHeights.push(currenttop);
+sectionDivHeights.sort(function(a, b){return a-b;});
+return sectionDivHeights.indexOf(currenttop);
+}
+
+currentSection=-1;
+
+currentSection=getSection($(window).scrollTop());
+CoreMetrics("Pageview","fall15_makeupdate",currentSection);
+
+$(window).scroll(function () {
+if(currentSection!=getSection($(window).scrollTop())){
+currentSection=getSection($(window).scrollTop());
+CoreMetrics("Pageview","fall15_makeupdate",currentSection);
+}
+});
+
+
+
+

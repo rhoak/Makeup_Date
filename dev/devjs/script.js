@@ -28,12 +28,8 @@
         $(window).on("load resize", function(){
             $('pages').css({'top': '97%'});
         });
-        /********* CoreMetrics **********/ 
 
-
-
-
-
+        /********* CoreMetrics **********/
         function CoreMetrics(tag_type, category_name, tag_value){
             if(tag_type=="Pageview"){
                 try {
@@ -49,7 +45,6 @@
             ("{{{{{{{{ Element- category_name: "+category_name+" tag_value: "+tag_value+" }}}}}}}}");
         }
     }
-
 
     function getSection(currenttop){
         var sectionDivHeights = [0,
@@ -128,14 +123,12 @@
 // 	}
 // }); 
 
-
-
 /********* Video Deep Linking - JQuery Address **********/ 
-// $(".video_thumbnail").on('click', function() {
-// 	$('.clicked').removeClass('clicked');
-// 	$(this).toggleClass('clicked');
-// 	CoreMetrics("Element","fall15_makeupdate", $(this).attr('data-key'));
-// });
+$(".video_thumbnail").on('click', function() {
+	$('.clicked').removeClass('clicked');
+	$(this).toggleClass('clicked');
+	CoreMetrics("Element","fall15_makeupdate", $(this).attr('data-key'));
+});
 
 $.address.change(function(event) {
 

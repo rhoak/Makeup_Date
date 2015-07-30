@@ -438,5 +438,5 @@ window.loadVideo=loadVideo;
 
 
 
-}(window, jQuery));
+}(window));
 

@@ -127,38 +127,34 @@
 
     };
 }(jQuery));
-/* jshint ignore:start */
 
-(function (window, $){
+
+(function (window){
 
 
     $(window).ready(function(){
 
         /********* Detect Device **********/
-        $('.desktop').hide();
-        $('.mobile').hide();
-
-
         if(jQuery.browser.mobile)
         {
-            console.log('mobile!')
-            $('.mobile').show();
-            $('#bgvid').hide('assets/headervideo.mp4');
-            ismobile=true;
+          console.log('mobile!')
+          $('#bgvid').hide('assets/headervideo.mp4');
+          $('.desktop').hide();
+          ismobile=true;
         }
         else
         {
-            console.log('not mobile!')
-            $('.desktop').show();
-            $('#bgvid').show('assets/headervideo.mp4');
-            ismobile=false;
+          console.log('not mobile!')
+          $('#bgvid').show('assets/headervideo.mp4');
+          $('.mobile').hide();
+          ismobile=false;
         } 
 
         $(window).on("load resize", function(){
             $('pages').css({'top': '97%'});
         });
 
-        /********* CoreMetrics **********/
+    /********* CoreMetrics **********/
         function CoreMetrics(tag_type, category_name, tag_value){
             if(tag_type=="Pageview"){
                 try {
@@ -202,55 +198,148 @@
         }
     });
 
+        $(window).scroll(function () {
+        if(currentSection!=getSection($(window).scrollTop())){
+            currentSection=getSection($(window).scrollTop());
+            CoreMetrics("Pageview","fall15_makeupdate",currentSection);
+        }
+        if(currentSection===1) {
+            $('[data-info="How_To_Video"]').addClass('active');
+        } 
+        else { 
+           $('[data-info="How_To_Video"]').removeClass('active');
+        }
+        if(currentSection===2) {
+            $('[data-info="Q&A_with_Cyndle"]').addClass('active');
+        } 
+        else { 
+           $('[data-info="Q&A_with_Cyndle"]').removeClass('active');
+        }
+        if(currentSection===3) {
+            $('[data-info="Exclusive_Gift"]').addClass('active');
+        } 
+        else { 
+           $('[data-info="Exclusive_Gift"]').removeClass('active');
+        }
+        if(currentSection===4) {
+            $('[data-info="Celebrate_in_Store"]').addClass('active');
+        } 
+        else { 
+           $('[data-info="Celebrate_in_Store"]').removeClass('active');
+        }
+        if(currentSection===5) {
+            $('[data-info="Enter_to_Win"]').addClass('active');
+        } 
+        else { 
+           $('[data-info="Enter_to_Win"]').removeClass('active');
+        }
+
+    }); 
+
+
+
+    $(".shopvideo_item").on('click', function() {
+        CoreMetrics("Element","fall15_makeupdate", $(this).attr('data-key'));
+    });
+
+    $(".giftset").on('click', function() {
+        CoreMetrics("Element","fall15_makeupdate", 'fall15_makeupdate--exclusives');
+    });
+
+    $("#shop_now").on('click', function() {
+        CoreMetrics("Element","fall15_makeupdate", 'fall15_makeupdate--exclusives');
+    });
+
+    $('#bluecircle').on('click', function() { 
+        // pop('/popup.ognc?popupID=563664','myDynaPop','width=575,height=350'); //Do not have the library - have not tested this 
+        CoreMetrics("Element","fall15_makeupdate", 'fall15_makeupdate--exclusives');
+    });
+
+    $('.galleryitem').on('click', function() { 
+        
+        // CoreMetrics("Element","fall15_makeupdate", 'fall15_makeupdate--exclusives');
+    });
+
+    /********* Sticky Navigation **********/ 
+    if (!!$('#sticky').offset()) { 
+        var stickyTop = $('#sticky').offset().top; 
+        var section3 = $('#section3').offset().top; 
+        
+        $(window).scroll(function(){ // scroll event
+            var windowTop = $(window).scrollTop(); 
+            if (stickyTop < windowTop){
+               $('#sticky').css({ position: 'fixed', top: 0 });
+           }
+           else {
+               $('#sticky').css('position','absolute');
+           }
+        });
+    }
+
+    /********* Sticky Toggle **********/ 
+    toggle();
+    $( window ).resize(function() { 
+        toggle();
+    });
+
+    function toggle() {
+        if ($(window).innerWidth() < 1262) { 
+            $('#sticky').css('display', 'none');      
+        }
+        else {
+            $('#sticky').css('display', 'block');                
+        }    
+    }
+
     /********* JQuery Address Desktop **********/ 
     $('.change_section').click(function() {  
         $.address.value($(this).attr('data-info'));  
     });  
 
-// $.address.change(function(event) {
-// 	switch(event.value) {
-// 		case '/How_To_Video':
-// 		if(ismobile) {
-// 			$('html, body').animate({scrollTop: $('#mob_section1').offset().top,}, 2000); 
-// 		}
-// 		else {
-// 			$('html, body').animate({scrollTop: $('#section1').offset().top,}, 2000);
-// 		} 
-// 		break;
-// 		case '/Q&A_with_Cyndle':
-// 		if(ismobile) {
-// 			$('html, body').animate({scrollTop: $('#mob_section3').offset().top,}, 2000); 
-// 		}
-// 		else {
-// 			$('html, body').animate({scrollTop: $('#section3').offset().top,}, 2000);
-// 		} 
-// 		break;
-// 		case '/Exclusive_Gift':
-// 		if(ismobile) {
-// 			$('html, body').animate({scrollTop: $('#mob_section4').offset().top,}, 2000); 
-// 		}
-// 		else {
-// 			$('html, body').animate({scrollTop: $('#section4').offset().top,}, 2000);
-// 		} 
-// 		break;
-// 		case '/Celebrate_in_Store':
-// 		if(ismobile) {
-// 			$('html, body').animate({scrollTop: $('#mob_section5').offset().top,}, 2000); 
-// 		}
-// 		else {
-// 			$('html, body').animate({scrollTop: $('#section5').offset().top,}, 2000);
-// 		} 
-// 		break;
-// 		case '/Enter_to_Win':
-// 		if(ismobile) {
-// 			$('html, body').animate({scrollTop: $('#mob_section7').offset().top,}, 2000); 
-// 		}
-// 		else {
-// 			$('html, body').animate({scrollTop: $('#section7').offset().top,}, 2000);
-// 		} 
-// 		break;
-// 	}
-// }); 
+    $.address.change(function(event) {
+    	switch(event.value) {
+    		case '/How_To_Video':
+    		if(ismobile) {
+    			$('html, body').animate({scrollTop: $('#mob_section1').offset().top,}, 2000); 
+    		}
+    		else {
+    			$('html, body').animate({scrollTop: $('#section1').offset().top,}, 2000);
+    		} 
+    		break;
+    		case '/Q&A_with_Cyndle':
+    		if(ismobile) {
+    			$('html, body').animate({scrollTop: $('#mob_section3').offset().top,}, 2000); 
+    		}
+    		else {
+    			$('html, body').animate({scrollTop: $('#section3').offset().top,}, 2000);
+    		} 
+    		break;
+    		case '/Exclusive_Gift':
+    		if(ismobile) {
+    			$('html, body').animate({scrollTop: $('#mob_section4').offset().top,}, 2000); 
+    		}
+    		else {
+    			$('html, body').animate({scrollTop: $('#section4').offset().top,}, 2000);
+    		} 
+    		break;
+    		case '/Celebrate_in_Store':
+    		if(ismobile) {
+    			$('html, body').animate({scrollTop: $('#mob_section5').offset().top,}, 2000); 
+    		}
+    		else {
+    			$('html, body').animate({scrollTop: $('#section5').offset().top,}, 2000);
+    		} 
+    		break;
+    		case '/Enter_to_Win':
+    		if(ismobile) {
+    			$('html, body').animate({scrollTop: $('#mob_section7').offset().top,}, 2000); 
+    		}
+    		else {
+    			$('html, body').animate({scrollTop: $('#section7').offset().top,}, 2000);
+    		} 
+    		break;
+    	}
+    }); 
 
 /********* Video Deep Linking - JQuery Address **********/ 
 $(".video_thumbnail").on('click', function() {
@@ -334,19 +423,6 @@ $(window).scroll(function(){ // scroll event
 });
 }
 
-toggle();
-window.onresize = function() {
-    toggle();
-}
-
-function toggle() {
-if (window.innerWidth < 1262) { // Change to jquery 
-    document.getElementById('sticky').style.display = 'none';      
-}
-else {
-    document.getElementById('sticky').style.display = 'block';                
-}    
-}
 
 /********* Up and Down Arrows **********/      
 $('.uparrow').hide();
@@ -456,9 +532,10 @@ $('.prev').click(function() {
 
 /********* Custom Mobile **********/ 
 /********* Arrows **********/ 
+
+
 function arrowToggle() { 
-    if($('#shop_lip_content').is(':hidden')) {
-        console.log('peaches');
+    if($('.mob-content').is(':hidden')) {
         $('.arrow_mob').css({
             transform: 'translateY(0px) rotateZ(-45deg)',
             MozTransform: 'translateY(0px) rotateZ(-45deg)',
@@ -466,7 +543,6 @@ function arrowToggle() {
             msTransform: 'translateY(0px) rotateZ(-45deg)'       
         }); 
     } else {
-        console.log('closed');
         $('.arrow_mob').css({
             transform: 'translateY(-14px) rotateZ(135deg)',
             MozTransform: 'translateY(-14px) rotateZ(135deg)',
@@ -474,12 +550,15 @@ function arrowToggle() {
             msTransform: 'translateY(-14px) rotateZ(135deg)'        
         }); 
     }
-}
+};
 
-$('#arrow_mob2').click(function(){
-    $('#shop_lip_content').slideToggle( 2000, 'swing', function() {
-        arrowToggle();
+$('.mob-button2').click(function(){
+    var content = $(this).prev(".mob-content")
+    content.slideToggle(2000, 'swing', function () { 
     });
+    $('html, body').animate({ 
+        scrollTop: content.offset().top 
+    }, 2000);
 });
 
 $(".mob-button").click(function(){
@@ -497,10 +576,9 @@ $(".totop").on("click", function(event) {
 $("#downarrow_mob").on("click", function(event) {
     $('html, body').animate({
         scrollTop: $("#mob_section2").offset().top
-    }, 1900);
+        }, 1900);
+    });
 });
-});
-
 /********* BrightCove **********/
 var videoPlayer;
 function onTemplateLoaded(id) {
@@ -520,7 +598,7 @@ window.loadVideo=loadVideo;
 
 }(window, jQuery));
 
-/* jshint ignore:end */
+
 /**
  * jQuery.browser.mobile (http://detectmobilebrowser.com/)
  *

@@ -339,16 +339,17 @@ em {
   font-size: 1.2em;
   text-transform: uppercase;
   padding: 8px; }
-  .side_navigation li {
-    cursor: pointer;
-    background-color: #eaff00;
-    padding: 8px; }
 
-.active li {
+.change_section {
+  cursor: pointer;
+  background-color: #eaff00;
+  padding: 8px; }
+
+.active {
   background-color: #fff;
   padding: 8px; }
 
-.side_navigation li:hover {
+.change_section:hover {
   background-color: #fff;
   padding: 8px; }
 
@@ -374,7 +375,7 @@ em {
   height: 411px;
   width: 730px;
   background-image: url(../assets/lip_video.png);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
   background-color: black; }
@@ -451,6 +452,13 @@ em {
   width: 100%;
   z-index: 5; }
 
+.slide_buttons {
+  position: absolute;
+  z-index: 18;
+  width: 50px;
+  height: 220px;
+  cursor: pointer; }
+
 .slideshow {
   margin: 0 auto;
   padding: 0;
@@ -486,9 +494,6 @@ em {
 .slide2 {
   position: absolute;
   right: -960px; }
-
-.slide_buttons {
-  cursor: pointer; }
 
 .next {
   position: absolute;
@@ -858,7 +863,7 @@ em {
   margin-top: 160px;
   height: 192px;
   width: 192px;
-  background-color: #414196;
+  background-color: #413894;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
@@ -934,7 +939,7 @@ em {
     cursor: pointer; }
 
 .galleryitem {
-  cursor: pointer;
+  display: block;
   overflow: hidden;
   width: 320px;
   height: 490px;

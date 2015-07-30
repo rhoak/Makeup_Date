@@ -1,1049 +1,1099 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Makeup Date</title>
-    <!-- Custom CSS -->
-    <link href="css/fall15_makeupdate.css" rel="stylesheet"/>
-    <!-- The Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
-    <link href="https://customerservice.bloomingdales.com/euf/assets/css/main.css" rel="stylesheet" type="text/css">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Makeup Date</title>
+	<!-- Custom CSS -->
+	<link href="css/fall15_makeupdate.css" rel="stylesheet"/>
+	<!-- The Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
+	<link href="https://customerservice.bloomingdales.com/euf/assets/css/main.css" rel="stylesheet" type="text/css">
 </head>
 
 <style></style>
 
 <body>
-    <div id="bl_main_container">
-        <!--Desktop-->
-        <div class="desktop">
-            <div id="desktop-header"></div>
-            <!-- Video -->
-            <div id="videowrapper">
-                <div id="video_overlay"></div>
-                <video autoplay loop id="bgvid">
-                    <source src="assets/headervideo.mp4" type='video/mp4'/> <!-- Should we have more video files -->
-                </video>
-            </div> 
-            <!-- Main Section -->
-            <div id="main_section">
-                <div class="main"> 
-                    <h5> 2 Days Only:</h5>
-                    <h4> Exclusive 15-Piece Gift <em> + </em> Triple points for loyallists</h4>
-                    <h1>The Makeup Date</h1>
-                    <h2> Your All-Access Pass to the Season's Top Trends</h2>
-                    <p> Clear your schedule: Our beauty edit is filled with the hautest how-tos and the most buzzworthy products—plus tips and tricks from our resident makeup artist (and fellow beauty junkie) Cyndle Komarovski.</p> 
-                </div> 
-            </div>
+	<div id="bl_main_container">
+		<!--Desktop-->
+		<div class="desktop">
+			<div id="desktop-header"></div>
+			<!-- Video -->
+			<div id="videowrapper">
+				<div id="video_overlay"></div>
+				<video autoplay loop id="bgvid">
+					<source src="assets/headervideo.mp4" type='video/mp4'/> <!-- Should we have more video files -->
+				</video>
+			</div> 
+			<!-- Main Section -->
+			<div id="main_section">
+				<div class="main"> 
+					<h5> 2 Days Only:</h5>
+					<h4> Exclusive 15-Piece Gift <em> + </em> Triple points for loyallists</h4>
+					<h1>The Makeup Date</h1>
+					<h2> Your All-Access Pass to the Season's Top Trends</h2>
+					<p> Clear your schedule: Our beauty edit is filled with the hautest how-tos and the most buzzworthy products—plus tips and tricks from our resident makeup artist (and fellow beauty junkie) Cyndle Komarovski.</p> 
+				</div> 
+			</div>
 
-            <!-- Pages: (A Container for the Content) --> 
-            <div class="pages">
-                <div class="half_circle" id="downarrow"><div class="downarrow"></div><div class="uparrow"></div></div> 
-                <!-- Section 1: How To Videos -->
-                <nav id="section1">
-                    <div class="container">
-                        <div id="makeup_header"><img src="assets/mob_makeup1.png" alt="makeup"></div> 
-                        <div id="nav_heading"><h3>How-To Videos</h3><div>
-                        </div>
-                    </nav> 
+			<!-- Pages: (A Container for the Content) --> 
+			<div class="pages">
+				<div class="half_circle" id="downarrow"><div class="downarrow"></div><div class="uparrow"></div></div> 
+				<!-- Section 1: How To Videos -->
+				<nav id="section1">
+					<div class="container">
+						<div id="makeup_header"><img src="assets/mob_makeup1.png" alt="makeup"></div> 
+						<div id="nav_heading"><h3>How-To Videos</h3><div>
+						</div>
+					</nav> 
 
-                    <!-- Section 2: Sticky Navigation -->
-                    <div id="section2">
-                        <div id="sticky">
-                            <ul class="side_navigation">
-                                <li data-info="How_To_Video" class="change_section">Videos</li>
-                                <li data-info="Q&A_with_Cyndle" class="change_section">Interviews</li>
-                                <li data-info="Exclusive_Gift" class="change_section">Exclusive<br>Gifts</li>
-                                <li data-info="Celebrate_in_Store" class="change_section">Events</li>
-                                <li data-info="Enter_to_Win" class="change_section">Sweepstakes</li>
-                            </ul> 
-                        </div>  
+					<!-- Section 2: Sticky Navigation -->
+					<div id="section2">
+						<div id="sticky">
+							<ul class="side_navigation">
+								<li data-info="How_To_Video" class="change_section">Videos</li>
+								<li data-info="Q&A_with_Cyndle" class="change_section">Interviews</li>
+								<li data-info="Exclusive_Gift" class="change_section">Exclusive<br>Gifts</li>
+								<li data-info="Celebrate_in_Store" class="change_section">Events</li>
+								<li data-info="Enter_to_Win" class="change_section">Sweepstakes</li>
+							</ul> 
+						</div>  
 
-                        <div id="container2">
-                            <!-- Section 2: Video Section -->
-                            <div id="videopreview">  
-                                <div style="display:none"></div>
-                                <div id="videoplayer_music"></div>
-                                <div id="videoplayer">
- <!--                               <object id="myExperience4377128244001" class="BrightcoveExperience">
-                                      <param name="bgcolor" value="#FFFFFF" />
-                                      <param name="width" value="745" />
-                                      <param name="height" value="419" />
-                                      <param name="playerID" value="4314019736001" />
-                                      <param name="playerKey" value="AQ~~,AAAAEa4LKPk~,F9t4RD8tmUu7xl2opXkdKhWUpq-Cz4gk" />
-                                      <param name="isVid" value="true" />
-                                      <param name="isUI" value="true" />
-                                      <param name="dynamicStreaming" value="true" />
-                                      <param name="@videoPlayer" value="4377128244001" />
-                                      <param name="includeAPI" value="true">
-                                      <param name="templateLoadHandler" value="onTemplateLoaded">
-                                    </object> -->
-                                </div>
-                                <!-- Section 2: Video Thumbnails -->
-                                <div class="videoset"> 
-                                    <div id="v1" class="video_thumbnail clicked" data-key"matte_lip_video" onclick="loadVideo(event, 4377128244001)">
-                                        <div id='video1_title'>
-                                            <div id='video1_button'><img src="assets/videobutton.png" alt="videobutton"></div>
-                                        </div>
-                                    </div>
-                                    <h6>The Two-Tone Matte Lip</h6>
-                                    <div id="v2" class="video_thumbnail" data-key"dewy_finish_video" onclick="loadVideo(event, 4377128247001)">
-                                        <div id='video2_title'>
-                                            <div id='video1_button'><img src="assets/videobutton.png" alt="videobutton"></div>   
-                                        </div>                        
-                                    </div>
-                                    <h6>The Dewy Finish</h6>
-                                    <div id="v3" class="video_thumbnail" data-key"smoky_eye_video" onclick="loadVideo(event, 4377147010001)">
-                                        <div id='video3_title'>
-                                            <div id='video1_button'><img src="assets/videobutton.png" alt="videobutton"></div>
-                                        </div>                        
-                                    </div>
-                                    <h6>The Steel Blue Smoky Eye</h6>
-                                </div> <!--end of video set -->
-                            </div> <!-- end of video preview -->
-                            <div id="shopthevideo"><span>Shop The Video:</span></div> 
-                        
-                        <!-- Section 2: Product SlideShow -->
-                        <div class="shopslideshow">
-                            <!--slideshow1: Shop the Lips-->
-                            <div class="slideshow" id="shop1"> 
-                                <div class="slide_buttons">
-                                    <div class="prev" alt="Previous"></div>
-                                    <div class="next" alt="Next"> </div>
-                                </div>
-                                <div class="slide1" class="slide">
-                                    <ul>
-                                        <li class="shopvideo_item">
-                                            <div id="shoplip1" class="shopvideo_pic" data-key="nars"></div>
-                                            <h6>Nars</h6>
-                                            <p> Velvet Matte Lip Pencil in Dragon Girl</p>
-                                        </li>
-                                        <li class="shopvideo_item">
-                                            <div id="shoplip2" class="shopvideo_pic"></div>
-                                            <h6>Tom Ford</h6>
-                                            <p>Lip Color Matte in Velvet Cherry</p>
-                                        </li>
-                                        <li class="shopvideo_item">
-                                            <div id="shoplip3" class="shopvideo_pic"></div>
-                                            <h6>Nars</h6>
-                                            <p>Lip Liner Pencil in Jungle Red</p>
-                                        </li>
-                                        <li class="shopvideo_item">
-                                            <div id="shoplip4" class="shopvideo_pic"></div>
-                                            <h6>Laura Mercier</h6>
-                                            <p>Translucent Loose Setting Powder</p>
-                                        </li>
-                                        <li class="shopvideo_item">
-                                            <div id="shoplip5" class="shopvideo_pic"></div>
-                                            <h6>Bobbi Brown</h6>
-                                            <p>Perfectly Defined Long-Wear Brow Pencil in Blonde</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="slide2" class="slide">
-                                    <ul>
-                                        <li class="shopvideo_item">
-                                            <div id="shoplip6" class="shopvideo_pic"></div>
-                                            <h6>Estée Lauder</h6>
-                                            <p>Lip Brush 35</p>
-                                        </li>
-                                        <li class="shopvideo_item">
-                                            <div id="shoplip7" class="shopvideo_pic"></div>
-                                            <h6>Yves Saint Laurent</h6>
-                                            <p>Rouge Pur Couture in Le Rouge</p>
-                                        </li>
-                                        <li class="shopvideo_item">
-                                            <div id="shoplip8" class="shopvideo_pic"></div>
-                                            <h6>Bobbi Brown</h6>
-                                            <p>Creamy Matte Lip Color in Red Carpet</p>
-                                        </li>
-                                        <li class="shopvideo_item">
-                                            <div id="shoplip9" class="shopvideo_pic"></div>
-                                            <h6>Estée Lauder</h6>
-                                            <p>Pure Color Envy Sculpting Lipstick in Envious</p>
-                                        </li>
-                                        <li class="shopvideo_item">
-                                            <div id="shoplip10" class="shopvideo_pic"></div>
-                                            <h6></h6>
-                                            <p></p>
-                                        </li>
-                                    </ul>   
-                                </div>
-                            </div> <!--end of slideshow 1-->
-                            <!--slideshow 2: Dewy Look-->
-                            <div class="slideshow" id="shop2" style="display:none;"> 
-                                <div class="slide_buttons">
-                                    <div class="prev" alt="Previous"> </div>
-                                    <div class="next" alt="Next"> </div>
-                                </div>
-                                <div class="slide1" class="slide">
-                                    <ul>
-                                        <li class="shopvideo_item">
-                                            <div id="dewylook1" class="shopvideo_pic"></div>
-                                            <h6>Estée Lauder</h6>
-                                            <p>Illuminating Perfecting Primer</p>
-                                        </li>
-                                        <li class="shopvideo_item">
-                                            <div id="dewylook2" class="shopvideo_pic"></div>
-                                            <h6>Yves Saint Laurent</h6>
-                                            <p>Touche Éclat</p>
-                                        </li>
-                                        <li class="shopvideo_item">
-                                            <div id="dewylook3" class="shopvideo_pic"></div>
-                                            <h6>Clinique</h6>
-                                            <p>Cheek Pop in Berry Pop</p>
-                                        </li>
-                                        <li class="shopvideo_item">
-                                            <div id="dewylook4" class="shopvideo_pic"></div>
-                                            <h6>Nars</h6>
-                                            <p>Dual-Intensity Blush in Jubilation</p>
-                                        </li>
-                                        <li class="shopvideo_item">
-                                            <div id="dewylook5" class="shopvideo_pic"></div>
-                                            <h6>SK-II</h6>
-                                            <p>Mid-Day Essence</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="slide2" class="slide">
-                                    <ul>
-                                        <li class="shopvideo_item">
-                                            <div id="dewylook6" class="shopvideo_pic"></div>
-                                            <h6>Lancôme</h6>
-                                            <p>Miracle Cushion Liquid Cushion Compact</p>
-                                        </li>
-                                        <li class="shopvideo_item">
-                                            <div id="dewylook7" class="shopvideo_pic"></div>
-                                            <h6>Trish McEvoy</h6>
-                                            <p>Eye Base Essentials in Demure</p>
-                                        </li>
-                                        <li class="shopvideo_item">
-                                            <div id="dewylook8" class="shopvideo_pic"></div>
-                                            <h6>Laura Mercier</h6>
-                                            <p>Translucent Loose Setting Powder</p>
-                                        </li>
-                                        <li class="shopvideo_item">
-                                            <div id="dewylook9" class="shopvideo_pic"></div>
-                                            <h6>Dior</h6>
-                                            <p>Backstage Fluid Foundation Brush - Light Coverage</p>
-                                        </li>
-                                        <li class="shopvideo_item">
-                                            <div id="dewylook10" class="shopvideo_pic"></div>
-                                            <h6>Laura Mercier</h6>
-                                            <p>Powder Brush</p>
-                                        </li>
-                                    </ul>   
-                                </div>
-                            </div> <!--end of slideshow 2-->
-                            <!--slideshow1: Smoky Eyes-->
-                            <div class="slideshow" id="shop3" style="display:none;"> <!--slideshow3-->
-                                <div class="slide_buttons">
-                                    <div class="prev" alt="Previous"> </div>
-                                    <div class="next" alt="Next"> </div>
-                                </div>
-                                <div class="slide1" class="slide">
-                                    <ul>
-                                        <li class="shopvideo_item">
-                                            <div id="smokylook1" class="shopvideo_pic"></div>
-                                            <h6>Tom Ford</h6>
-                                            <p>Eye Color Quad in Titanium Smoke</p>
-                                        </li>
-                                        <li class="shopvideo_item">
-                                            <div id="smokylook2" class="shopvideo_pic"></div>
-                                            <h6>Laura Mercier</h6>
-                                            <p>Eye Basics in Buff</p>
-                                        </li>
-                                        <li class="shopvideo_item">
-                                            <div id="smokylook3" class="shopvideo_pic"></div>
-                                            <h6>Lancôme</h6>
-                                            <p>Grandiôse Mascara</p>
-                                        </li>
-                                        <li class="shopvideo_item">
-                                            <div id="smokylook4" class="shopvideo_pic"></div>
-                                            <h6>Bobbi Brown</h6>
-                                            <p>Perfectly Defined Long-Wear Brow Pencil in Blonde</p>
-                                        </li>
-                                        <li class="shopvideo_item">
-                                            <div id="smokylook5" class="shopvideo_pic"></div>
-                                            <h6>Sisley Paris</h6>
-                                            <p>Phyto-Eye Twist in Lagoon</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="slide2" class="slide">
-                                    <ul>
-                                        <li class="shopvideo_item">
-                                            <div id="smokylook6" class="shopvideo_pic"></div>
-                                            <h6>Sisley Paris</h6>
-                                            <p>Phyto-Eye Twist in Steel</p>
-                                        </li>
-                                        <li class="shopvideo_item">
-                                            <div id="smokylook7" class="shopvideo_pic"></div>
-                                            <h6>Estée Lauder</h6>
-                                            <p>Little Black Liner in Onyx</p>
-                                        </li>
-                                        <li class="shopvideo_item">
-                                            <div id="smokylook8" class="shopvideo_pic"></div>
-                                            <h6>Trish McEvoy</h6>
-                                            <p>Instant Solutions® Triangle of Light® Eye Mask</p>
-                                        </li>
-                                        <li class="shopvideo_item">
-                                            <div id="smokylook9" class="shopvideo_pic"></div>
-                                            <h6>Shiseido</h6>
-                                            <p>Eyelash Curler</p>
-                                        </li>
-                                        <li class="shopvideo_item">
-                                            <div id="smokylook10" class="shopvideo_pic"></div>
-                                            <h6>Burberry</h6>
-                                            <p>Lip Velvet in Pink Apricot</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div> <!--end of slideshow 3-->
-                        </div> <!--end of productslideshow-->
-                        </div><!-- end of container2 -->
-                    </div><!--end of section2-->
+						<div id="container2">
+							<!-- Section 2: Video Section -->
+							<div id="videopreview">  
+								<div style="display:none"></div>
+								<div id="videoplayer_music"></div>
+								<div id="videoplayer">
+							   <object id="myExperience4377128244001" class="BrightcoveExperience">
+									  <param name="bgcolor" value="#FFFFFF" />
+									  <param name="width" value="745" />
+									  <param name="height" value="419" />
+									  <param name="playerID" value="4314019736001" />
+									  <param name="playerKey" value="AQ~~,AAAAEa4LKPk~,F9t4RD8tmUu7xl2opXkdKhWUpq-Cz4gk" />
+									  <param name="isVid" value="true" />
+									  <param name="isUI" value="true" />
+									  <param name="dynamicStreaming" value="true" />
+									  <param name="@videoPlayer" value="4377128244001" />
+									  <param name="includeAPI" value="true">
+									  <param name="templateLoadHandler" value="onTemplateLoaded">
+									</object>
+								</div>
+								<!-- Section 2: Video Thumbnails -->
+								<div class="videoset"> 
+									<div id="v1" class="video_thumbnail clicked" data-key"matte_lip_video" onclick="loadVideo(event, 4377128244001)">
+										<div id='video1_title'>
+											<div id='video1_button'><img src="assets/videobutton.png" alt="videobutton"></div>
+										</div>
+									</div>
+									<h6>The Two-Tone Matte Lip</h6>
+									<div id="v2" class="video_thumbnail" data-key"dewy_finish_video" onclick="loadVideo(event, 4377128247001)">
+										<div id='video2_title'>
+											<div id='video1_button'><img src="assets/videobutton.png" alt="videobutton"></div>   
+										</div>                        
+									</div>
+									<h6>The Dewy Finish</h6>
+									<div id="v3" class="video_thumbnail" data-key"smoky_eye_video" onclick="loadVideo(event, 4377147010001)">
+										<div id='video3_title'>
+											<div id='video1_button'><img src="assets/videobutton.png" alt="videobutton"></div>
+										</div>                        
+									</div>
+									<h6>The Steel Blue Smoky Eye</h6>
+								</div> <!--end of video set -->
+							</div> <!-- end of video preview -->
+							<div id="shopthevideo"><span>Shop The Video:</span></div> 
+						
+						<!-- Section 2: Product SlideShow -->
+						<div class="shopslideshow">
+							<!--slideshow1: Shop the Lips-->
+							<div class="slide_buttons">
+								<div class="prev" alt="Previous"></div>
+								<div class="next" alt="Next"> </div>
+							</div>
+							<div class="slideshow" id="shop1"> 
+								<div class="slide1" class="slide">
+									<ul>
+										<li class="shopvideo_item">
+											<a href="http://www1.bloomingdales.com/shop/product/nars-velvet-matte-lip-pencil?ID=103913&CategoryID=2921" data-key="nars-matte-pencil">
+												<div id="shoplip1" class="shopvideo_pic"></div>
+												<h6>Nars</h6>
+												<p> Velvet Matte Lip Pencil in Dragon Girl</p>
+											</a>
+										</li>
+										<li class="shopvideo_item">
+											<a href="http://www1.bloomingdales.com/shop/product/tom-ford-lip-color-matte?ID=1127352&CategoryID=2921" data-key="tom-ford-matte-lip">
+												<div id="shoplip2" class="shopvideo_pic"></div>
+												<h6>Tom Ford</h6>
+												<p>Lip Color Matte in Velvet Cherry</p>
+											</a>
+										</li>
+										<li class="shopvideo_item">
+											<a href="http://www1.bloomingdales.com/shop/product/nars-lip-liner-pencil?ID=116550&CategoryID=2921" data-key="nars-lipliner">
+												<div id="shoplip3" class="shopvideo_pic"></div>
+												<h6>Nars</h6>
+												<p>Lip Liner Pencil in Jungle Red</p>
+											</a>
+										</li>
+										<li class="shopvideo_item">
+											<a href="http://www1.bloomingdales.com/shop/product/laura-mercier-loose-setting-powder?ID=87195&CategoryID=2921" data-key="Laura-Mercier-Powder">
+												<div id="shoplip4" class="shopvideo_pic"></div>
+												<h6>Laura Mercier</h6>
+												<p>Translucent Loose Setting Powder</p>
+											</a>
+										</li>
+										<li class="shopvideo_item">
+											<a href="http://www1.bloomingdales.com/shop/product/bobbi-brown-perfectly-defined-long-wear-brow-pencil?ID=1292851&CategoryID=2921" data-key="bobbi-brown-pencil">
+												<div id="shoplip5" class="shopvideo_pic"></div>
+												<h6>Bobbi Brown</h6>
+												<p>Perfectly Defined Long-Wear Brow Pencil in Blonde</p>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="slide2" class="slide">
+									<ul>
+										<li class="shopvideo_item">
+											<a href="http://www1.bloomingdales.com/shop/product/estee-lauder-lip-brush-35?ID=442763&CategoryID=2921" data-key="Estée-Lauder-Lip-Brush">
+												<div id="shoplip6" class="shopvideo_pic"></div>
+												<h6>Estée Lauder</h6>
+												<p>Lip Brush 35</p>
+											</a>
+										</li>
+										<li class="shopvideo_item">
+											<a href="http://www1.bloomingdales.com/shop/product/yves-saint-laurent-rouge-pur-couture?ID=501751&CategoryID=2921" data-key="Yves-Saint-Rouge">
+												<div id="shoplip7" class="shopvideo_pic"></div>
+												<h6>Yves Saint Laurent</h6>
+												<p>Rouge Pur Couture in Le Rouge</p>
+											</a>
+										</li>
+										 <li class="shopvideo_item">
+											<a href="http://www1.bloomingdales.com/shop/product/estee-lauder-pure-color-envy-sculpting-lipstick?ID=991883&CategoryID=2921" data-key="Estée-Lauder-Color">
+												<div id="shoplip9" class="shopvideo_pic"></div>
+												<h6>Estée Lauder</h6>
+												<p>Pure Color Envy Sculpting Lipstick in Envious</p>
+											</a>
+										</li>
+										<li class="shopvideo_item">
+											<a href="http://www1.bloomingdales.com/shop/product/bobbi-brown-creamy-matte-lip-color?ID=665012&CategoryID=2921" data-key="Bobbi-Brown-Lip-Color">
+												<div id="shoplip8" class="shopvideo_pic"></div>
+												<h6>Bobbi Brown</h6>
+												<p>Creamy Matte Lip Color in Red Carpet</p>
+											</a>
+										</li>
 
-
-                    <!-- Section 3: Meet Cyndle -->
-                    <div id="section3">
-                        <div class="container">
-                            <div class="meetcyndle">
-                                <div id="cyndle"></div>
-                                <div class="cyndle_heading">
-                                    <h4>A Q&amp;A with Our Go-To Beauty Guru</h4>
-                                    <h3> Cyndle</h3> <h3>Komarovski</h3> 
-                                </div>
-                                <div id="makeup_section3"></div> 
-                                <div class="questions" id="questions1">
-                                    <h5> What trends are you most excited about for fall? </h5>
-                                    <p> Red lipstick is feeling fresh again. To update this classic look, wear it without mascara. Instead, fill in your brows to frame your eyes or use a gel liner at the base of your lashes for a subtle contrast.</p>
-                                    <h5>What’s your best tip for transitioning your makeup from summer to fall?</h5>
-                                    <p>Good makeup starts with good skin care. Adjust your routine by adding in more moisture (think creams and oils) to combat the drying effects of indoor heating. You can also switch out your summer bronzer for a cream blush in a rosy tone for fall.</p>
-                                    <h5>What’s the one thing you won’t leave the house without doing?</h5>
-                                    <p>My eyebrows! You don't need to wear much makeup if your eyebrows are perfectly groomed. </p>
-                                </div>
-                                <div id="cyndle_quote"></div>
-                                <div class="questions" id="questions2">
-                                    <h5> How do you transform your look from day to night? </h5>
-                                    <p>A basic black eyeliner does the trick! By smudging the liner on the top lash line, you can create a soft smoky eye with just one product.</p>
-                                    <h5>If you were stranded on a deserted island, what’s the one product you couldn’t live without?</h5>
-                                    <p>Clarins UV Plus HP SPF 40 Day Screen—it’s the best for everyday protection.</p>
-                                </div>
-                                <div id="cyndle_screenshot"></div>
-                                <div id="makeup_dots"></div>
-                            </div><!--end of meetcyndle-->
-                        </div><!--end of container-->
-                    </div><!--end of section3-->
-
-
-                    <!-- Section 4: Exlusive Gift Set-->
-                    <div id="section4">
-                        <div class="container">
-                            <div class="giftset">
-                                <h5>Online Only</h5>
-                                <h3> Your Exclusive</h3><h3>10-Piece Gift</h3>
-                                <h6> with any $125 beauty purchase! </h6>
-                                <p> Ends 9/1 or while supplies last. </p>
-                            </div>
-                            <div id="shop_now"><span><a>Shop Now</a></span></div> 
-                            <div id="loyalist"> <!--blue circle-->
-                                <div id="bluecircle">
-                                    <span>
-                                        <h5>+</h5>
-                                        <h5>Loyallists<br>Recieve Triple<br>Points on<br>All Beauty<br>Purchases</h5>
-                                        <p>Ends 9/1.<br>info/exclusions</p>
-                                    </span>
-                                </div>
-                            </div>     
-                            <div class="giftbag"> <div id="bag"></div></div>
-                        </div><!--end of container-->
-                    </div><!--end of section4-->
+										<li class="shopvideo_item">
+										</li>
+									</ul>   
+								</div>
+							</div> <!--end of slideshow 1-->
+							<!--slideshow 2: Dewy Look-->
+							<div class="slideshow" id="shop2" style="display:none;"> 
+								<div class="slide1" class="slide">
+									<ul>
+										<li class="shopvideo_item">
+											<a href="http://www1.bloomingdales.com/shop/product/estee-lauder-illuminating-perfecting-primer?ID=600887&CategoryID=2921" data-key="Estee-Lauder-Primer">
+												<div id="dewylook1" class="shopvideo_pic"></div>
+												<h6>Estée Lauder</h6>
+												<p>Illuminating Perfecting Primer</p>
+											</a>
+										</li>
+										<li class="shopvideo_item">
+											<a href="http://www1.bloomingdales.com/shop/product/yves-saint-laurent-touche-eclat?ID=87434&CategoryID=2921" data-key="YSL Touche Eclat">
+												<div id="dewylook2" class="shopvideo_pic"></div>
+												<h6>Yves Saint Laurent</h6>
+												<p>Touche Éclat</p>
+											 </a>
+										</li>
+										<li class="shopvideo_item">
+											<a href="http://www1.bloomingdales.com/shop/product/clinique-cheek-pop?ID=973181&CategoryID=2921" data=key="CLINIQUE-Cheek-Pop">
+												<div id="dewylook3" class="shopvideo_pic"></div>
+												<h6>Clinique</h6>
+												<p>Cheek Pop in Berry Pop</p>
+											</a>
+										</li>
+										<li class="shopvideo_item">
+											<a href="http://www1.bloomingdales.com/shop/product/nars-dual-intensity-blush?ID=1298313&CategoryID=2921" data-key="NARS-Dual-Intensity-Blush">
+												<div id="dewylook4" class="shopvideo_pic"></div>
+												<h6>Nars</h6>
+												<p>Dual-Intensity Blush in Jubilation</p>
+											</a>
+										</li>
+										 <li class="shopvideo_item">
+											<a href="http://www1.bloomingdales.com/shop/product/lancome-miracle-cushion-liquid-cushion-compact?ID=1340662&CategoryID=2921" data-key="LANCOME-Miracle-Cushion">
+												<div id="dewylook6" class="shopvideo_pic"></div>
+												<h6>Lancôme</h6>
+												<p>Miracle Cushion Liquid Cushion Compact</p>
+											</a>
+										</li> 
+									</ul>
+								</div>
+								<div class="slide2" class="slide">
+									<ul>
+										<li class="shopvideo_item">
+											<a href="http://www1.bloomingdales.com/shop/product/sk-ii-mid-day-essence?ID=1403419&CategoryID=2921" data-key="SK-II-Pitera">
+												<div id="dewylook5" class="shopvideo_pic"></div>
+												<h6>SK-II</h6>
+												<p>Mid-Day Essence</p>
+											</a>
+										</li>
+										<li class="shopvideo_item">
+											<a href="http://www1.bloomingdales.com/shop/product/trish-mcevoy-eye-base-essentials?ID=91228&CategoryID=2921" data-key="Trish-Mcevoy-Eye-Base">
+												<div id="dewylook7" class="shopvideo_pic"></div>
+												<h6>Trish McEvoy</h6>
+												<p>Eye Base Essentials in Demure</p>
+											</a>
+										</li>
+										<li class="shopvideo_item">
+											<a href="http://www1.bloomingdales.com/shop/product/laura-mercier-loose-setting-powder?ID=87195&CategoryID=2921" data-key="LAURA MERCIER-Loose-Setting-Powder">
+												<div id="dewylook8" class="shopvideo_pic"></div>
+												<h6>Laura Mercier</h6>
+												<p>Translucent Loose Setting Powder</p>
+											</a>
+										</li>
+										<li class="shopvideo_item" >
+											<a href="http://www1.bloomingdales.com/shop/product/dior-backstage-fluid-foundation-brush-light-coverage?ID=644044&CategoryID=2921"
+											data-key"Dior Backstage Fluid Foundation Brush - Light Coverage">
+												<div id="dewylook9" class="shopvideo_pic"></div>
+												<h6>Dior</h6>
+												<p>Backstage Fluid Foundation Brush - Light Coverage</p>
+											</a>
+										</li>
+										<li class="shopvideo_item">
+											<a href="http://www1.bloomingdales.com/shop/product/laura-mercier-powder-brush-travel?ID=87317&CategoryID=2921" data-key="Laura Mercier Powder Brush - Travel">
+												<div id="dewylook10" class="shopvideo_pic"></div>
+												<h6>Laura Mercier</h6>
+												<p>Powder Brush</p>
+											</a>
+										</li>
+									</ul>   
+								</div>
+							</div> <!--end of slideshow 2-->
+							<!--slideshow1: Smoky Eyes-->
+							<div class="slideshow" id="shop3" style="display:none;"> <!--slideshow3-->
+								<div class="slide1" class="slide">
+									<ul>
+										<a href="http://www1.bloomingdales.com/shop/product/tom-ford-eye-color-quad?ID=859868&CategoryID=2921" data-key="TOM-FORD-Eye-Quad">
+											<li class="shopvideo_item">
+												<div id="smokylook1" class="shopvideo_pic"></div>
+												<h6>Tom Ford</h6>
+												<p>Eye Color Quad in Titanium Smoke</p>
+											</li>
+										</a>
+										<a href="http://www1.bloomingdales.com/shop/product/laura-mercier-eye-basics?ID=87209&CategoryID=2921" data-key="LAURA-MERCIER-Eye Basics">
+											<li class="shopvideo_item">
+												<div id="smokylook2" class="shopvideo_pic"></div>
+												<h6>Laura Mercier</h6>
+												<p>Eye Basics in Buff</p>
+											</li>
+										</a>
+										<a href="http://www1.bloomingdales.com/shop/product/lancome-grandiose-mascara?ID=1453375&CategoryID=2921" data-key="Lancôme-Grandiôse-Mascara">
+											<li class="shopvideo_item">
+												<div id="smokylook3" class="shopvideo_pic"></div>
+												<h6>Lancôme</h6>
+												<p>Grandiôse Mascara</p>
+											</li>
+										</a>
+										<a href="http://www1.bloomingdales.com/shop/product/bobbi-brown-perfectly-defined-long-wear-brow-pencil?ID=1292851&CategoryID=2921" data-key="BOBBI-BROWN-Brown-Pencil">
+											<li class="shopvideo_item">
+												<div id="smokylook4" class="shopvideo_pic"></div>
+												<h6>Bobbi Brown</h6>
+												<p>Perfectly Defined Long-Wear Brow Pencil in Blonde</p>
+											</li>
+										</a>
+										<a href="http://www1.bloomingdales.com/shop/product/sisley-paris-phyto-eye-twist?ID=1252709&CategoryID=2921" data-key="SISLEY-Phyto-Eye-Twist-(4 Steel)">
+											<li class="shopvideo_item">
+												<div id="smokylook5" class="shopvideo_pic"></div>
+												<h6>Sisley Paris</h6>
+												<p>Phyto-Eye Twist in Lagoon</p>
+											</li>
+										</a>
+									</ul>
+								</div>
+								<div class="slide2" class="slide">
+									<ul>
+										<a href="http://www1.bloomingdales.com/shop/product/sisley-paris-phyto-eye-twist?ID=1252709&CategoryID=2921" data-key="SISLEY-Phyto-Eye-Twist-(8 Black Diamond)">
+											<li class="shopvideo_item">
+												<div id="smokylook6" class="shopvideo_pic"></div>
+												<h6>Sisley Paris</h6>
+												<p>Phyto-Eye Twist in Steel</p>
+											</li>
+										</a>
+										<a href="http://www1.bloomingdales.com/shop/product/estee-lauder-little-black-liner?ID=1489055&CategoryID=2921" data-key="ESTEE-LAUDER-Little-Black-Liner">
+											<li class="shopvideo_item">
+												<div id="smokylook7" class="shopvideo_pic"></div>
+												<h6>Estée Lauder</h6>
+												<p>Little Black Liner in Onyx</p>
+											</li>
+										</a>
+										<a href="http://www1.bloomingdales.com/shop/product/trish-mcevoy-instant-solutions-triangle-of-light-eye-mask?ID=1292885&CategoryID=2921" data-key="TRISH-MCEVOY-Eye-Mask">
+											<li class="shopvideo_item">
+												<div id="smokylook8" class="shopvideo_pic"></div>
+												<h6>Trish McEvoy</h6>
+												<p>Instant Solutions® Triangle of Light® Eye Mask</p>
+											</li>
+										</a>
+										<a href="http://www1.bloomingdales.com/shop/product/burberry-lip-velvet?ID=1483716&CategoryID=2921" data-key="Burberry-Lip-Velvet">
+											<li class="shopvideo_item">
+												<div id="smokylook10" class="shopvideo_pic"></div>
+												<h6>Burberry</h6>
+												<p>Lip Velvet in Pink Apricot</p>
+											</li>
+										</a>
+										<a href="http://www1.bloomingdales.com/shop/product/shiseido-eyelash-curler?ID=439194&CategoryID=2921" data-key="Shiseido-Eyelash-Curler">
+											<li class="shopvideo_item">
+												<div id="smokylook9" class="shopvideo_pic"></div>
+												<h6>Shiseido</h6>
+												<p>Eyelash Curler</p>
+											</li>
+										</a>
+									</ul>
+								</div>
+							</div> <!--end of slideshow 3-->
+						</div> <!--end of productslideshow-->
+						</div><!-- end of container2 -->
+					</div><!--end of section2-->
 
 
-                    <!-- Section 5 -->
-                    <div id="section5">
-                        <div class="container">
-                            <div class="section5_line"></div>
-                            <div class="sample_heading"><div id="sample_heading"><h3>Includes 3 cosmetics bags &amp; 12 deluxe samples:</h4></div></div>
-        
-                            
-                            <div class="samples">  
-                                <div class="galleryitem">
-                                    <div id="pic1" class="gallerypic"></div>
-                                    <div class="sample_words">
-                                        <h5>Amorepacific<br> Time Response Eye Renewal Creme</h5>
-                                        <p>Infused with green tea caffeine, this brightening treatment works to combat wrinkles, puffiness and dark circles for a luminous-looking under-eye area.</p>
-                                    </div>
-                                </div>
-                                <div class="galleryitem">   
-                                    <div id="pic2" class="gallerypic"></div>
-                                    <div class="sample_words">
-                                        <h5>Lancôme <br> Hypnôse Doll Lashes Mascara</h5>
-                                        <p>Coat, lift and plump every lash— even hard-to-reach corners—with the unique cone-shaped brush of this glam-girl essential.</p>
-                                    </div>
-                                </div>
-                                <div class="galleryitem">
-                                    <div id="pic3" class="gallerypic"></div>
-                                    <div class="sample_words">
-                                        <h5>La Mer<br>The Moisturizing Lotion</h5>
-                                        <p>Enjoy all the benefits of the luxurious line’s Miracle Broth–rich products in a lightweight fluid with a satin, radiant finish.</p>
-                                    </div>
-                                </div>
-                                <div class="galleryitem">
-                                    <div id="pic4" class="gallerypic"></div>
-                                    <div class="sample_words">
-                                        <h5>Guerlain <br> Orchidée Impériale Eye &amp; Lip Cream</h5>
-                                        <p>For a flawless makeup application, apply this smoothing, brightening hydrator to the eyes and lips. Bonus: Fine lines appear reduced. </p>
-                                     </div>
-                                </div>
-                                <div class="galleryitem">
-                                    <div id="pic5" class="gallerypic"></div>
-                                    <div class="sample_words">
-                                        <h5>SK-II Facial Treatment Mask</h5>
-                                        <p>A cult classic that started the sheet mask revolution, this 15-minute pick-me-up soaks your skin in moisture and leaves you visibly radiant.</p>
-                                    </div>
-                                </div>
-                                <div class="galleryitem">
-                                    <div id="pic6" class="gallerypic"></div>
-                                    <div class="sample_words">
-                                        <h5>Tory Burch <br> Eau de Parfum</h5>
-                                        <p>Peony, tuberose and citrus notes of grapefruit and neroli come together in this playful-meets-polished scent.</p>
-                                    </div>
-                                </div>
-                                <div class="galleryitem">
-                                    <div id="pic7" class="gallerypic"></div>
-                                     <div class="sample_words">
-                                        <h5>Yves Saint Laurent <br> Or Rouge Serum</h5>
-                                        <p>Defy the key signs of aging with this luxurious formula made with precious Moroccan saffron flower to revitalize and improve your skin’s appearance. </p>
-                                    </div>
-                                </div>
-                                <div class="galleryitem">
-                                    <div id="pic8" class="gallerypic"></div>
-                                    <div class="sample_words">
-                                        <h5>Estée Lauder <br> Advanced Night Repair Synchronized <br> Recovery Complex II</h5>
-                                        <p>Wake up to a better complexion with this purifying serum—it repairs, protects and minimizes fine lines and wrinkles for younger-looking skin.</p>
-                                    </div>
-                                </div>
-                                <div class="galleryitem">
-                                    <div id="pic9" class="gallerypic"></div>
-                                    <div class="sample_words">
-                                        <h5>Kiehl’s Since 1851<br>Midnight Recovery Eye</h5>
-                                        <p>Formulated with essential oils and botanicals, this night treatment reduces puffiness and dark under-eye circles while diminishing the look of fine lines.</p>
-                                    </div>
-                                </div>
-                                <div class="galleryitem">
-                                    <div id="pic10" class="gallerypic"></div>
-                                    <div class="sample_words">
-                                        <h5>Tom Ford<br>Grey Vetiver Eau de Parfum</h5>
-                                        <p>This refined fragrance for him combines natural vetiver with sage, warm wood and orange flower to create an elegantly balanced blend.</p>
-                                    </div>
-                                </div>
-                                <div class="galleryitem">
-                                    <div id="pic11" class="gallerypic"></div>
-                                    <div class="sample_words">
-                                        <h5>Malin+Goetz<br>Grapefruit Face Cleanser</h5>
-                                        <p>Gently purify, hydrate and remove makeup with this foaming gel, which features natural grapefruit extract to balance all skin types.Formulated with essential oils and botanicals, this night treatment reduces puffiness and dark under-eye circles while diminishing the look of fine lines.</p>
-                                    </div>
-                                </div>
-                                <div class="galleryitem">
-                                    <div id="pic12" class="gallerypic"></div>
-                                    <div class="sample_words">
-                                        <h5>Bobbi Brown<br>Hydrating Eye Cream</h5>
-                                        <p>Day or night, this concentrated yet lightweight formula rehydrates and plumps the skin and absorbs quickly so concealer goes on evenly.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="section5_line"></div>  
-                        </div><!--end of container-->
-                    </div><!--end of section5-->
+					<!-- Section 3: Meet Cyndle -->
+					<div id="section3">
+						<div class="container">
+							<div class="meetcyndle">
+								<div id="cyndle"></div>
+								<div class="cyndle_heading">
+									<h4>A Q&amp;A with Our Go-To Beauty Guru</h4>
+									<h3> Cyndle</h3> <h3>Komarovski</h3> 
+								</div>
+								<div id="makeup_section3"></div> 
+								<div class="questions" id="questions1">
+									<h5> What trends are you most excited about for fall? </h5>
+									<p> Red lipstick is feeling fresh again. To update this classic look, wear it without mascara. Instead, fill in your brows to frame your eyes or use a gel liner at the base of your lashes for a subtle contrast.</p>
+									<h5>What’s your best tip for transitioning your makeup from summer to fall?</h5>
+									<p>Good makeup starts with good skin care. Adjust your routine by adding in more moisture (think creams and oils) to combat the drying effects of indoor heating. You can also switch out your summer bronzer for a cream blush in a rosy tone for fall.</p>
+									<h5>What’s the one thing you won’t leave the house without doing?</h5>
+									<p>My eyebrows! You don't need to wear much makeup if your eyebrows are perfectly groomed. </p>
+								</div>
+								<div id="cyndle_quote"></div>
+								<div class="questions" id="questions2">
+									<h5> How do you transform your look from day to night? </h5>
+									<p>A basic black eyeliner does the trick! By smudging the liner on the top lash line, you can create a soft smoky eye with just one product.</p>
+									<h5>If you were stranded on a deserted island, what’s the one product you couldn’t live without?</h5>
+									<p>Clarins UV Plus HP SPF 40 Day Screen—it’s the best for everyday protection.</p>
+								</div>
+								<div id="cyndle_screenshot"></div>
+								<div id="makeup_dots"></div>
+							</div><!--end of meetcyndle-->
+						</div><!--end of container-->
+					</div><!--end of section3-->
 
 
-                    <!-- Section 6 : Celebrate in Store -->
-                    <div id="section6">
-                        <div class="container">
-                            <div class="instore">
-                                <div id="instore"><h3>Celebrate In Store</h3></div>
-                                <div id="findstore">
-                                    <p>Runway shows, makeovers and more! Sign up to see the beauty trends come to life and learn how to recreate your favorite looks at an exclusive event near you. </p>
-                                    <h5>To RSVP and get more information, email the store of your choice below.</h5>
-                                </div>
-                                <div class="instore_dates">
-                                    <div id="step12">
-                                        <h4>September 12</h4>
-                                        <div class="word_box">
-                                            <h5>Tysons Corner Center</h5>
-                                            <p>toni.ready@bloomingdales.com</p>
-                                            <h5>Tysons Corner Center</h5>
-                                            <p>toni.ready@bloomingdales.com</p>
-                                            <h5>Tysons Corner Center</h5>
-                                            <p>toni.ready@bloomingdales.com</p>
-                                        </div>
-                                        <div class="word_box">
-                                            <h5>Tysons Corner Center</h5>
-                                            <p>toni.ready@bloomingdales.com</p>
-                                            <h5>Tysons Corner Center</h5>
-                                            <p>toni.ready@bloomingdales.com</p>
-                                            <h5>Tysons Corner Center</h5>
-                                            <p>toni.ready@bloomingdales.com</p>
-                                        </div>
-                                    </div>
-                                    <div id="step19">
-                                        <h4>September 19</h4>
-                                            <div class="word_box">
-                                            <h5>Tysons Corner Center</h5>
-                                            <p>toni.ready@bloomingdales.com</p>
-                                            <h5>Tysons Corner Center</h5>
-                                            <p>toni.ready@bloomingdales.com</p>
-                                            <h5>Tysons Corner Center</h5>
-                                            <p>toni.ready@bloomingdales.com</p>
-                                        </div>
-                                    </div>                                    
-
-                                </div>
-                            </div>
-                        </div><!--end of container-->
-                    </div><!--end of section6-->
+					<!-- Section 4: Exlusive Gift Set-->
+					<div id="section4">
+						<div class="container">
+							<div class="giftset">
+								<h5>Online Only</h5>
+								<a href="http://www1.bloomingdales.com/shop/beauty/gifts-with-purchase?id=7138"> <h3> Your Exclusive</h3><h3>15-Piece Gift</h3> </a>
+								<h6> with any $125 beauty purchase! </h6>
+								<p> Ends 9/1 or while supplies last. </p>
+							</div>
+							<div id="shop_now"><span><a href="http://www1.bloomingdales.com/shop/beauty/gifts-with-purchase?id=7138">Shop Now</a></span></div> 
+							<div id="loyalist"> <!--blue circle-->
+								<div id="bluecircle">
+									<span>
+										<h5>+</h5>
+										<h5>Loyallists<br>Recieve Triple<br>Points on<br>All Beauty<br>Purchases</h5>
+										<p>Ends 9/1.<br>info/exclusions</p>
+									</span>
+								</div>
+							</div>     
+							<div class="giftbag"> <div id="bag"></div></div>
+						</div><!--end of container-->
+					</div><!--end of section4-->
 
 
-                    <!-- Section 7 : Win a Complete Beauty Look -->
-                    <div id="section7">
-                        <div class="container">
-                            <div id="makeup_bottom"></div>
-                            <div id="makeup2_bottom"></div>
-                            <div class="win" id="win">
-                                <h3>Enter a Complete <br> Beauty Look!</h3>
-                                <p>Write a review of any beauty product for a chance to be one of three lucky winners to receive a basket featuring must-haves from our trend videos. Ends 9/1.</p>
-                                <h6>Write a Review</h6>
-                            </div>
-                        </div>
-                    </div>
+					<!-- Section 5 -->
+					<div id="section5">
+						<div class="container">
+							<div class="section5_line"></div>
+							<div class="sample_heading"><div id="sample_heading"><h3>Includes 3 cosmetics bags &amp; 12 deluxe samples:</h4></div></div>
+		
+							
+							<div class="samples">    
+									<div class="galleryitem">
+										<div id="pic1" class="gallerypic"></div>
+										<div class="sample_words">
+											<h5>Amorepacific<br> Time Response Eye Renewal Creme</h5>
+											<p>Infused with green tea caffeine, this brightening treatment works to combat wrinkles, puffiness and dark circles for a luminous-looking under-eye area.</p>
+										</div>
+									</div>
+								
+								<div class="galleryitem">   
+									<div id="pic2" class="gallerypic"></div>
+									<div class="sample_words">
+										<h5>Lancôme <br> Hypnôse Doll Lashes Mascara</h5>
+										<p>Coat, lift and plump every lash— even hard-to-reach corners—with the unique cone-shaped brush of this glam-girl essential.</p>
+									</div>
+								</div>
+								<div class="galleryitem">
+									<div id="pic3" class="gallerypic"></div>
+									<div class="sample_words">
+										<h5>La Mer<br>The Moisturizing Lotion</h5>
+										<p>Enjoy all the benefits of the luxurious line’s Miracle Broth–rich products in a lightweight fluid with a satin, radiant finish.</p>
+									</div>
+								</div>
+								<div class="galleryitem">
+									<div id="pic4" class="gallerypic"></div>
+									<div class="sample_words">
+										<h5>Guerlain <br> Orchidée Impériale Eye &amp; Lip Cream</h5>
+										<p>For a flawless makeup application, apply this smoothing, brightening hydrator to the eyes and lips. Bonus: Fine lines appear reduced. </p>
+									 </div>
+								</div>
+								<div class="galleryitem">
+									<div id="pic5" class="gallerypic"></div>
+									<div class="sample_words">
+										<h5>SK-II Facial Treatment Mask</h5>
+										<p>A cult classic that started the sheet mask revolution, this 15-minute pick-me-up soaks your skin in moisture and leaves you visibly radiant.</p>
+									</div>
+								</div>
+								<div class="galleryitem">
+									<div id="pic6" class="gallerypic"></div>
+									<div class="sample_words">
+										<h5>Tory Burch <br> Eau de Parfum</h5>
+										<p>Peony, tuberose and citrus notes of grapefruit and neroli come together in this playful-meets-polished scent.</p>
+									</div>
+								</div>
+								<div class="galleryitem">
+									<div id="pic7" class="gallerypic"></div>
+									 <div class="sample_words">
+										<h5>Yves Saint Laurent <br> Or Rouge Serum</h5>
+										<p>Defy the key signs of aging with this luxurious formula made with precious Moroccan saffron flower to revitalize and improve your skin’s appearance. </p>
+									</div>
+								</div>
+								<div class="galleryitem">
+									<div id="pic8" class="gallerypic"></div>
+									<div class="sample_words">
+										<h5>Estée Lauder <br> Advanced Night Repair Synchronized <br> Recovery Complex II</h5>
+										<p>Wake up to a better complexion with this purifying serum—it repairs, protects and minimizes fine lines and wrinkles for younger-looking skin.</p>
+									</div>
+								</div>
+								<div class="galleryitem">
+									<div id="pic9" class="gallerypic"></div>
+									<div class="sample_words">
+										<h5>Kiehl’s Since 1851<br>Midnight Recovery Eye</h5>
+										<p>Formulated with essential oils and botanicals, this night treatment reduces puffiness and dark under-eye circles while diminishing the look of fine lines.</p>
+									</div>
+								</div>
+								<div class="galleryitem">
+									<div id="pic10" class="gallerypic"></div>
+									<div class="sample_words">
+										<h5>Tom Ford<br>Grey Vetiver Eau de Parfum</h5>
+										<p>This refined fragrance for him combines natural vetiver with sage, warm wood and orange flower to create an elegantly balanced blend.</p>
+									</div>
+								</div>
+								<div class="galleryitem">
+									<div id="pic11" class="gallerypic"></div>
+									<div class="sample_words">
+										<h5>Malin+Goetz<br>Grapefruit Face Cleanser</h5>
+										<p>Gently purify, hydrate and remove makeup with this foaming gel, which features natural grapefruit extract to balance all skin types.Formulated with essential oils and botanicals, this night treatment reduces puffiness and dark under-eye circles while diminishing the look of fine lines.</p>
+									</div>
+								</div>
+								<div class="galleryitem">
+									<div id="pic12" class="gallerypic"></div>
+									<div class="sample_words">
+										<h5>Bobbi Brown<br>Hydrating Eye Cream</h5>
+										<p>Day or night, this concentrated yet lightweight formula rehydrates and plumps the skin and absorbs quickly so concealer goes on evenly.</p>
+									</div>
+								</div>
+							</div>
+							<div class="section5_line"></div>  
+						</div><!--end of container-->
+					</div><!--end of section5-->
 
-                    <div id="section9">
-                        <div class="container">
-                            <div id="bottom_nav">
-                                <ul>
-                                    <li><a href="#section2">Shop:</a></li>
-                                    <li><a href="#section3">Lips</a></li>
-                                    <li><a href="#section4">Foundation</a></li>
-                                    <li><a href="#section5">Eyes</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Section 8 -->
-                    <div id="section8">
-                        <div class="container">
-                            <div class="backtotop">
-                                <div id="backtotop"><h6>Back To Top</h6><div class="topbutton"></div></div>
-                            </div>
-                        </div>
-                    </div>
+					<!-- Section 6 : Celebrate in Store -->
+					<div id="section6">
+						<div class="container">
+							<div class="instore">
+								<div id="instore"><h3>Celebrate In Store</h3></div>
+								<div id="findstore">
+									<p>Runway shows, makeovers and more! Sign up to see the beauty trends come to life and learn how to recreate your favorite looks at an exclusive event near you. </p>
+									<h5>To RSVP and get more information, email the store of your choice below.</h5>
+								</div>
+								<div class="instore_dates">
+									<div id="step12">
+										<h4>September 12</h4>
+										<div class="word_box">
+											<h5>Tysons Corner Center</h5>
+											<p>toni.ready@bloomingdales.com</p>
+											<h5>King of Prussia</h5>
+											<p>carlyn.tanis@bloomingdales.com</p>
+											<h5>San Francisco Centre</h5>
+											<p>marsha.sanders@bloomingdales.com</p>
+										</div>
+										<div class="word_box">
+											<h5>Bridgewater Commons</h5>
+											<p>paula.cirami@bloomingdales.com</p>
+											<h5>Sherman Oaks Fashion Square</h5>
+											<p>ann.ellis@bloomingdales.com</p>
+											<h5>Bergen Shops at Riverside</h5>
+											<p>rachel.ragone@bloomingdales.com</p>
+										</div>
+									</div>
+									<div id="step19">
+										<h4>September 19</h4>
+											<div class="word_box">
+											<h5>Orlando The Mall at Millennia</h5>
+											<p>lorraine.hall@bloomingdales.com</p>
+											<h5>Newport Fashion Island</h5>
+											<p>rebecca.manibusan@bloomingdales.com</p>
+											<h5>Santa Monica Place</h5>
+											<p>william.ashman@bloomingdales.com</p>
+										</div>
+									</div>                                    
 
-            </div> <!-- end of pages -->
-        </div> <!-- end of desktop-->
-    </div> <!-- end of bl_main_container-->
+								</div>
+							</div>
+						</div><!--end of container-->
+					</div><!--end of section6-->
+
+
+					<!-- Section 7 : Win a Complete Beauty Look -->
+					<div id="section7">
+						<div class="container">
+							<div id="makeup_bottom"></div>
+							<div id="makeup2_bottom"></div>
+							<div class="win" id="win">
+								<h3>Enter a Complete <br> Beauty Look!</h3>
+								<p>Write a review of any beauty product for a chance to be one of three lucky winners to receive a basket featuring must-haves from our trend videos. Ends 9/1.</p>
+								<h6>Write a Review</h6>
+							</div>
+						</div>
+					</div>
+
+					<div id="section9">
+						<div class="container">
+							<div id="bottom_nav">
+								<ul>
+									<li><a href="#section2">Shop:</a></li>
+									<li><a href="#section3">Lips</a></li>
+									<li><a href="#section4">Foundation</a></li>
+									<li><a href="#section5">Eyes</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<!-- Section 8 -->
+					<div id="section8">
+						<div class="container">
+							<div class="backtotop">
+								<div id="backtotop"><h6>Back To Top</h6><div class="topbutton"></div></div>
+							</div>
+						</div>
+					</div>
+
+			</div> <!-- end of pages -->
+		</div> <!-- end of desktop-->
+	</div> <!-- end of bl_main_container-->
 
 <!--Mobile-->
-    <div class="mobile">
-    <!--Mobile Section1-->  
-        <div id="mob_section1">
-            <h1>The Makeup Date</h1>
-            <h2> 2 Days Only:</h2>
-            <h4> Exclusive 15-Piece Gift</h4>
-            <h2>+</h2>
-            <h4> Triple points for loyallists</h4>
-            <h6> ends 9/1 </h6>
-        </div><!-- end of Section 1 -->
+	<div class="mobile">
+	<!--Mobile Section1-->  
+		<div id="mob_section1">
+			<h1>The Makeup Date</h1>
+			<h2> 2 Days Only:</h2>
+			<h4> Exclusive 15-Piece Gift</h4>
+			<h2>+</h2>
+			<h4> Triple points for loyallists</h4>
+			<h6> ends 9/1 </h6>
+		</div><!-- end of Section 1 -->
 
-        <!-- Section 2 -->
-        <div id="mob_section2">
-            <div class="half_circle" id="downarrow_mob"><div class="downarrow_mob"></div></div> 
-            <div class="mob2_container">
-                <h4>Your All-Access Pass to the <br> Season’s Top Trends</h4>
-                <h5>Clear your schedule: Our beauty edit is filled with the hautest how-tos and the most buzzworthy products—plus tips and tricks from our resident makeup artist (and fellow beauty junkie) Cyndle Komarovski.</h5>
-            </div>
-        </div><!-- end of Section 2 -->
+		<!-- Section 2 -->
+		<div id="mob_section2">
+			<div class="half_circle" id="downarrow_mob"><div class="downarrow_mob"></div></div> 
+			<div class="mob2_container">
+				<h4>Your All-Access Pass to the <br> Season’s Top Trends</h4>
+				<h5>Clear your schedule: Our beauty edit is filled with the hautest how-tos and the most buzzworthy products—plus tips and tricks from our resident makeup artist (and fellow beauty junkie) Cyndle Komarovski.</h5>
+			</div>
+		</div><!-- end of Section 2 -->
 
-        <div id="mob_section3"> 
-            <div id="mob_makeup_header1"><h3>How-To Videos</h3></div>
-            <div id="mob_makeup_header2"><img src="assets/mob_makeup1.png" alt="makeup"></div>
-        </div>
-    
-        <!-- Section 4 : Shop the Lip -->
-        <div class="mob_section4">
-            <div class="mobile_video_button"></div>
-            <div class="mobile_video" id="shoplip_video"></div>
-            <h4>The Two-Tone Matte Lip</h4>
-            <h5>Create a runway-inspired look with pucker-perfect dimension.</h5>
-        </div> <!-- end of Section 4 -->
-        <!-- Shop The Lip -->
-        <div class="mob-button" id="shop_lip"><h4>Shop The Two-Tone Matte Lip</h4></div>
-        <div class="mob-content" id="shop_lip_content">
-            <div class="mobcontent_container">
-                <div class="mob_galleryitem"> 
-                    <div class="mob_gallerypic">
-                        <div id="mob_pic"><img src="assets/shoplip1.png" alt="shop_lip pictures"></div>
-                        <h5>Nars</h5>
-                        <p>Velvet Matte Lip Pencil in Dragon Girl</p>
-                    </div>
-                </div>
-                <div class="mob_galleryitem"> 
-                    <div class="mob_gallerypic">
-                        <div id="mob_pic"><img src="assets/shoplip2.png" alt="shop_lip pictures"></div>
-                        <h5>Tom Ford</h5>
-                        <p>Lip Color Matte in Velvet Cherry</p>
-                    </div>
-                </div>
-                <div class="mob_galleryitem"> 
-                    <div class="mob_gallerypic">
-                        <div id="mob_pic"><img src="assets/shoplip3.png" alt="shop_lip pictures"></div>
-                        <h5>Nars</h5>
-                        <p>Lip Liner Pencil in Jungle Red</p>
-                    </div>
-                </div>
-                <div class="mob_galleryitem"> 
-                    <div class="mob_gallerypic">
-                        <div id="mob_pic"><img src="assets/shoplip4.png" alt="shop_lip pictures"></div>
-                        <h5>Laura Mercier</h5>
-                        <p>Translucent Loose Setting Powder</p>
-                    </div>
-                </div>
-                <div class="mob_galleryitem"> 
-                    <div class="mob_gallerypic">
-                        <div id="mob_pic"><img src="assets/shoplip5.png" alt="shop_lip pictures"></div>
-                        <h5>Bobbi Brown</h5>
-                        <p>Perfectly Defined Long-Wear Brow Pencil in Blonde</p>
-                    </div>  
-                </div>
-                <div class="mob_galleryitem"> 
-                    <div class="mob_gallerypic">
-                        <div id="mob_pic"><img src="assets/shoplip6.png" alt="shop_lip pictures"></div>
-                        <h5>Estée Lauder</h5>
-                        <p>Lip Brush 35</p>
-                    </div>
-                </div>
-                <div class="mob_galleryitem"> 
-                    <div class="mob_gallerypic"> 
-                        <div id="mob_pic"><img src="assets/shoplip7.png" alt="shop_lip pictures"></div>
-                        <h5>Yves Saint Laurent</h5>
-                        <p>Rouge Pur Couture in Le Rouge</p>
-                    </div>
-                </div>
-                <div class="mob_galleryitem"> 
-                    <div class="mob_gallerypic">
-                        <div id="mob_pic"><img src="assets/shoplip8.png" alt="shop_lip pictures"></div>
-                        <h5>Bobbi Brown</h5>
-                        <p>Creamy Matte Lip Color in Red Carpet</p>
-                    </div>
-                </div>
-                <div class="mob_galleryitem"> 
-                    <div class="mob_gallerypic">
-                        <div id="mob_pic"><img src="assets/shoplip9.png" alt="shop_lip pictures"></div>
-                        <h5>Estée Lauder</h5>
-                        <p>Pure Color Envy Sculpting Lipstick in Envious</p>
-                    </div>
-                </div>
-            </div> <!--shop_lip_container-->
-        </div> <!--shop_lip_content-->
-        <div class="mob-button2">
-            <div class="mob-half_circle" id="arrow_mob2"><div class="arrow_mob"></div></div>
-        </div> <!--Shop the Lip End -->
+		<div id="mob_section3"> 
+			<div id="mob_makeup_header1"><h3>How-To Videos</h3></div>
+			<div id="mob_makeup_header2"><img src="assets/mob_makeup1.png" alt="makeup"></div>
+		</div>
+	
+		<!-- Section 4 : Shop the Lip -->
+		<div class="mob_section4">
+			<div class="mobile_video_button"></div>
+			<div class="mobile_video" id="shoplip_video"></div>
+			<h4>The Two-Tone Matte Lip</h4>
+			<h5>Create a runway-inspired look with pucker-perfect dimension.</h5>
+		</div> <!-- end of Section 4 -->
+		<!-- Shop The Lip -->
+		<div class="mob-button" id="shop_lip"><h4>Shop The Two-Tone Matte Lip</h4></div>
+		<div class="mob-content" id="shop_lip_content">
+			<div class="mobcontent_container">
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic"><img src="assets/shoplip1.png" alt="shop_lip pictures"></div>
+						<h5>Nars</h5>
+						<p>Velvet Matte Lip Pencil in Dragon Girl</p>
+					</div>
+				</div>
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic"><img src="assets/shoplip2.png" alt="shop_lip pictures"></div>
+						<h5>Tom Ford</h5>
+						<p>Lip Color Matte in Velvet Cherry</p>
+					</div>
+				</div>
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic"><img src="assets/shoplip3.png" alt="shop_lip pictures"></div>
+						<h5>Nars</h5>
+						<p>Lip Liner Pencil in Jungle Red</p>
+					</div>
+				</div>
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic"><img src="assets/shoplip4.png" alt="shop_lip pictures"></div>
+						<h5>Laura Mercier</h5>
+						<p>Translucent Loose Setting Powder</p>
+					</div>
+				</div>
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic"><img src="assets/shoplip5.png" alt="shop_lip pictures"></div>
+						<h5>Bobbi Brown</h5>
+						<p>Perfectly Defined Long-Wear Brow Pencil in Blonde</p>
+					</div>  
+				</div>
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic"><img src="assets/shoplip6.png" alt="shop_lip pictures"></div>
+						<h5>Estée Lauder</h5>
+						<p>Lip Brush 35</p>
+					</div>
+				</div>
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic"> 
+						<div id="mob_pic"><img src="assets/shoplip7.png" alt="shop_lip pictures"></div>
+						<h5>Yves Saint Laurent</h5>
+						<p>Rouge Pur Couture in Le Rouge</p>
+					</div>
+				</div>
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic"><img src="assets/shoplip8.png" alt="shop_lip pictures"></div>
+						<h5>Bobbi Brown</h5>
+						<p>Creamy Matte Lip Color in Red Carpet</p>
+					</div>
+				</div>
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic"><img src="assets/shoplip9.png" alt="shop_lip pictures"></div>
+						<h5>Estée Lauder</h5>
+						<p>Pure Color Envy Sculpting Lipstick in Envious</p>
+					</div>
+				</div>
+			</div> <!--shop_lip_container-->
+		</div> <!--shop_lip_content-->
+		<div class="mob-button2">
+			<div class="mob-half_circle" id="arrow_mob2"><div class="arrow_mob"></div></div>
+		</div> <!--Shop the Lip End -->
 
-        <!-- Section 4 : The Dewy Finish -->
-        <div class="mob_section4">
-            <div class="mobile_video_button"></div>
-            <div class="mobile_video" id="dewylook_video"></div>
-            <h4>The Dewy Finish</h4>
-            <h5>Achieve a flawless glow with the buzzed-about cushion compact.</h5>
-        </div> <!-- end of section 5 -->
-        <!-- The Dewy Finish -->
-        <div class="mob-button" id="dewy_look"><h4>Shop The Dewy Finish</h4></div>
-        <div class="mob-content" id="dewy_look_content">
-            <div class="mobcontent_container">
-                <div class="mob_galleryitem"> 
-                    <div class="mob_gallerypic">
-                        <div id="mob_pic"><img src="assets/dewylook1.png" alt="makeup"></div>
-                        <h5>Estée Lauder</h5>
-                        <p>Illuminating Perfecting Primer </p>
-                    </div>
-                </div>
-                <div class="mob_galleryitem"> 
-                    <div class="mob_gallerypic">
-                        <div id="mob_pic"><img src="assets/dewylook2.png" alt="makeup"></div>
-                        <h5>Yves Saint Laurent</h5>
-                        <p>Touche Éclat</p>
-                    </div>
-                </div>
-                <div class="mob_galleryitem"> 
-                    <div class="mob_gallerypic">
-                        <div id="mob_pic"><img src="assets/dewylook3.png" alt="makeup"></div>
-                        <h5>Clinique</h5>
-                        <p>Cheek Pop in Berry Pop</p>
-                    </div>
-                </div>
-                <div class="mob_galleryitem"> 
-                    <div class="mob_gallerypic">
-                        <div id="mob_pic"><img src="assets/dewylook4.png" alt="makeup"></div>
-                        <h5>Nars</h5>
-                        <p>Dual-Intensity Blush in Jubilation</p>
-                    </div>
-                </div>
-                <div class="mob_galleryitem"> 
-                    <div class="mob_gallerypic">
-                        <div id="mob_pic"><img src="assets/dewylook5.png" alt="makeup"></div>
-                        <h5>SK-II</h5>
-                        <p>Mid-Day Essence</p>
-                    </div>  
-                </div>
-                <div class="mob_galleryitem"> 
-                    <div class="mob_gallerypic">
-                        <div id="mob_pic"><img src="assets/dewylook6.png" alt="makeup"></div>
-                        <h5>Lancôme</h5>
-                        <p>Miracle Cushion Liquid Cushion Compact</p>
-                    </div>
-                </div>
-                <div class="mob_galleryitem"> 
-                    <div class="mob_gallerypic">
-                        <div id="mob_pic"><img src="assets/dewylook7.png" alt="makeup"></div>
-                        <h5>Trish McEvoy</h5>
-                        <p>Eye Base Essentials in Demure</p>
-                    </div>
-                </div>
-                <div class="mob_galleryitem"> 
-                    <div class="mob_gallerypic">
-                        <div id="mob_pic"><img src="assets/dewylook8.png" alt="makeup"></div>
-                        <h5>Laura Mercier</h5>
-                        <p>Translucent Loose Setting Powder</p>
-                    </div>
-                </div>
-                <div class="mob_galleryitem"> 
-                    <div class="mob_gallerypic">
-                        <div id="mob_pic"><img src="assets/dewylook9.png" alt="makeup"></div>
-                        <h5>Dior</h5>
-                        <p>Backstage Fluid Foundation Brush - Light Coverage</p>
-                    </div>
-                </div>
-                <div class="mob_galleryitem"> 
-                    <div class="mob_gallerypic">
-                        <div id="mob_pic"><img src="assets/dewylook10.png" alt="makeup"></div>
-                        <h5>Laura Mercier</h5>
-                        <p>Powder Brush</p>
-                    </div>
-                </div>
-            </div> <!--dewy_look_container-->
-        </div> <!--dewy_look_content-->
-        <div class="mob-button2">
-            <div class="mob-half_circle" id="arrow_mob2"><div class="arrow_mob"></div></div>
-        </div> <!--Dewy Look End -->
+		<!-- Section 4 : The Dewy Finish -->
+		<div class="mob_section4">
+			<div class="mobile_video_button"></div>
+			<div class="mobile_video" id="dewylook_video"></div>
+			<h4>The Dewy Finish</h4>
+			<h5>Achieve a flawless glow with the buzzed-about cushion compact.</h5>
+		</div> <!-- end of section 5 -->
+		<!-- The Dewy Finish -->
+		<div class="mob-button" id="dewy_look"><h4>Shop The Dewy Finish</h4></div>
+		<div class="mob-content" id="dewy_look_content">
+			<div class="mobcontent_container">
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic"><img src="assets/dewylook1.png" alt="makeup"></div>
+						<h5>Estée Lauder</h5>
+						<p>Illuminating Perfecting Primer </p>
+					</div>
+				</div>
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic"><img src="assets/dewylook2.png" alt="makeup"></div>
+						<h5>Yves Saint Laurent</h5>
+						<p>Touche Éclat</p>
+					</div>
+				</div>
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic"><img src="assets/dewylook3.png" alt="makeup"></div>
+						<h5>Clinique</h5>
+						<p>Cheek Pop in Berry Pop</p>
+					</div>
+				</div>
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic"><img src="assets/dewylook4.png" alt="makeup"></div>
+						<h5>Nars</h5>
+						<p>Dual-Intensity Blush in Jubilation</p>
+					</div>
+				</div>
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic"><img src="assets/dewylook5.png" alt="makeup"></div>
+						<h5>SK-II</h5>
+						<p>Mid-Day Essence</p>
+					</div>  
+				</div>
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic"><img src="assets/dewylook6.png" alt="makeup"></div>
+						<h5>Lancôme</h5>
+						<p>Miracle Cushion Liquid Cushion Compact</p>
+					</div>
+				</div>
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic"><img src="assets/dewylook7.png" alt="makeup"></div>
+						<h5>Trish McEvoy</h5>
+						<p>Eye Base Essentials in Demure</p>
+					</div>
+				</div>
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic"><img src="assets/dewylook8.png" alt="makeup"></div>
+						<h5>Laura Mercier</h5>
+						<p>Translucent Loose Setting Powder</p>
+					</div>
+				</div>
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic"><img src="assets/dewylook9.png" alt="makeup"></div>
+						<h5>Dior</h5>
+						<p>Backstage Fluid Foundation Brush - Light Coverage</p>
+					</div>
+				</div>
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic"><img src="assets/dewylook10.png" alt="makeup"></div>
+						<h5>Laura Mercier</h5>
+						<p>Powder Brush</p>
+					</div>
+				</div>
+			</div> <!--dewy_look_container-->
+		</div> <!--dewy_look_content-->
+		<div class="mob-button2">
+			<div class="mob-half_circle" id="arrow_mob2"><div class="arrow_mob"></div></div>
+		</div> <!--Dewy Look End -->
 
-        <!-- Section 4 : Smoky Eye Look -->
-        <div class="mob_section4">
-            <div class="mobile_video_button"></div> 
-            <div class="mobile_video" id="smokyeye_video"></div>
-            <h4>The Steel Blue Smoky Eye</h4>
-            <h5>Master this sultry statement in a bold new hue.</h5>
-        </div> <!-- end of section 5 -->
-        <!-- Smoky Eye Look -->
-        <div class="mob-button" id="smoky_eye"><h4>Shop The Steel Blue Smoky Eye</h4></div>
-        <div class="mob-content" id="smoky_eye_content">
-            <div class="mobcontent_container">
-                <div class="mob_galleryitem"> 
-                    <div class="mob_gallerypic">
-                        <div id="mob_pic"><img src="assets/smokylook1.png" alt="makeup"></div>
-                        <h5>Tom Ford</h5>
-                        <p>Eye Color Quad in Titanium Smoke</p>
-                    </div>
-                </div>
-                <div class="mob_galleryitem"> 
-                    <div class="mob_gallerypic">
-                        <div id="mob_pic"><img src="assets/smokylook2.png" alt="makeup"></div>
-                        <h5>Laura Mercier</h5>
-                        <p>Eye Basics in Buff</p>
-                    </div>
-                </div>
-                <div class="mob_galleryitem"> 
-                    <div class="mob_gallerypic">
-                        <div id="mob_pic"><img src="assets/smokylook3.png" alt="makeup"></div>
-                        <h5>Lancôme</h5>
-                        <p>Grandiôse Mascara</p>
-                    </div>
-                </div>
-                <div class="mob_galleryitem"> 
-                    <div class="mob_gallerypic">
-                        <div id="mob_pic"><img src="assets/smokylook4.png" alt="makeup"></div>
-                        <h5>Bobbi Brown</h5>
-                        <p>Perfectly Defined Long-Wear Brow Pencil in Blonde</p>
-                    </div>
-                </div>
-                <div class="mob_galleryitem"> 
-                    <div class="mob_gallerypic">
-                        <div id="mob_pic"><img src="assets/smokylook5.png" alt="makeup"></div>
-                        <h5>Sisley Paris</h5>
-                        <p>Phyto-Eye Twist in Lagoon</p>
-                    </div>  
-                </div>
-                <div class="mob_galleryitem"> 
-                    <div class="mob_gallerypic">
-                        <div id="mob_pic"><img src="assets/smokylook6.png" alt="makeup"></div>
-                        <h5>Sisley Paris</h5>
-                        <p>Phyto-Eye Twist in Steel</p>
-                    </div>
-                </div>
-                <div class="mob_galleryitem"> 
-                    <div class="mob_gallerypic">
-                        <div id="mob_pic"><img src="assets/smokylook7.png" alt="makeup"></div>
-                        <h5>Estée Lauder</h5>
-                        <p>Little Black Liner in Onyx</p>
-                    </div>
-                </div>
-                <div class="mob_galleryitem"> 
-                    <div class="mob_gallerypic">
-                        <div id="mob_pic"><img src="assets/smokylook8.png" alt="makeup"></div>
-                        <h5>Trish McEvoy</h5>
-                        <p>Instant Solutions® Triangle of Light® Eye Mask</p>
-                    </div>
-                </div>
-                <div class="mob_galleryitem"> 
-                    <div class="mob_gallerypic">
-                        <div id="mob_pic"><img src="assets/smokylook9.png" alt="makeup"></div>
-                        <h5>Shiseido</h5>
-                        <p>Eyelash Curler</p>
-                    </div>
-                </div>
-                <div class="mob_galleryitem"> 
-                    <div class="mob_gallerypic">
-                        <div id="mob_pic"></div>
-                        <h5>Burberry</h5>
-                        <p>Lip Velvet in Pink Apricot</p>
-                    </div>
-                </div>
-            </div> <!--smoky_eye_container-->
-        </div> <!--smoky_eye_content-->
-        <div class="mob-button2">
-            <div class="mob-half_circle" id="arrow_mob2"><div class="arrow_mob"></div></div>
-        </div> <!--Smoky Eye Look End -->
+		<!-- Section 4 : Smoky Eye Look -->
+		<div class="mob_section4">
+			<div class="mobile_video_button"></div> 
+			<div class="mobile_video" id="smokyeye_video"></div>
+			<h4>The Steel Blue Smoky Eye</h4>
+			<h5>Master this sultry statement in a bold new hue.</h5>
+		</div> <!-- end of section 5 -->
+		<!-- Smoky Eye Look -->
+		<div class="mob-button" id="smoky_eye"><h4>Shop The Steel Blue Smoky Eye</h4></div>
+		<div class="mob-content" id="smoky_eye_content">
+			<div class="mobcontent_container">
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic"><img src="assets/smokylook1.png" alt="makeup"></div>
+						<h5>Tom Ford</h5>
+						<p>Eye Color Quad in Titanium Smoke</p>
+					</div>
+				</div>
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic"><img src="assets/smokylook2.png" alt="makeup"></div>
+						<h5>Laura Mercier</h5>
+						<p>Eye Basics in Buff</p>
+					</div>
+				</div>
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic"><img src="assets/smokylook3.png" alt="makeup"></div>
+						<h5>Lancôme</h5>
+						<p>Grandiôse Mascara</p>
+					</div>
+				</div>
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic"><img src="assets/smokylook4.png" alt="makeup"></div>
+						<h5>Bobbi Brown</h5>
+						<p>Perfectly Defined Long-Wear Brow Pencil in Blonde</p>
+					</div>
+				</div>
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic"><img src="assets/smokylook5.png" alt="makeup"></div>
+						<h5>Sisley Paris</h5>
+						<p>Phyto-Eye Twist in Lagoon</p>
+					</div>  
+				</div>
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic"><img src="assets/smokylook6.png" alt="makeup"></div>
+						<h5>Sisley Paris</h5>
+						<p>Phyto-Eye Twist in Steel</p>
+					</div>
+				</div>
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic"><img src="assets/smokylook7.png" alt="makeup"></div>
+						<h5>Estée Lauder</h5>
+						<p>Little Black Liner in Onyx</p>
+					</div>
+				</div>
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic"><img src="assets/smokylook8.png" alt="makeup"></div>
+						<h5>Trish McEvoy</h5>
+						<p>Instant Solutions® Triangle of Light® Eye Mask</p>
+					</div>
+				</div>
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic"><img src="assets/smokylook9.png" alt="makeup"></div>
+						<h5>Shiseido</h5>
+						<p>Eyelash Curler</p>
+					</div>
+				</div>
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic"></div>
+						<h5>Burberry</h5>
+						<p>Lip Velvet in Pink Apricot</p>
+					</div>
+				</div>
+			</div> <!--smoky_eye_container-->
+		</div> <!--smoky_eye_content-->
+		<div class="mob-button2">
+			<div class="mob-half_circle" id="arrow_mob2"><div class="arrow_mob"></div></div>
+		</div> <!--Smoky Eye Look End -->
 
-        <div id="mob_section5"></div>
+		<div id="mob_section5"></div>
 
-        <div id="mob_section6">
-            <div class="mob2_container">
-                <h4>A Q&amp;A with Our Go-To Beauty Guru</h4>
-                <div id="mob_makeup"><img src="assets/makeup_smear1.png" alt="makeup"></div>
-                <div id="mob_cyndle"><h3>Cyndle<br>Komarovski</h3></div>
-                <div id="mob_cyndle_portrait"></div>
-                <div class="cyndle_words">
-                    <h5>What trends are you most excited about for fall?</h5>
-                    <p>Red lipstick is feeling fresh again. To update this classic look, wear it without mascara. Instead, fill in your brows to frame your eyes or use a gel liner at the base of your lashes for a subtle contrast.</p> 
-                    
-                    <h5>What’s your best tip for transitioning your makeup from summer to fall?</h5>
-                    <p>Good makeup starts with good skin care. Adjust your routine by adding in more moisture (think creams and oils) to combat the drying effects of indoor heating. You can also switch out your summer bronzer for a cream blush in a rosy tone for fall.</p>
+		<div id="mob_section6">
+			<div class="mob2_container">
+				<h4>A Q&amp;A with Our Go-To Beauty Guru</h4>
+				<div id="mob_makeup"><img src="assets/makeup_smear1.png" alt="makeup"></div>
+				<div id="mob_cyndle"><h3>Cyndle<br>Komarovski</h3></div>
+				<div id="mob_cyndle_portrait"></div>
+				<div class="cyndle_words">
+					<h5>What trends are you most excited about for fall?</h5>
+					<p>Red lipstick is feeling fresh again. To update this classic look, wear it without mascara. Instead, fill in your brows to frame your eyes or use a gel liner at the base of your lashes for a subtle contrast.</p> 
+					
+					<h5>What’s your best tip for transitioning your makeup from summer to fall?</h5>
+					<p>Good makeup starts with good skin care. Adjust your routine by adding in more moisture (think creams and oils) to combat the drying effects of indoor heating. You can also switch out your summer bronzer for a cream blush in a rosy tone for fall.</p>
 
-                    <h5>What’s the one thing you won’t leave the house without doing?</h5>
-                    <p>My eyebrows! You don't need to wear much makeup if your eyebrows are perfectly groomed.</p>
-                </div>
-            </div>
-        </div><!--end of Section 6 -->
+					<h5>What’s the one thing you won’t leave the house without doing?</h5>
+					<p>My eyebrows! You don't need to wear much makeup if your eyebrows are perfectly groomed.</p>
+				</div>
+			</div>
+		</div><!--end of Section 6 -->
 
-        <!-- Section 7: Exlusive Gifts -->
-        <div id="mob_section7">
-            <h4>Online Only</h4>
-            <h3>Your Exclusive <br>15-Piece Gif</h3>
-            <h5> <br>with any $125 beauty purchase! </h5>
-            
-            <div id="mob_bluecircle">
-                <h5> + </h5>
-                <h5>Loyallists Recieve Triple Points On All Beauty Purchases! </h5>
-                <h6>Ends 9/1. info/exclusions</h6>
-            </div>
+		<!-- Section 7: Exlusive Gifts -->
+		<div id="mob_section7">
+			<h4>Online Only</h4>
+			<h3>Your Exclusive <br>15-Piece Gif</h3>
+			<h5> <br>with any $125 beauty purchase! </h5>
+			
+			<div id="mob_bluecircle">
+				<h5> + </h5>
+				<h5>Loyallists Recieve Triple Points On All Beauty Purchases! </h5>
+				<h6>Ends 9/1. info/exclusions</h6>
+			</div>
 
-            <div id="mob_exlusive_gift"></div>
-            <h6>Ends 9/1 or while supplies last.</h6>
-        </div> <!-- end of Section 7 -->
+			<div id="mob_exlusive_gift"></div>
+			<h6>Ends 9/1 or while supplies last.</h6>
+		</div> <!-- end of Section 7 -->
 
 
-        
-        <div id="mob_section8_heading">
-            <h4>Includes 3 cosmetics bags <br> &amp; 12 deluxe samples:</h4>
-        </div>
+		
+		<div id="mob_section8_heading">
+			<h4>Includes 3 cosmetics bags <br> &amp; 12 deluxe samples:</h4>
+		</div>
 
-        <div id="mob_section8">
+		<div id="mob_section8">
 
-            <div class="mobcontent_container">
-                
-                <div class="mob_galleryitem"> 
-                    <div class="mob_gallerypic">
-                        <div id="mob_pic"><img src="assets/dewylook1.png" alt="makeup"></div>
-                            
-                            <div id="mob_sample_text">
-                                <h5>La Mer</h5>
-                                <p>The Moisturizing Lotion</p>
-                            </div>
+			<div class="mobcontent_container">
+				
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic"><img src="assets/dewylook1.png" alt="makeup"></div>
+							
+							<div id="mob_sample_text">
+								<h5>La Mer</h5>
+								<p>The Moisturizing Lotion</p>
+							</div>
 
-                    </div>
-                </div>
-                <div class="mob_galleryitem"> 
-                    <div class="mob_gallerypic">
-                        <div id="mob_pic"><img src="assets/dewylook2.png" alt="makeup"></div>
+					</div>
+				</div>
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic"><img src="assets/dewylook2.png" alt="makeup"></div>
 
-                            <div id="mob_sample_text">
-                                <h5>Lancôme</h5>
-                                <p>Hypnôse Doll Lashes Mascara</p>
-                            </div>
+							<div id="mob_sample_text">
+								<h5>Lancôme</h5>
+								<p>Hypnôse Doll Lashes Mascara</p>
+							</div>
 
-                    </div>
-                </div>
-                <div class="mob_galleryitem"> 
-                    <div class="mob_gallerypic">
-                        <div id="mob_pic"><img src="assets/dewylook3.png" alt="makeup"></div>
+					</div>
+				</div>
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic"><img src="assets/dewylook3.png" alt="makeup"></div>
 
-                            <div id="mob_sample_text">
-                                <h5>Tory Burch</h5>
-                                <p>Eau de Parfum</p>
-                            </div>
+							<div id="mob_sample_text">
+								<h5>Tory Burch</h5>
+								<p>Eau de Parfum</p>
+							</div>
 
-                    </div>
-                </div>
-                <div class="mob_galleryitem"> 
-                    <div class="mob_gallerypic">
-                        <div id="mob_pic"><img src="assets/dewylook4.png" alt="makeup"></div>
-                            
-                            <div id="mob_sample_text">
-                                <h5>Amorepacific</h5>
-                                <p>Time Response Eye Renewal Creme</p>
-                            </div>
+					</div>
+				</div>
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic"><img src="assets/dewylook4.png" alt="makeup"></div>
+							
+							<div id="mob_sample_text">
+								<h5>Amorepacific</h5>
+								<p>Time Response Eye Renewal Creme</p>
+							</div>
 
-                    </div>
-                </div>
-                <div class="mob_galleryitem"> 
-                    <div class="mob_gallerypic">
-                        <div id="mob_pic"><img src="assets/dewylook5.png" alt="makeup"></div>
-                            
-                            <div id="mob_sample_text">
-                                <h5>Guerlain</h5>
-                                <p>Orchidée Impériale Eye &amp; Lip Cream</p>
-                            </div>
+					</div>
+				</div>
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic"><img src="assets/dewylook5.png" alt="makeup"></div>
+							
+							<div id="mob_sample_text">
+								<h5>Guerlain</h5>
+								<p>Orchidée Impériale Eye &amp; Lip Cream</p>
+							</div>
 
-                    </div>  
-                </div>
-                <div class="mob_galleryitem"> 
-                    <div class="mob_gallerypic">
-                        <div id="mob_pic"><img src="assets/dewylook6.png" alt="makeup"></div>
-                            
-                            <div id="mob_sample_text">
-                                <h5>SK-II</h5>
-                                <p>Facial Treatment Mask</p>
-                            </div>
+					</div>  
+				</div>
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic"><img src="assets/dewylook6.png" alt="makeup"></div>
+							
+							<div id="mob_sample_text">
+								<h5>SK-II</h5>
+								<p>Facial Treatment Mask</p>
+							</div>
 
-                    </div>
-                </div>
-                <div class="mob_galleryitem"> 
-                    <div class="mob_gallerypic">
-                        <div id="mob_pic"><img src="assets/dewylook7.png" alt="makeup"></div>
-                            
-                            <div id="mob_sample_text">
-                                <h5>Estée Lauder</h5>
-                                <p>Advanced Night Repair Synchronized Recovery Complex II</p>
-                            </div>
+					</div>
+				</div>
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic"><img src="assets/dewylook7.png" alt="makeup"></div>
+							
+							<div id="mob_sample_text">
+								<h5>Estée Lauder</h5>
+								<p>Advanced Night Repair Synchronized Recovery Complex II</p>
+							</div>
 
-                    </div>
-                </div>
-                <div class="mob_galleryitem"> 
-                    <div class="mob_gallerypic">
-                        <div id="mob_pic"><img src="assets/dewylook8.png" alt="makeup"></div>
-                            
-                            <div id="mob_sample_text">
-                                <h5>Yves Saint Laurent</h5>
-                                <p>Or Rouge Serum</p>
-                            </div>
+					</div>
+				</div>
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic"><img src="assets/dewylook8.png" alt="makeup"></div>
+							
+							<div id="mob_sample_text">
+								<h5>Yves Saint Laurent</h5>
+								<p>Or Rouge Serum</p>
+							</div>
 
-                    </div>
-                </div>
-                <div class="mob_galleryitem"> 
-                    <div class="mob_gallerypic">
-                        <div id="mob_pic"><img src="assets/dewylook9.png" alt="makeup"></div>
-                            
-                            <div id="mob_sample_text">
-                                <h5>Tom Ford</h5>
-                                <p>Grey Vetiver Eau de Parfum</p>
-                            </div>
+					</div>
+				</div>
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic"><img src="assets/dewylook9.png" alt="makeup"></div>
+							
+							<div id="mob_sample_text">
+								<h5>Tom Ford</h5>
+								<p>Grey Vetiver Eau de Parfum</p>
+							</div>
 
-                    </div>
-                </div>
-                <div class="mob_galleryitem"> 
-                    <div class="mob_gallerypic">
-                        <div id="mob_pic"><img src="assets/dewylook10.png" alt="makeup"></div>
-                            
-                            <div id="mob_sample_text">
-                                <h5>Kiehl’s Since 1851</h5>
-                                <p>Midnight Recovery Eye</p>
-                            </div>
+					</div>
+				</div>
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic"><img src="assets/dewylook10.png" alt="makeup"></div>
+							
+							<div id="mob_sample_text">
+								<h5>Kiehl’s Since 1851</h5>
+								<p>Midnight Recovery Eye</p>
+							</div>
 
-                    </div>
-                </div>
-                <div class="mob_galleryitem"> 
-                    <div class="mob_gallerypic">
-                        <div id="mob_pic"><img src="assets/dewylook10.png" alt="makeup"></div>
-                            
-                            <div id="mob_sample_text">
-                                <h5>Malin+Goetz</h5>
-                                <p>Grapefruit Face Cleanser</p>
-                            </div>
+					</div>
+				</div>
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic"><img src="assets/dewylook10.png" alt="makeup"></div>
+							
+							<div id="mob_sample_text">
+								<h5>Malin+Goetz</h5>
+								<p>Grapefruit Face Cleanser</p>
+							</div>
 
-                    </div>
-                </div>
-                <div class="mob_galleryitem"> 
-                    <div class="mob_gallerypic">
-                        <div id="mob_pic"><img src="assets/dewylook10.png" alt="makeup"></div>
-                            
-                        <div id="mob_sample_text">
-                            <h5>Bobbi Brown</h5>
-                            <p>Hydrating Eye Cream</p>
-                        </div>
+					</div>
+				</div>
+				<div class="mob_galleryitem"> 
+					<div class="mob_gallerypic">
+						<div id="mob_pic"><img src="assets/dewylook10.png" alt="makeup"></div>
+							
+						<div id="mob_sample_text">
+							<h5>Bobbi Brown</h5>
+							<p>Hydrating Eye Cream</p>
+						</div>
 
-                    </div>
-                </div>
-            </div> <!--dewy_look_container-->
-        </div><!--mob_section8-->
+					</div>
+				</div>
+			</div> <!--dewy_look_container-->
+		</div><!--mob_section8-->
 
-        <div id="mob_section9">
-            <div id="win_look">
-                <h3>Win a Complete <br> Beauty Look!</h3>
-                <p> Write a review of any beauty product for a chance to be one of three lucky winners to receive a basket featuring must-haves from our trend videos. Ends 9/1. </p>
-                <h6> Write a Review </h6>
-            </div>
-        </div>      
+		<div id="mob_section9">
+			<div id="win_look">
+				<h3>Win a Complete <br> Beauty Look!</h3>
+				<p> Write a review of any beauty product for a chance to be one of three lucky winners to receive a basket featuring must-haves from our trend videos. Ends 9/1. </p>
+				<h6> Write a Review </h6>
+			</div>
+		</div>      
 
-        <div id="mob_section11">    
-            <div class="mob_bottom_nav">
-                <div id="shop"><h5>Shop:</h5></div>
-                <ul id="mob_bottomnav">
-                    <li id="part2" class="change_section">Lips</li>
-                    <li id="part3" class="change_section">Foundation</li>
-                    <li id="part4" class="change_section">Eyes</li>
-                </ul>
-            </div>
-        </div>
+		<div id="mob_section11">    
+			<div class="mob_bottom_nav">
+				<div id="shop"><h5>Shop:</h5></div>
+				<ul id="mob_bottomnav">
+					<li id="part2" class="change_section">Lips</li>
+					<li id="part3" class="change_section">Foundation</li>
+					<li id="part4" class="change_section">Eyes</li>
+				</ul>
+			</div>
+		</div>
 
-        <div id="mob_section12">
-            <div class="container">
-                <div class="totop">
-                </div>
-            </div>
-        </div>  
+		<div id="mob_section12">
+			<div class="container">
+				<div class="totop">
+				</div>
+			</div>
+		</div>  
 
-    </div> <!-- end of mobile -->
+	</div> <!-- end of mobile -->
 
-    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="http://admin.brightcove.com/js/BrightcoveExperiences.js" type="text/javascript"></script>    
-    <script src="js/fall15_makeupdate.js" type="text/javascript"></script>
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="http://admin.brightcove.com/js/BrightcoveExperiences.js" type="text/javascript"></script>    
+	<script src="js/fall15_makeupdate.js" type="text/javascript"></script>
 
-    <!--Custom Javascript-->
-    <script>
+	<!--Custom Javascript-->
+	<script>
 
-    </script>
+	</script>
 </body>
 </html>
 

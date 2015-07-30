@@ -239,8 +239,8 @@ video {
 		color: $yellow;
 		font-family: 'Libre Baskerville', serif;
 		padding-bottom: 2%;
-        font-size: 2.7em;
-        font-size: 2.7vmax; 
+		font-size: 2.7em;
+		font-size: 2.7vmax; 
 	}
 	h5 { 
 		color: $yellow;
@@ -407,40 +407,31 @@ em {
   right: 0;
   font-weight: 700;
   width: 150px;
-  background-color: $yellow;
-  z-index: 55; 
-}
+  background-color: #eaff00;
+  z-index: 55; }
 
 .side_navigation {
-    float: left;
-    text-align: left;
-    letter-spacing: 0em;
-    line-height: 150%;
-    color: #000;
-    font-size: 1.2em;
-    text-transform: uppercase;
-    padding: 8px;
+  float: left;
+  text-align: left;
+  letter-spacing: 0em;
+  line-height: 150%;
+  color: #000;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  padding: 8px; }
 
-    li {    
-        cursor: pointer;
-        background-color: $yellow;
-        padding: 8px;
-    }
-}
+.change_section {
+  cursor: pointer;
+  background-color: #eaff00;
+  padding: 8px; }
 
- .active {
-    li {
-    	background-color: #fff;
-    	padding: 8px;
-    }
-}
+.active {
+  background-color: #fff;
+  padding: 8px; }
 
-.side_navigation { 
-    li:hover {
-        background-color: #fff;
-        padding: 8px;
-    }
-}
+.change_section:hover {
+  background-color: #fff;
+  padding: 8px; }
 
 /*************** Section 2 ******************/
 /*************** Shop Video *******/
@@ -471,7 +462,7 @@ em {
 	height: 411px;
 	width: 730px; 
 	background-image: url(../assets/lip_video.png);
-	background-size: contain;
+	background-size: cover;
 	background-repeat: no-repeat;
 	position: absolute;
 	background-color: black;
@@ -557,11 +548,20 @@ em {
 
 /*************** Video Products *******/
 .shopslideshow { 
-  position: absolute; 
-  top: 520px;
-  width: 100%;
-  z-index: 5;
+	position: absolute; 
+	top: 520px;
+	width: 100%;
+	z-index: 5;
 }
+
+.slide_buttons {
+	position: absolute;
+	z-index: 18;
+	width: 50px;
+	height: 220px;
+	cursor: pointer;
+}
+
 
 .slideshow { 
   margin: 0 auto;
@@ -580,7 +580,7 @@ em {
   padding-right: 6px;
   li { 
 	padding-top: 15px;
-    cursor: pointer;
+	cursor: pointer;
   }
 }
 
@@ -592,7 +592,7 @@ em {
   padding-right: 6px;
   li { 
 	padding-top: 15px;
-    cursor: pointer;
+	cursor: pointer;
   }
 }
 
@@ -606,9 +606,6 @@ em {
   right: -960px;
 }
 
-.slide_buttons {
-  cursor: pointer; 
-}
 
 //Clean Up Button Section//
 .next { 
@@ -977,7 +974,7 @@ em {
 	width: 176px;
 	background-color: #000;
 	display: table;
-    cursor: pointer;
+	cursor: pointer;
 }
 
 #shop_now span { 
@@ -1039,7 +1036,7 @@ display: inline;
 	top: 30%;
 	right: 0px;
 	z-index: 11;
-    cursor: pointer;
+	cursor: pointer;
 
 }
 
@@ -1048,7 +1045,7 @@ display: inline;
 	margin-top: 160px;
 	height: 192px;
 	width: 192px;
-	background-color: rgba(65,65,150,1);
+	background-color: rgba(65,56,148,1);
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
 	border-radius: 50%;
@@ -1121,25 +1118,25 @@ display: inline;
 } 
 
 .sample_words { 
-    margin-top: -30px;
-    padding-left: 5%;
-    padding-right: 5%;
-    h5 { 
-        font-size: 1.2em;
-        line-height: 160%;
-        cursor: pointer;
-    }
-    p {
-        font-size: 1.2em;
-        padding-left: 4%;
-        padding-right: 4%;
-        cursor: pointer;
-    }
+	margin-top: -30px;
+	padding-left: 5%;
+	padding-right: 5%;
+	h5 { 
+		font-size: 1.2em;
+		line-height: 160%;
+		cursor: pointer;
+	}
+	p {
+		font-size: 1.2em;
+		padding-left: 4%;
+		padding-right: 4%;
+		cursor: pointer;
+	}
 }
 
 
 .galleryitem {
-    cursor: pointer;
+	display: block;
 	overflow: hidden;
 	width: 320px;
 	height: 490px;
@@ -1148,8 +1145,8 @@ display: inline;
 }
 
 .gallerypic { 
-    height: 358px;
-    width: auto;
+	height: 358px;
+	width: auto;
 }
 
 
@@ -1158,63 +1155,63 @@ display: inline;
 	left: 358px;
 	width: 320px; 
 	background: url(../assets/sample1.png) no-repeat;
-    background-size: cover;
+	background-size: cover;
 }
 
 #pic2 {
 	left: 358px;
 	width: 320px;  
 	background: url(../assets/sample2.png) no-repeat;
-    background-size: cover;
+	background-size: cover;
 }
 
 #pic3 {
-    left: 358px;
-    width: 320px;   
-    background: url(../assets/samples1.png) no-repeat;
-    background-size: contain;
+	left: 358px;
+	width: 320px;   
+	background: url(../assets/samples1.png) no-repeat;
+	background-size: contain;
 }
 
 #pic4 {
-    left: 358px;
-    width: 320px; 
-    background: url(../assets/sample4.png) no-repeat;
-    background-size: contain;
+	left: 358px;
+	width: 320px; 
+	background: url(../assets/sample4.png) no-repeat;
+	background-size: contain;
 }
 
 #pic5 {
-    left: 358px;
-    width: 320px; 
-    background: url(../assets/sample5.png) no-repeat;
-    background-size: cover;
+	left: 358px;
+	width: 320px; 
+	background: url(../assets/sample5.png) no-repeat;
+	background-size: cover;
 }
 
 #pic6 {
-    left: 358px;
-    width: 320px;  
-    background: url(../assets/sample6.png) no-repeat;
-    background-size: cover;
+	left: 358px;
+	width: 320px;  
+	background: url(../assets/sample6.png) no-repeat;
+	background-size: cover;
 }
 
 #pic7 {
-    left: 358px;
-    width: 320px;  
-    background: url(../assets/sample7.png) no-repeat;
-    background-size: cover;
+	left: 358px;
+	width: 320px;  
+	background: url(../assets/sample7.png) no-repeat;
+	background-size: cover;
 }
 
 #pic8 {
-    left: 358px;
-    width: 320px;  
-    background: url(../assets/sample8.png) no-repeat;
-    background-size: cover;
+	left: 358px;
+	width: 320px;  
+	background: url(../assets/sample8.png) no-repeat;
+	background-size: cover;
 }
 
 #pic9 {
-    left: 358px;
-    width: 320px;  
-    background: url(../assets/sample9.png) no-repeat;
-    background-size: cover;
+	left: 358px;
+	width: 320px;  
+	background: url(../assets/sample9.png) no-repeat;
+	background-size: cover;
 }
 
 #pic10 {
@@ -1272,7 +1269,7 @@ display: inline;
 .instore_dates { 
 	position: absolute;
 	top: 275px;
-    text-align: left;
+	text-align: left;
 
   
 	h4 { 
@@ -1288,14 +1285,14 @@ display: inline;
 		font-size: 1.2em; 
 		color: #fff;
 		padding: 0;
-        cursor: pointer;
+		cursor: pointer;
 	}
 	p { 
 		color: #fff;
 		padding: 0;
 		text-decoration: underline;
 		padding-bottom: 25px;
-        cursor: pointer;
+		cursor: pointer;
 	}
 	#step12 { 
 		position: relative;
@@ -1344,7 +1341,7 @@ display: inline;
 		font-weight: 700;
 		font-size: 1.5em;
 		letter-spacing: 0.1em;
-        cursor: pointer;
+		cursor: pointer;
 	}
 
 }
@@ -1386,10 +1383,10 @@ display: inline;
 		font-weight: 700;
 		font-size: 1.5em;
 		letter-spacing: 0.1em;
-        cursor: pointer;
+		cursor: pointer;
 	}
 	.topbutton { 
-        cursor: pointer;
+		cursor: pointer;
 		margin-left: 30px;
 		position: relative;
 		overflow: hidden;

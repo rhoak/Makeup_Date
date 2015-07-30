@@ -115,6 +115,9 @@ video {
   width: 100%;
   z-index: 4; }
 
+.desktop .pages {
+  min-width: 962px; }
+
 #section1 {
   height: 170px;
   width: 100%;
@@ -182,7 +185,7 @@ video {
 /*************** Main Section ******************/
 #main_section {
   position: fixed;
-  top: 25%;
+  top: 30%;
   z-index: 1; }
 
 .main p {
@@ -219,7 +222,7 @@ em {
   font-style: normal;
   font-weight: 300;
   font-size: 2.5em;
-  font-size: 2.5vmax;
+  font-size: 2.5vmin;
   text-transform: uppercase;
   color: #eaff00; }
 
@@ -446,13 +449,6 @@ em {
   width: 100%;
   z-index: 5; }
 
-.slide_buttons {
-  position: absolute;
-  z-index: 18;
-  width: 50px;
-  height: 220px;
-  cursor: pointer; }
-
 .slideshow {
   margin: 0 auto;
   padding: 0;
@@ -470,6 +466,8 @@ em {
   .slide1 ul li {
     padding-top: 15px;
     cursor: pointer; }
+  .slide1 ul a {
+    text-decoration: none; }
 
 .slide2 ul {
   background-color: #fff;
@@ -480,6 +478,8 @@ em {
   .slide2 ul li {
     padding-top: 15px;
     cursor: pointer; }
+  .slide2 ul a {
+    text-decoration: none; }
 
 .slide1 {
   position: absolute;
@@ -489,11 +489,29 @@ em {
   position: absolute;
   right: -960px; }
 
+.slide_buttons {
+  cursor: pointer; }
+
+#prev-button {
+  position: absolute;
+  top: 0;
+  z-index: 17;
+  height: 300px;
+  width: 50px; }
+
+#next-button {
+  position: absolute;
+  left: 910px;
+  top: 0px;
+  z-index: 16;
+  height: 300px;
+  width: 50px; }
+
 .next {
   position: absolute;
   left: 910px;
   top: 110px;
-  z-index: 18;
+  z-index: 19;
   overflow: hidden;
   display: inline-block;
   font-size: 12px;
@@ -1051,7 +1069,9 @@ em {
     text-transform: none;
     font-size: 2.2em;
     letter-spacing: 0;
-    padding-bottom: 20px; }
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-right: 50px; }
   .instore_dates h5 {
     font-size: 1.2em;
     color: #fff;
@@ -1071,6 +1091,8 @@ em {
     position: relative;
     float: right;
     height: 240px; }
+  .instore_dates #step12 h4, .instore_dates #step19 h4 {
+    border-bottom: 1px solid #fff; }
 
 .word_box {
   float: left;
@@ -1113,11 +1135,11 @@ em {
 
 #makeup2_bottom {
   position: absolute;
-  left: 73%;
-  top: 51%;
+  right: 50px;
+  top: 54%;
   z-index: 10;
-  width: 35%;
-  height: 35%;
+  width: 199px;
+  height: 136px;
   background: url(../assets/makeup_bottom2.png) no-repeat;
   background-size: contain; }
 
@@ -1217,7 +1239,6 @@ em {
   text-align: center; }
 
 .mobile h4 {
-  font-family: 'Lato', sans-serif;
   color: #fff;
   font-size: 3.3vw;
   text-transform: uppercase;
@@ -1392,10 +1413,12 @@ em {
   width: 100%;
   background-color: #efefef; }
   .mob_section4 h4 {
-    padding-top: 65%;
+    font-size: 3vw;
+    padding-top: 55%;
     color: #000;
     padding-bottom: 20px; }
   .mob_section4 h5 {
+    font-size: 3vw;
     padding-left: 15%;
     padding-right: 15%;
     padding-bottom: 10%; }
@@ -1410,12 +1433,15 @@ em {
   padding-bottom: 47.6%;
   margin-left: 10%;
   margin-top: 10%; }
+  .mobile_video_button h4 {
+    font-size: 3vw;
+    color: #000; }
 
 .mobile_video {
   position: absolute;
   z-index: 4;
   width: 80%;
-  padding-bottom: 47.6%;
+  padding-bottom: 40%;
   margin-left: 10%;
   margin-top: 10%; }
 
@@ -1448,7 +1474,6 @@ em {
 .mob-content {
   height: 100%;
   width: 100%;
-  background-color: pink;
   display: none; }
   .mob-content h5 {
     text-decoration: underline;
@@ -1468,16 +1493,14 @@ em {
   float: left;
   display: inline-block;
   width: 50%;
-  padding-bottom: 65%;
-  background-color: green; }
+  padding-bottom: 65%; }
 
 .mob_gallerypic {
   position: absolute;
   left: 10px;
   right: 10px;
   top: 10px;
-  bottom: 10px;
-  background-color: springgreen; }
+  bottom: 10px; }
 
 #mob_section5 {
   width: 100%;
@@ -1546,22 +1569,25 @@ em {
 #mob_section7 {
   width: 100%;
   background-color: #efefef;
-  padding-bottom: 20%; }
+  padding-bottom: 18%; }
   #mob_section7 h4 {
     font-family: 'Lato', sans-serif;
     color: #000;
     font-size: 3vw;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    font-weight: 700; }
+    font-weight: 700;
+    padding-top: 7%;
+    padding-bottom: 2%; }
   #mob_section7 h3 {
     text-align: center;
-    font-size: 5vw;
+    font-size: 6vw;
     display: initial;
     padding: 8px;
-    line-height: 180%; }
+    line-height: 200%; }
   #mob_section7 h5 {
     background-color: #eaff00;
+    text-transform: uppercase;
     font-weight: 700;
     color: #000;
     text-align: center;
@@ -1570,8 +1596,10 @@ em {
     padding: 8px;
     line-height: 180%; }
   #mob_section7 h6 {
-    font-size: 2vw;
-    color: #000; }
+    font-size: 1vw;
+    color: #000;
+    font-weight: bold;
+    padding-top: 1%; }
   #mob_section7 #mob_exlusive_gift {
     width: 90%;
     padding-bottom: 90%;
@@ -1579,6 +1607,17 @@ em {
     margin-right: 5%;
     background: url(../assets/mob_gifts.png) no-repeat;
     background-size: cover; }
+  #mob_section7 .shop_now_mob {
+    width: 40%;
+    font-size: 3vw;
+    line-height: 200%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #000;
+    cursor: pointer; }
+    #mob_section7 .shop_now_mob a {
+      color: #fff;
+      border-bottom: none; }
 
 #mob_section8_heading {
   position: absolute;
@@ -1604,16 +1643,21 @@ em {
     float: left;
     display: inline-block;
     width: 50%;
-    padding-bottom: 50%;
-    background-color: green; }
+    padding-bottom: 50%; }
   #mob_section8 #mob_sample_text {
     position: absolute;
     margin-top: -10%;
     width: 100%; }
     #mob_section8 #mob_sample_text h5 {
+      font-weight: 700;
+      font-size: 2vw;
+      text-transform: uppercase;
       text-align: center;
       padding: 0; }
     #mob_section8 #mob_sample_text p {
+      font-weight: 300;
+      font-size: 2vw;
+      text-transform: uppercase;
       padding-left: 2%;
       padding-right: 2%; }
 
@@ -1639,7 +1683,10 @@ em {
     color: #000; }
 
 #mob_section11 {
-  width: 100%; }
+  width: 100%;
+  font-weight: bold;
+  text-decoration: underline;
+  text-transform: uppercase; }
   #mob_section11 #shop {
     padding-top: 5%;
     padding-bottom: 5%; }
@@ -1648,11 +1695,17 @@ em {
   #mob_section11 #mob_bottomnav li {
     text-decoration: underline;
     background-color: #000;
-    font-size: 3vw;
+    font-size: 4vw;
     padding-top: 5%;
     padding-bottom: 5%;
     color: #fff;
     border-bottom: solid #fff 3vh; }
+  #mob_section11 #mob_backtotop {
+    background-color: #eaff00;
+    padding-top: 5%;
+    padding-bottom: 6%; }
+    #mob_section11 #mob_backtotop h5 {
+      font-weight: 700; }
 
 #mob_section12 {
   height: 100px;

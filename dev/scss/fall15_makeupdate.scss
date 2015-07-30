@@ -133,6 +133,10 @@ video {
   z-index: 4;
 }
 
+.desktop .pages {
+	min-width: 962px;
+}
+
 #section1 {
   height: 170px;
   width: 100%;
@@ -211,7 +215,7 @@ video {
 /*************** Main Section ******************/
 #main_section { 
   position: fixed;
-  top: 25%;
+  top: 30%;
   z-index: 1;
 }
 
@@ -253,7 +257,7 @@ em {
   font-style: normal;
   font-weight: 300;
   font-size: 2.5em;
-  font-size: 2.5vmax;
+  font-size: 2.5vmin;
   text-transform: uppercase;
   color: $yellow;
 }
@@ -402,9 +406,10 @@ em {
 	font-weight: 700;
 	width: 150px;
 	background-color: #eaff00;
-	z-index: 55; }
+	z-index: 55; 
+}
 
-  .side_navigation {
+.side_navigation {
    float: left;
    text-align: left;
    letter-spacing: 0em;
@@ -412,110 +417,113 @@ em {
    color: #000;
    font-size: 1.2em;
    text-transform: uppercase;
-   padding: 8px; }
+   padding: 8px; 
+}
 
-   .change_section {
+.change_section {
      cursor: pointer;
      background-color: #eaff00;
-     padding: 8px; }
+     padding: 8px; 
+ }
 
-     .active {
-       background-color: #fff;
-       padding: 8px; }
+.active {
+	background-color: #fff;
+	padding: 8px; 
+}
 
-       .change_section:hover {
-         background-color: #fff;
-         padding: 8px; }
+.change_section:hover {
+	background-color: #fff;
+	padding: 8px; 
+}
 
-         /*************** Section 2 ******************/
-         /*************** Shop Video *******/
+/*************** Section 2 ******************/
+/*************** Shop Video *******/
 
-         .shopvideo_item h6 { 
-           font-size: 12px;
-           font-weight: 700;
-           letter-spacing: 0.1px;
-         }
+.shopvideo_item h6 { 
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 0.1px;
+}
 
-         .shopvideo_item p {
-           line-height: 160%;
-           font-size: 10px;
-           padding-top: 5px;
-           padding-right: 8px;
-           padding-left: 8px;
-           text-transform: uppercase;
-         }
+.shopvideo_item p {
+	line-height: 160%;
+	font-size: 10px;
+	padding-top: 5px;
+	padding-right: 8px;
+	padding-left: 8px;
+	text-transform: uppercase;
+}
 
-         #videopreview { 
-           margin-top: 50px;
-         }
+#videopreview { 
+	margin-top: 50px;
+}
 
-         #videoplayer_music {
-         }
+#videoplayer_music {
+}
 
-         #videoplayer {
-          height: 411px;
-          width: 730px; 
-          background-image: url(../assets/lip_video.png);
-          background-size: cover;
-          background-repeat: no-repeat;
-          position: absolute;
-          background-color: black;
-        }
+#videoplayer {
+	height: 411px;
+	width: 730px; 
+	background-image: url(../assets/lip_video.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	background-color: black;
+}
 
-        .videoset { 
-         position: relative;
-         float: right;
-         h6 { 
-          padding-top: 5px;
-          padding-bottom: 13px;
-        }
-      }
+.videoset { 
+	position: relative;
+	float: right;
+	h6 { 
+		padding-top: 5px;
+		padding-bottom: 13px;
+	}
+}
 
-      .video_thumbnail {
-       height: 110px;
-       width: 183px;
-       cursor: pointer;
+.video_thumbnail {
+	height: 110px;
+	width: 183px;
+	cursor: pointer;
+}
 
-     }
+#video1_button { 
+	position: absolute;
+	left: 50%;
+	margin-left: -28.5px;
+	height: 57px;
+	width: 57px;
+	padding-top: 31.5px;
+}
 
-     #video1_button { 
-       position: absolute;
-       left: 50%;
-       margin-left: -28.5px;
-       height: 57px;
-       width: 57px;
-       padding-top: 31.5px;
-     }
+.video_thumbnail { 
+	border: 2px solid $grey;
+	transition : border 500ms ease-out; 
+	-webkit-transition : border 500ms ease-out; 
+	-moz-transition : border 500ms ease-out;
+	-o-transition : border 500ms ease-out;
+}
 
-     .video_thumbnail { 
-       border: 2px solid $grey;
-       transition : border 500ms ease-out; 
-       -webkit-transition : border 500ms ease-out; 
-       -moz-transition : border 500ms ease-out;
-       -o-transition : border 500ms ease-out;
-     }
+.clicked { 
+	border : 2px solid $yellow;
+}
 
-     .clicked { 
-       border : 2px solid $yellow; 
-     }
+#v1{   
+	background-image: url(../assets/lip_video.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
 
-     #v1{   
-       background-image: url(../assets/lip_video.png);
-       background-repeat: no-repeat;
-       background-size: contain;
-     }
+#v2{ 
+	background-image: url(../assets/dewylook_video.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
 
-     #v2{ 
-       background-image: url(../assets/dewylook_video.png);
-       background-repeat: no-repeat;
-       background-size: contain;
-     }
-
-     #v3{ 
-       background-image: url(../assets/smokyeye_video.png);
-       background-repeat: no-repeat;
-       background-size: contain;
-     }
+#v3{ 
+	background-image: url(../assets/smokyeye_video.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+} 
 
 
      #shopthevideo {
@@ -547,15 +555,7 @@ em {
       width: 100%;
       z-index: 5;
     }
-
-    .slide_buttons {
-      position: absolute;
-      z-index: 18;
-      width: 50px;
-      height: 220px;
-      cursor: pointer;
-    }
-
+  
 
     .slideshow { 
      margin: 0 auto;
@@ -566,19 +566,7 @@ em {
      overflow: hidden;
    }
 
-   .slide1 ul {
-     background-color: #fff; 
-     height: 300px;
-     width: 962px;
-     padding-left: 6px;
-     padding-right: 6px;
-     li { 
-      padding-top: 15px;
-      cursor: pointer;
-    }
-  }
-
-  .slide2 ul {
+.slide1 ul {
    background-color: #fff; 
    height: 300px;
    width: 962px;
@@ -587,6 +575,26 @@ em {
    li { 
     padding-top: 15px;
     cursor: pointer;
+  }
+  a {
+    text-decoration: none; 
+  }
+}
+
+
+
+.slide2 ul {
+  background-color: #fff; 
+  height: 300px;
+  width: 962px;
+  padding-left: 6px;
+  padding-right: 6px;
+  li { 
+    padding-top: 15px;
+    cursor: pointer;
+  }
+  a {
+    text-decoration: none; 
   }
 }
 
@@ -600,14 +608,34 @@ em {
 	right: -960px;
 }
 
+.slide_buttons {
+  cursor: pointer;
+}
+
+#prev-button  { 
+  position: absolute;
+  top: 0;
+  z-index: 17;
+  height: 300px;
+  width: 50px;
+}
+
+#next-button  { 
+  position: absolute;
+  left: 910px;
+  top: 0px;
+  z-index: 16;
+  height: 300px;
+  width: 50px;
+}
 
 //Clean Up Button Section//
 .next { 
 	position: absolute;
 	left: 910px;
 	top: 110px;
-	z-index: 18;
-	overflow:hidden;
+	z-index: 19;
+	overflow: hidden;
 	display: inline-block;
 	font-size: 12px;
 	width: 2em;
@@ -1271,7 +1299,9 @@ em {
     text-transform: none;
     font-size: 2.2em;
     letter-spacing: 0;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-right:50px;
 
   }
   h5 {
@@ -1297,7 +1327,9 @@ em {
     float: right;
     height: 240px;
   }
-
+  #step12 h4, #step19 h4 {
+  	border-bottom: 1px solid #fff;
+  }
 }
 
 .word_box { 
@@ -1352,11 +1384,11 @@ em {
 
 #makeup2_bottom { 
   position: absolute;
-  left: 73%;
-  top: 51%;
+  right: 50px;
+  top: 54%;
   z-index: 10;
-  width: 35%;
-  height: 35%;
+  width: 199px;
+  height: 136px;
   background: url(../assets/makeup_bottom2.png) no-repeat;
   background-size: contain;
 }
@@ -1468,7 +1500,6 @@ em {
     text-align: center;
   }
   h4 { 
-    font-family: 'Lato', sans-serif;
     color: #fff;
     font-size: 3.3vw;
     text-transform: uppercase;
@@ -1668,14 +1699,16 @@ em {
 	width: 100%;
 	background-color: $grey;
 	h4 { 
-   padding-top: 65%;
-   color: #000;
-   padding-bottom: 20px;
+    font-size: 3vw;
+    padding-top: 55%;
+    color: #000;
+    padding-bottom: 20px;
  }
  h5 {
-   padding-left: 15%;
-   padding-right: 15%;
-   padding-bottom: 10%;
+    font-size: 3vw;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 10%;
  }
 }
 
@@ -1689,13 +1722,17 @@ em {
 	padding-bottom: 47.6%;
 	margin-left: 10%;
 	margin-top: 10%;
+  h4 { 
+      font-size: 3vw;
+      color: #000;
+   }
 }
 
 .mobile_video { 
 	position: absolute;
 	z-index: 4;
 	width: 80%;
-	padding-bottom: 47.6%;
+	padding-bottom: 40%;
 	margin-left: 10%;
 	margin-top: 10%;
 }
@@ -1737,7 +1774,6 @@ em {
 .mob-content {
 	height: 100%;
 	width: 100%;
-	background-color: pink;
 	display: none;
 	h5 { 
    text-decoration: underline;
@@ -1762,7 +1798,6 @@ em {
 	display: inline-block;
 	width: 50%;
 	padding-bottom: 65%;
-	background-color: green;
 }
 
 .mob_gallerypic { 
@@ -1771,7 +1806,6 @@ em {
 	right: 10px;
 	top: 10px;
 	bottom: 10px;
-	background-color: springgreen;
 }
 
 #mob_section5{ 
@@ -1852,7 +1886,7 @@ em {
 #mob_section7{ 
 	width: 100%;
 	background-color: $grey;
-	padding-bottom: 20%;
+	padding-bottom: 18%;
 	h4 { 
 		font-family: 'Lato', sans-serif;
 		color: #000;
@@ -1860,16 +1894,19 @@ em {
 		text-transform: uppercase;
 		letter-spacing: 0.1em;
 		font-weight: 700;
+		padding-top: 7%;
+		padding-bottom: 2%;
 	}
 	h3 { 
 		text-align: center;
-		font-size: 5vw;
+		font-size: 6vw;
 		display: initial;
 		padding: 8px;
-		line-height: 180%;
+		line-height: 200%;
 	}
 	h5 { 
 		background-color: $yellow;
+    text-transform: uppercase;
 		font-weight: 700;
 		color: #000;
 		text-align: center;
@@ -1879,9 +1916,50 @@ em {
 		line-height: 180%;
 	}
 	h6 {
-		font-size: 2vw; 
+		font-size: 1vw; 
 		color: #000;
+		font-weight: bold;
+		padding-top: 1%;
 	}
+
+// #mob_bluecircle {
+//   text-align: center;
+//   margin-top: 160px;
+//   min-height: 192px;
+//   min-width: 192px;
+//   background-color: rgba(65,56,148,1);
+//   -moz-border-radius: 50%;
+//   -webkit-border-radius: 50%;
+//   border-radius: 50%;
+//   display: table; 
+// }
+
+// #mob_bluecircle span { 
+//   color: white;
+//   text-transform: uppercase;
+//   display: table-cell;
+//   vertical-align: middle;
+//   font-weight: 300;
+//   line-height: 160%;
+//   h4:first-child {
+//     color: #fff;
+//     font-size: 3em;
+//     line-height:  
+//   }
+//   h4 { 
+//     color: #fff;
+//     font-size: 1.2em;
+//     padding: 1.5%;
+//   }
+//   h6 { 
+//     font-weight: 100;
+//     color: #fff;
+//     padding: 0px;
+//     font-size: 0.8em;
+//   }
+// }
+
+
 	#mob_exlusive_gift { 
 		width: 90%;
 		padding-bottom: 90%;
@@ -1889,6 +1967,19 @@ em {
 		margin-right: 5%;
 		background: url(../assets/mob_gifts.png) no-repeat;
 		background-size: cover;
+	}
+	.shop_now_mob  {
+		width: 40%;
+		font-size: 3vw;
+		line-height: 200%;
+		margin-left: auto;
+		margin-right: auto; 
+		background-color: #000;
+		cursor: pointer;
+		a {
+			color: #fff;
+			border-bottom: none;
+		}
 	}
 }
 
@@ -1921,17 +2012,22 @@ em {
 		display: inline-block;
 		width: 50%;
 		padding-bottom: 50%;
-		background-color: green;
 	}
 	#mob_sample_text {
     position: absolute;
     margin-top: -10%;
     width: 100%;
     h5 {
-     text-align: center;
-     padding: 0;
+      font-weight: 700;
+      font-size: 2vw;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 0;
    }
    p { 
+    font-weight: 300;
+    font-size: 2vw;
+    text-transform: uppercase;
      padding-left: 2%;
      padding-right: 2%; 
    }
@@ -1967,6 +2063,9 @@ em {
 
 #mob_section11{
 	width: 100%;
+	font-weight: bold;
+	text-decoration: underline;
+	text-transform: uppercase;
 	#shop { 
 		padding-top: 5%; 
 		padding-bottom: 5%; 
@@ -1977,11 +2076,20 @@ em {
 	#mob_bottomnav li {
 		text-decoration: underline;
 		background-color: #000;
-		font-size: 3vw; 
+		font-size: 4vw; 
 		padding-top: 5%; 
 		padding-bottom: 5%;
 		color: #fff;
 		border-bottom: solid #fff 3vh;
+
+	}
+	#mob_backtotop { 
+    background-color: $yellow;
+		padding-top: 5%; 
+		padding-bottom: 6%; 
+		h5 { 
+			font-weight: 700;
+		}
 	}
 }
 

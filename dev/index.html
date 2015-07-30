@@ -12,9 +12,9 @@
   <link href="https://customerservice.bloomingdales.com/euf/assets/css/main.css" rel="stylesheet" type="text/css">
 </head>
 
-<style></style>
 
 <body>
+
   <div id="bl_main_container">
       <!--Desktop-->
       <div class="desktop">
@@ -66,7 +66,7 @@
                               <div style="display:none"></div>
                               <div id="videoplayer_music"></div>
                               <div id="videoplayer">
-<!--                              <object id="myExperience4377128244001" class="BrightcoveExperience">
+                           <object id="myExperience4377128244001" class="BrightcoveExperience">
                                     <param name="bgcolor" value="#FFFFFF" />
                                     <param name="width" value="745" />
                                     <param name="height" value="419" />
@@ -78,7 +78,7 @@
                                     <param name="@videoPlayer" value="4377128244001" />
                                     <param name="includeAPI" value="true">
                                     <param name="templateLoadHandler" value="onTemplateLoaded">
-                                  </object> -->
+                                  </object>
                               </div>
                               <!-- Section 2: Video Thumbnails -->
                               <div class="videoset"> 
@@ -108,8 +108,8 @@
                       <div class="shopslideshow">
                           <!--slideshow1: Shop the Lips-->
                           <div class="slide_buttons">
-                              <div class="prev" alt="Previous"></div>
-                              <div class="next" alt="Next"> </div>
+                              <div class="prev" alt="Previous"></div> <div id="prev-button"> </div>
+                              <div class="next" alt="Next"> </div> <div id="next-button"> </div>
                           </div>
                           <div class="slideshow" id="shop1"> 
                               <div class="slide1" class="slide">
@@ -418,7 +418,8 @@
                           <div class="sample_heading"><div id="sample_heading"><h3>Includes 3 cosmetics bags &amp; 12 deluxe samples:</h4></div></div>
       
                           
-                          <div class="samples">    
+                          <div class="samples">  
+                            
                                   <div class="galleryitem">
                                       <div id="pic1" class="gallerypic"></div>
                                       <div class="sample_words">
@@ -575,9 +576,9 @@
                           <div id="bottom_nav">
                               <ul>
                                   <li>Shop</li>
-                                  <li><a href="#section3">Lips</a></li>
-                                  <li><a href="#section4">Foundation</a></li>
-                                  <li><a href="#section5">Eyes</a></li>
+                                  <li><a href="http://m.bloomingdales.com/shop/beauty/lips?id=14806">Lips</a></li>
+                                  <li><a href="http://m.bloomingdales.com/shop/beauty/face/Face,Sortby,Productsperpage/Foundations,ORIGINAL,96?id=14721">Foundation</a></li>
+                                  <li><a href="http://m.bloomingdales.com/shop/beauty/eyes?id=14797">Eyes</a></li>
                               </ul>
                           </div>
                       </div>
@@ -625,7 +626,22 @@
       <!-- Section 4 : Shop the Lip -->
       <div class="mob_section4">
           <div class="mobile_video_button"></div>
-          <div class="mobile_video" id="shoplip_video"></div>
+          <div class="mobile_video" id="shoplip_video">
+           <!--      <object id="myExperience4377128244001mob" class="BrightcoveExperience">
+                    <param name="bgcolor" value="#FFFFFF" />
+                    <param name="width" value="745" />
+                    <param name="height" value="419" />
+                    <param name="playerID" value="4314019736001" />
+                    <param name="playerKey" value="AQ~~,AAAAEa4LKPk~,F9t4RD8tmUu7xl2opXkdKhWUpq-Cz4gk" />
+                    <param name="isVid" value="true" />
+                    <param name="isUI" value="true" />
+                    <param name="dynamicStreaming" value="true" />
+                    <param name="@videoPlayer" value="4377128244001" />
+                    <param name="includeAPI" value="true">
+                    <param name="templateLoadHandler" value="onTemplateLoaded">
+                  </object> -->
+            </div>
+
           <h4>The Two-Tone Matte Lip</h4>
           <h5>Create a runway-inspired look with pucker-perfect dimension.</h5>
       </div> <!-- end of Section 4 -->
@@ -633,69 +649,90 @@
       <div class="mob-button" id="shop_lip"><h4>Shop The Two-Tone Matte Lip</h4></div>
       <div class="mob-content" id="shop_lip_content">
           <div class="mobcontent_container">
-              <div class="mob_galleryitem"> 
-                  <div class="mob_gallerypic">
-                      <div id="mob_pic"><img src="assets/shoplip1.png" alt="shop_lip pictures"></div>
-                      <h5>Nars</h5>
-                      <p>Velvet Matte Lip Pencil in Dragon Girl</p>
+              <a href="http://www1.bloomingdales.com/shop/product/nars-velvet-matte-lip-pencil?ID=103913&amp;CategoryID=2921" data-key="nars-matte-pencil">
+                  <div class="mob_galleryitem"> 
+                      <div class="mob_gallerypic">
+                          <div id="mob_pic"><img src="assets/shoplip1.png" alt="shop_lip pictures"></div>
+                          <h5>Nars</h5>
+                          <p>Velvet Matte Lip Pencil in Dragon Girl</p>
+                      </div>
                   </div>
-              </div>
-              <div class="mob_galleryitem"> 
-                  <div class="mob_gallerypic">
-                      <div id="mob_pic"><img src="assets/shoplip2.png" alt="shop_lip pictures"></div>
-                      <h5>Tom Ford</h5>
-                      <p>Lip Color Matte in Velvet Cherry</p>
+              </a>
+
+              <a href="http://www1.bloomingdales.com/shop/product/tom-ford-lip-color-matte?ID=1127352&amp;CategoryID=2921" data-key="tom-ford-matte-lip">
+                  <div class="mob_galleryitem"> 
+                      <div class="mob_gallerypic">
+                          <div id="mob_pic"><img src="assets/shoplip2.png" alt="shop_lip pictures"></div>
+                          <h5>Tom Ford</h5>
+                          <p>Lip Color Matte in Velvet Cherry</p>
+                      </div>
                   </div>
-              </div>
-              <div class="mob_galleryitem"> 
-                  <div class="mob_gallerypic">
-                      <div id="mob_pic"><img src="assets/shoplip3.png" alt="shop_lip pictures"></div>
-                      <h5>Nars</h5>
-                      <p>Lip Liner Pencil in Jungle Red</p>
+              </a>
+
+              <a href="http://www1.bloomingdales.com/shop/product/nars-lip-liner-pencil?ID=116550&amp;CategoryID=2921" data-key="nars-lipliner">
+                  <div class="mob_galleryitem"> 
+                      <div class="mob_gallerypic">
+                          <div id="mob_pic"><img src="assets/shoplip3.png" alt="shop_lip pictures"></div>
+                          <h5>Nars</h5>
+                          <p>Lip Liner Pencil in Jungle Red</p>
+                      </div>
                   </div>
-              </div>
-              <div class="mob_galleryitem"> 
-                  <div class="mob_gallerypic">
-                      <div id="mob_pic"><img src="assets/shoplip4.png" alt="shop_lip pictures"></div>
-                      <h5>Laura Mercier</h5>
-                      <p>Translucent Loose Setting Powder</p>
+              </a>
+              <a href="http://www1.bloomingdales.com/shop/product/laura-mercier-loose-setting-powder?ID=87195&amp;CategoryID=2921" data-key="Laura-Mercier-Powder">
+                  <div class="mob_galleryitem"> 
+                      <div class="mob_gallerypic">
+                          <div id="mob_pic"><img src="assets/shoplip4.png" alt="shop_lip pictures"></div>
+                          <h5>Laura Mercier</h5>
+                          <p>Translucent Loose Setting Powder</p>
+                      </div>
                   </div>
-              </div>
-              <div class="mob_galleryitem"> 
-                  <div class="mob_gallerypic">
-                      <div id="mob_pic"><img src="assets/shoplip5.png" alt="shop_lip pictures"></div>
-                      <h5>Bobbi Brown</h5>
-                      <p>Perfectly Defined Long-Wear Brow Pencil in Blonde</p>
-                  </div>  
-              </div>
-              <div class="mob_galleryitem"> 
-                  <div class="mob_gallerypic">
-                      <div id="mob_pic"><img src="assets/shoplip6.png" alt="shop_lip pictures"></div>
-                      <h5>Estée Lauder</h5>
-                      <p>Lip Brush 35</p>
+              </a>
+              <a href="http://www1.bloomingdales.com/shop/product/bobbi-brown-perfectly-defined-long-wear-brow-pencil?ID=1292851&CategoryID=2921">
+                  <div class="mob_galleryitem"> 
+                      <div class="mob_gallerypic">
+                          <div id="mob_pic"><img src="assets/shoplip5.png" alt="shop_lip pictures"></div>
+                          <h5>Bobbi Brown</h5>
+                          <p>Perfectly Defined Long-Wear Brow Pencil in Blonde</p>
+                      </div>  
                   </div>
-              </div>
-              <div class="mob_galleryitem"> 
-                  <div class="mob_gallerypic"> 
-                      <div id="mob_pic"><img src="assets/shoplip7.png" alt="shop_lip pictures"></div>
-                      <h5>Yves Saint Laurent</h5>
-                      <p>Rouge Pur Couture in Le Rouge</p>
+              </a>
+
+              <a href="http://www1.bloomingdales.com/shop/product/bobbi-brown-perfectly-defined-long-wear-brow-pencil?ID=1292851&amp;CategoryID=2921" data-key="bobbi-brown-pencil">
+                  <div class="mob_galleryitem"> 
+                      <div class="mob_gallerypic">
+                          <div id="mob_pic"><img src="assets/shoplip6.png" alt="shop_lip pictures"></div>
+                          <h5>Estée Lauder</h5>
+                          <p>Lip Brush 35</p>
+                      </div>
                   </div>
-              </div>
-              <div class="mob_galleryitem"> 
-                  <div class="mob_gallerypic">
-                      <div id="mob_pic"><img src="assets/shoplip8.png" alt="shop_lip pictures"></div>
-                      <h5>Bobbi Brown</h5>
-                      <p>Creamy Matte Lip Color in Red Carpet</p>
+              </a>
+              <a href="http://www1.bloomingdales.com/shop/product/yves-saint-laurent-rouge-pur-couture?ID=501751&amp;CategoryID=2921" data-key="Yves-Saint-Rouge">
+                <div class="mob_galleryitem"> 
+                      <div class="mob_gallerypic"> 
+                          <div id="mob_pic"><img src="assets/shoplip7.png" alt="shop_lip pictures"></div>
+                          <h5>Yves Saint Laurent</h5>
+                          <p>Rouge Pur Couture in Le Rouge</p>
+                      </div>
                   </div>
-              </div>
-              <div class="mob_galleryitem"> 
-                  <div class="mob_gallerypic">
-                      <div id="mob_pic"><img src="assets/shoplip9.png" alt="shop_lip pictures"></div>
-                      <h5>Estée Lauder</h5>
-                      <p>Pure Color Envy Sculpting Lipstick in Envious</p>
+              </a>
+              <a href="http://www1.bloomingdales.com/shop/product/estee-lauder-pure-color-envy-sculpting-lipstick?ID=991883&amp;CategoryID=2921" data-key="Estée-Lauder-Color">
+                  <div class="mob_galleryitem"> 
+                      <div class="mob_gallerypic">
+                          <div id="mob_pic"><img src="assets/shoplip8.png" alt="shop_lip pictures"></div>
+                          <h5>Bobbi Brown</h5>
+                          <p>Creamy Matte Lip Color in Red Carpet</p>
+                      </div>
                   </div>
-              </div>
+              </a>
+              <a href="http://www1.bloomingdales.com/shop/product/bobbi-brown-creamy-matte-lip-color?ID=665012&amp;CategoryID=2921" data-key="Bobbi-Brown-Lip-Color">
+                  <div class="mob_galleryitem"> 
+                      <div class="mob_gallerypic">
+                          <div id="mob_pic"><img src="assets/shoplip9.png" alt="shop_lip pictures"></div>
+                          <h5>Estée Lauder</h5>
+                          <p>Pure Color Envy Sculpting Lipstick in Envious</p>
+                      </div>
+                  </div>
+              </a>
           </div> <!--shop_lip_container-->
       </div> <!--shop_lip_content-->
       <div class="mob-button2">
@@ -705,7 +742,21 @@
       <!-- Section 4 : The Dewy Finish -->
       <div class="mob_section4">
           <div class="mobile_video_button"></div>
-          <div class="mobile_video" id="dewylook_video"></div>
+      <div class="mobile_video" id="dewylook_video">
+   <!--          <object id="myExperience4377128247001mob" class="BrightcoveExperience">
+                <param name="bgcolor" value="#FFFFFF" />
+                <param name="width" value="745" />
+                <param name="height" value="419" />
+                <param name="playerID" value="4314019736001" />
+                <param name="playerKey" value="AQ~~,AAAAEa4LKPk~,F9t4RD8tmUu7xl2opXkdKhWUpq-Cz4gk" />
+                <param name="isVid" value="true" />
+                <param name="isUI" value="true" />
+                <param name="dynamicStreaming" value="true" />
+                <param name="@videoPlayer" value="4377128247001" />
+                <param name="includeAPI" value="true">
+                <param name="templateLoadHandler" value="onTemplateLoaded">
+              </object> -->
+          </div>
           <h4>The Dewy Finish</h4>
           <h5>Achieve a flawless glow with the buzzed-about cushion compact.</h5>
       </div> <!-- end of section 5 -->
@@ -713,34 +764,44 @@
       <div class="mob-button" id="dewy_look"><h4>Shop The Dewy Finish</h4></div>
       <div class="mob-content" id="dewy_look_content">
           <div class="mobcontent_container">
-              <div class="mob_galleryitem"> 
-                  <div class="mob_gallerypic">
-                      <div id="mob_pic"><img src="assets/dewylook1.png" alt="makeup"></div>
-                      <h5>Estée Lauder</h5>
-                      <p>Illuminating Perfecting Primer </p>
+              <a href="http://www1.bloomingdales.com/shop/product/estee-lauder-illuminating-perfecting-primer?ID=600887&amp;CategoryID=2921" data-key="Estee-Lauder-Primer">
+                  <div class="mob_galleryitem"> 
+                      <div class="mob_gallerypic">
+                          <div id="mob_pic"><img src="assets/dewylook1.png" alt="makeup"></div>
+                          <h5>Estée Lauder</h5>
+                          <p>Illuminating Perfecting Primer </p>
+                      </div>
                   </div>
-              </div>
-              <div class="mob_galleryitem"> 
-                  <div class="mob_gallerypic">
-                      <div id="mob_pic"><img src="assets/dewylook2.png" alt="makeup"></div>
-                      <h5>Yves Saint Laurent</h5>
-                      <p>Touche Éclat</p>
+              </a>
+              <a href="http://www1.bloomingdales.com/shop/product/yves-saint-laurent-touche-eclat?ID=87434&amp;CategoryID=2921" data-key="YSL Touche Eclat">
+                  <div class="mob_galleryitem"> 
+                      <div class="mob_gallerypic">
+                          <div id="mob_pic"><img src="assets/dewylook2.png" alt="makeup"></div>
+                          <h5>Yves Saint Laurent</h5>
+                          <p>Touche Éclat</p>
+                      </div>
                   </div>
-              </div>
-              <div class="mob_galleryitem"> 
-                  <div class="mob_gallerypic">
-                      <div id="mob_pic"><img src="assets/dewylook3.png" alt="makeup"></div>
-                      <h5>Clinique</h5>
-                      <p>Cheek Pop in Berry Pop</p>
+              </a>
+              <a href="http://www1.bloomingdales.com/shop/product/clinique-cheek-pop?ID=973181&amp;CategoryID=2921" data="key=&quot;CLINIQUE-Cheek-Pop&quot;">
+                  <div class="mob_galleryitem"> 
+                      <div class="mob_gallerypic">
+                          <div id="mob_pic"><img src="assets/dewylook3.png" alt="makeup"></div>
+                          <h5>Clinique</h5>
+                          <p>Cheek Pop in Berry Pop</p>
+                      </div>
                   </div>
-              </div>
-              <div class="mob_galleryitem"> 
-                  <div class="mob_gallerypic">
-                      <div id="mob_pic"><img src="assets/dewylook4.png" alt="makeup"></div>
-                      <h5>Nars</h5>
-                      <p>Dual-Intensity Blush in Jubilation</p>
+              </a>
+              <a href="http://www1.bloomingdales.com/shop/product/nars-dual-intensity-blush?ID=1298313&amp;CategoryID=2921" data-key="NARS-Dual-Intensity-Blush">
+                  <div class="mob_galleryitem"> 
+                      <div class="mob_gallerypic">
+                          <div id="mob_pic"><img src="assets/dewylook4.png" alt="makeup"></div>
+                          <h5>Nars</h5>
+                          <p>Dual-Intensity Blush in Jubilation</p>
+                      </div>
                   </div>
-              </div>
+              </a>
+
+              <a href="http://www1.bloomingdales.com/shop/product/sk-ii-mid-day-essence?ID=1403419&CategoryID=2921" data-key="SK-II-Pitera">
               <div class="mob_galleryitem"> 
                   <div class="mob_gallerypic">
                       <div id="mob_pic"><img src="assets/dewylook5.png" alt="makeup"></div>
@@ -748,41 +809,57 @@
                       <p>Mid-Day Essence</p>
                   </div>  
               </div>
-              <div class="mob_galleryitem"> 
-                  <div class="mob_gallerypic">
-                      <div id="mob_pic"><img src="assets/dewylook6.png" alt="makeup"></div>
-                      <h5>Lancôme</h5>
-                      <p>Miracle Cushion Liquid Cushion Compact</p>
+              </a>
+
+              <a href="http://www1.bloomingdales.com/shop/product/lancome-miracle-cushion-liquid-cushion-compact?ID=1340662&amp;CategoryID=2921" data-key="LANCOME-Miracle-Cushion">
+                  <div class="mob_galleryitem"> 
+                      <div class="mob_gallerypic">
+                          <div id="mob_pic"><img src="assets/dewylook6.png" alt="makeup"></div>
+                          <h5>Lancôme</h5>
+                          <p>Miracle Cushion Liquid Cushion Compact</p>
+                      </div>
                   </div>
-              </div>
-              <div class="mob_galleryitem"> 
-                  <div class="mob_gallerypic">
-                      <div id="mob_pic"><img src="assets/dewylook7.png" alt="makeup"></div>
-                      <h5>Trish McEvoy</h5>
-                      <p>Eye Base Essentials in Demure</p>
+              </a>
+              <a href="http://www1.bloomingdales.com/shop/product/trish-mcevoy-eye-base-essentials?ID=91228&CategoryID=2921" data-key="Trish-Mcevoy-Eye-Base">
+                  <div class="mob_galleryitem"> 
+                      <div class="mob_gallerypic">
+                          <div id="mob_pic"><img src="assets/dewylook7.png" alt="makeup"></div>
+                          <h5>Trish McEvoy</h5>
+                          <p>Eye Base Essentials in Demure</p>
+                      </div>
                   </div>
-              </div>
-              <div class="mob_galleryitem"> 
-                  <div class="mob_gallerypic">
-                      <div id="mob_pic"><img src="assets/dewylook8.png" alt="makeup"></div>
-                      <h5>Laura Mercier</h5>
-                      <p>Translucent Loose Setting Powder</p>
+              </a>
+              <!-- </div> -->
+
+
+              <a href="http://www1.bloomingdales.com/shop/product/laura-mercier-loose-setting-powder?ID=87195&CategoryID=2921" data-key="LAURA MERCIER-Loose-Setting-Powder">
+                <div class="mob_galleryitem"> 
+                      <div class="mob_gallerypic">
+                          <div id="mob_pic"><img src="assets/dewylook8.png" alt="makeup"></div>
+                          <h5>Laura Mercier</h5>
+                          <p>Translucent Loose Setting Powder</p>
+                      </div>
                   </div>
-              </div>
-              <div class="mob_galleryitem"> 
-                  <div class="mob_gallerypic">
-                      <div id="mob_pic"><img src="assets/dewylook9.png" alt="makeup"></div>
-                      <h5>Dior</h5>
-                      <p>Backstage Fluid Foundation Brush - Light Coverage</p>
+              </a>
+              <a href="http://www1.bloomingdales.com/shop/product/dior-backstage-fluid-foundation-brush-light-coverage?ID=644044&CategoryID=2921"
+                                          data-key"Dior Backstage Fluid Foundation Brush - Light Coverage">
+                  <div class="mob_galleryitem"> 
+                      <div class="mob_gallerypic">
+                          <div id="mob_pic"><img src="assets/dewylook9.png" alt="makeup"></div>
+                          <h5>Dior</h5>
+                          <p>Backstage Fluid Foundation Brush - Light Coverage</p>
+                      </div>
                   </div>
-              </div>
-              <div class="mob_galleryitem"> 
-                  <div class="mob_gallerypic">
-                      <div id="mob_pic"><img src="assets/dewylook10.png" alt="makeup"></div>
-                      <h5>Laura Mercier</h5>
-                      <p>Powder Brush</p>
+              </a>
+              <a href="http://www1.bloomingdales.com/shop/product/laura-mercier-powder-brush-travel?ID=87317&CategoryID=2921" data-key="Laura Mercier Powder Brush - Travel">
+                  <div class="mob_galleryitem"> 
+                      <div class="mob_gallerypic">
+                          <div id="mob_pic"><img src="assets/dewylook10.png" alt="makeup"></div>
+                          <h5>Laura Mercier</h5>
+                          <p>Powder Brush</p>
+                      </div>
                   </div>
-              </div>
+              </a>
           </div> <!--dewy_look_container-->
       </div> <!--dewy_look_content-->
       <div class="mob-button2">
@@ -792,7 +869,21 @@
       <!-- Section 4 : Smoky Eye Look -->
       <div class="mob_section4">
           <div class="mobile_video_button"></div> 
-          <div class="mobile_video" id="smokyeye_video"></div>
+      <div class="mobile_video" id="smokyeye_video">
+  <!--           <object id="myExperience4377147010001mob" class="BrightcoveExperience">
+                <param name="bgcolor" value="#FFFFFF" />
+                <param name="width" value="745" />
+                <param name="height" value="419" />
+                <param name="playerID" value="4314019736001" />
+                <param name="playerKey" value="AQ~~,AAAAEa4LKPk~,F9t4RD8tmUu7xl2opXkdKhWUpq-Cz4gk" />
+                <param name="isVid" value="true" />
+                <param name="isUI" value="true" />
+                <param name="dynamicStreaming" value="true" />
+                <param name="@videoPlayer" value="4377147010001" />
+                <param name="includeAPI" value="true">
+                <param name="templateLoadHandler" value="onTemplateLoaded">
+              </object> -->
+          </div>
           <h4>The Steel Blue Smoky Eye</h4>
           <h5>Master this sultry statement in a bold new hue.</h5>
       </div> <!-- end of section 5 -->
@@ -800,7 +891,7 @@
       <div class="mob-button" id="smoky_eye"><h4>Shop The Steel Blue Smoky Eye</h4></div>
       <div class="mob-content" id="smoky_eye_content">
           <div class="mobcontent_container">
-            <a style="display: block;" href="//google.com">
+            <a href="//google.com">
               <div class="mob_galleryitem"> 
                   <div class="mob_gallerypic">
                       <div id="mob_pic"><img src="assets/smokylook1.png" alt="makeup"></div>
@@ -903,16 +994,19 @@
       <!-- Section 7: Exlusive Gifts -->
       <div id="mob_section7">
           <h4>Online Only</h4>
-          <h3>Your Exclusive <br>15-Piece Gif</h3>
+          <h3>Your Exclusive <br>15-Piece Gift</h3>
           <h5> <br>with any $125 beauty purchase! </h5>
           
           <div id="mob_bluecircle">
-              <h5> + </h5>
-              <h5>Loyallists Recieve Triple Points On All Beauty Purchases! </h5>
-              <h6>Ends 9/1. info/exclusions</h6>
+<!--         <span>
+              <h4> + </h4>
+              <h4>Loyallists Recieve Triple Points On All Beauty Purchases! </h4>
+              <h6>Ends 9/1. <br> info/exclusions</h6> 
+            </span> -->
           </div>
 
           <div id="mob_exlusive_gift"></div>
+          <div class="shop_now_mob"><span><a href="http://www1.bloomingdales.com/shop/beauty/gifts-with-purchase?id=7138">Shop Now</a></span></div>
           <h6>Ends 9/1 or while supplies last.</h6>
       </div> <!-- end of Section 7 -->
 
@@ -929,17 +1023,15 @@
               <div class="mob_galleryitem"> 
                   <div class="mob_gallerypic">
                       <div id="mob_pic"><img src="assets/mob_sample1.png" alt="makeup"></div>
-                          
                           <div id="mob_sample_text">
                               <h5>La Mer</h5>
                               <p>The Moisturizing Lotion</p>
                           </div>
-
                   </div>
               </div>
               <div class="mob_galleryitem"> 
                   <div class="mob_gallerypic">
-                      <div id="mob_pic"><img src="assets/dewylook2.png" alt="makeup"></div>
+                      <div id="mob_pic"><img src="assets/mob_sample2.png" alt="makeup"></div>
 
                           <div id="mob_sample_text">
                               <h5>Lancôme</h5>
@@ -950,7 +1042,7 @@
               </div>
               <div class="mob_galleryitem"> 
                   <div class="mob_gallerypic">
-                      <div id="mob_pic"><img src="assets/dewylook3.png" alt="makeup"></div>
+                      <div id="mob_pic"><img src="assets/mob_sample3.png" alt="makeup"></div>
 
                           <div id="mob_sample_text">
                               <h5>Tory Burch</h5>
@@ -961,7 +1053,7 @@
               </div>
               <div class="mob_galleryitem"> 
                   <div class="mob_gallerypic">
-                      <div id="mob_pic"><img src="assets/dewylook4.png" alt="makeup"></div>
+                      <div id="mob_pic"><img src="assets/mob_sample4.png" alt="makeup"></div>
                           
                           <div id="mob_sample_text">
                               <h5>Amorepacific</h5>
@@ -972,7 +1064,7 @@
               </div>
               <div class="mob_galleryitem"> 
                   <div class="mob_gallerypic">
-                      <div id="mob_pic"><img src="assets/dewylook5.png" alt="makeup"></div>
+                      <div id="mob_pic"><img src="assets/mob_sample5.png" alt="makeup"></div>
                           
                           <div id="mob_sample_text">
                               <h5>Guerlain</h5>
@@ -983,7 +1075,7 @@
               </div>
               <div class="mob_galleryitem"> 
                   <div class="mob_gallerypic">
-                      <div id="mob_pic"><img src="assets/dewylook6.png" alt="makeup"></div>
+                      <div id="mob_pic"><img src="assets/mob_sample6.png" alt="makeup"></div>
                           
                           <div id="mob_sample_text">
                               <h5>SK-II</h5>
@@ -994,7 +1086,7 @@
               </div>
               <div class="mob_galleryitem"> 
                   <div class="mob_gallerypic">
-                      <div id="mob_pic"><img src="assets/dewylook7.png" alt="makeup"></div>
+                      <div id="mob_pic"><img src="assets/mob_sample7.png" alt="makeup"></div>
                           
                           <div id="mob_sample_text">
                               <h5>Estée Lauder</h5>
@@ -1005,7 +1097,7 @@
               </div>
               <div class="mob_galleryitem"> 
                   <div class="mob_gallerypic">
-                      <div id="mob_pic"><img src="assets/dewylook8.png" alt="makeup"></div>
+                      <div id="mob_pic"><img src="assets/mob_sample8.png" alt="makeup"></div>
                           
                           <div id="mob_sample_text">
                               <h5>Yves Saint Laurent</h5>
@@ -1016,7 +1108,7 @@
               </div>
               <div class="mob_galleryitem"> 
                   <div class="mob_gallerypic">
-                      <div id="mob_pic"><img src="assets/dewylook9.png" alt="makeup"></div>
+                      <div id="mob_pic"><img src="assets/mob_sample9.png" alt="makeup"></div>
                           
                           <div id="mob_sample_text">
                               <h5>Tom Ford</h5>
@@ -1027,7 +1119,7 @@
               </div>
               <div class="mob_galleryitem"> 
                   <div class="mob_gallerypic">
-                      <div id="mob_pic"><img src="assets/dewylook10.png" alt="makeup"></div>
+                      <div id="mob_pic"><img src="assets/mob_sample10.png" alt="makeup"></div>
                           
                           <div id="mob_sample_text">
                               <h5>Kiehl’s Since 1851</h5>
@@ -1038,7 +1130,7 @@
               </div>
               <div class="mob_galleryitem"> 
                   <div class="mob_gallerypic">
-                      <div id="mob_pic"><img src="assets/dewylook10.png" alt="makeup"></div>
+                      <div id="mob_pic"><img src="assets/mob_sample11.png" alt="makeup"></div>
                           
                           <div id="mob_sample_text">
                               <h5>Malin+Goetz</h5>
@@ -1049,7 +1141,7 @@
               </div>
               <div class="mob_galleryitem"> 
                   <div class="mob_gallerypic">
-                      <div id="mob_pic"><img src="assets/dewylook10.png" alt="makeup"></div>
+                      <div id="mob_pic"><img src="assets/mob_sample12.png" alt="makeup"></div>
                           
                       <div id="mob_sample_text">
                           <h5>Bobbi Brown</h5>
@@ -1073,19 +1165,20 @@
           <div class="mob_bottom_nav">
               <div id="shop"><h5>Shop:</h5></div>
               <ul id="mob_bottomnav">
-                  <li id="part2" class="change_section">Lips</li>
-                  <li id="part3" class="change_section">Foundation</li>
-                  <li id="part4" class="change_section">Eyes</li>
+                  <a href="http://m.bloomingdales.com/shop/beauty/lips?id=14806"><li id="part2" class="change_section">Lips</li></a>
+                  <a href="http://m.bloomingdales.com/shop/beauty/eyes?id=14797"><li id="part4" class="change_section">Eyes</li></a> 
+                  <a href="http://m.bloomingdales.com/shop/beauty/face/Face,Sortby,Productsperpage/Foundations,ORIGINAL,96?id=14721"><li id="part4" class="change_section">Foundation</li></a> 
               </ul>
+              <div id="mob_backtotop"><h5>Back To Top</h5><div class="topbutton"></div></div>
           </div>
       </div>
 
-      <div id="mob_section12">
+     <!--  <div id="mob_section12">
           <div class="container">
               <div class="totop">
               </div>
           </div>
-      </div>  
+      </div>   -->
 
   </div> <!-- end of mobile -->
 

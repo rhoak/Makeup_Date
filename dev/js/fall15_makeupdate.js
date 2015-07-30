@@ -127,8 +127,6 @@
 
     };
 }(jQuery));
-
-
 (function (window){
 
 
@@ -258,7 +256,7 @@
         // CoreMetrics("Element","fall15_makeupdate", 'fall15_makeupdate--exclusives');
     });
 
-    $('.galleryitem').on('click', function() { 
+    $('.mob_galleryitem').on('click', function() { 
         // CoreMetrics("Element","fall15_makeupdate", 'fall15_makeupdate--exclusives');
     });
 
@@ -444,6 +442,8 @@
     });
 
 
+
+
 /********* SlideShow Thumbnails **********/ 
     $(".video_thumbnail").on("click", function(e) {
         switch ($(this).attr('id')) {
@@ -470,7 +470,7 @@
 var currentPanel=1;
 
 
-$('.next').click(function() {
+$('#next-button').click(function() {
   if(currentPanel===1) {
     $('.slide1').animate({ right: 960 }, 400, 'swing');
     $('.slide2').animate({ right: 0}, 400,'swing');
@@ -483,7 +483,7 @@ $('.next').click(function() {
   }
 });
 
-$('.prev').click(function() {
+$('#prev-button').click(function() {
   if(currentPanel===1) {
     $('.slide1').animate({ right: 960 }, 400,'swing');
     $('.slide2').animate({ right: 0}, 400,'swing');
@@ -495,6 +495,10 @@ $('.prev').click(function() {
     currentPanel=1;
   }
 });
+
+/********* Adding Links **********/ 
+$('.galleryitem').wrap('<a href="http://m.bloomingdales.com/shop/beauty/gifts-with-purchase?id=7138"></a>');
+$('.mob_galleryitem').wrap('<a href="http://m.bloomingdales.com/shop/beauty/gifts-with-purchase?id=7138"></a>');
 
 
 
@@ -521,6 +525,12 @@ $('.prev').click(function() {
         }
     };
 
+    $("#mob_backtotop").on("click", function(event) {
+        $('html, body').animate({
+            scrollTop: $("#mob_section1").offset().top 
+        }, 1900);
+    });
+
     $('.mob-button2').click(function(){
         var content = $(this).prev(".mob-content")
         content.slideToggle(2000, 'swing', function () { 
@@ -536,7 +546,7 @@ $('.prev').click(function() {
             var content = $(this);
             arrowToggle(content);
         });
-    })
+    });
 
     $(".totop").on("click", function(event) {
         $('html, body').animate({
@@ -568,7 +578,6 @@ window.loadVideo=loadVideo;
 
 
 }(window));
-
 
 /**
  * jQuery.browser.mobile (http://detectmobilebrowser.com/)
